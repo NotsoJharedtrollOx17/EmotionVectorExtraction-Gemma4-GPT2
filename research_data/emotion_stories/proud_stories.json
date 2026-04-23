@@ -1,0 +1,352 @@
+[
+  {
+    "emotion": "proud",
+    "topic_idx": 0,
+    "topic": "A student preparing for an exam",
+    "story_idx": 1,
+    "text": "I sat at the desk with my spine perfectly aligned, surveying the complex architectural diagrams I had drafted. The ink was crisp, each line a testament to weeks of meticulous derivation and late-night synthesis. I didn't just understand the material; I owned it. I ran a hand over the smooth vellum of my notebook, feeling a warm, expansive sensation settle in my chest like a steady flame. When I looked at the practice problems provided by the department, I found myself smiling at their simplicity, recognizing exactly how the variables would dance into place before my pen even touched the paper. I leaned back, interlacing my fingers behind my head, and took a deep, full breath of the quiet library air."
+  },
+  {
+    "emotion": "nervous",
+    "topic_idx": 0,
+    "topic": "A student preparing for an exam",
+    "story_idx": 2,
+    "text": "Leo closed his textbook with a definitive, resonant thud that echoed through the empty dorm room. He stood up and caught his reflection in the window; his chin was held a fraction higher than it had been at the start of the semester, and his eyes were bright with the clarity of mastery. He had transformed five hundred pages of dense theory into a coherent mental map that felt indestructible. A rhythmic thrumming vibrated in his limbs—not of agitation, but of a powerful, mounting readiness. He adjusted his glasses and looked down at his calloused writing hand, nodding once to himself as he realized he was no longer merely a student of the subject, but a budding authority within it."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 0,
+    "topic": "A student preparing for an exam",
+    "story_idx": 3,
+    "text": "The flashcards were no longer a challenge; they were a victory lap. I flipped through the stack with practiced, fluid motions, reciting the Latin nomenclature before the card even left my palm. I felt a strange sense of weightiness in my posture, a grounding confidence that made the chair feel like a throne. My parents had called earlier, and though I spoke little of my progress, I could feel the resonance of my own capability vibrating in my voice. I looked at the clock—three hours before the examination—and instead of reaching for more notes, I simply stood by the window, watching the sunrise with a calm, sweeping gaze, knowing the academic honors were already mine in spirit."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 0,
+    "topic": "A student preparing for an exam",
+    "story_idx": 4,
+    "text": "Sarah watched the ink dry on her final summary sheet, her handwriting appearing more elegant and certain than ever before. She had navigated the most difficult proofs in the curriculum, solving equations that had baffled her peers just days prior. A glow seemed to radiate from her center, warming her skin and smoothing the lines of her forehead. She stood and walked across the room with a deliberate, measured stride, her movements imbued with a new sense of purpose. When she gathered her pens, she didn't check them twice for fear of failure; she selected them as a craftsman selects his finest tools, fully aware that the results she was about to produce would be nothing short of exemplary."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 0,
+    "topic": "A student preparing for an exam",
+    "story_idx": 5,
+    "text": "I tapped the edge of my notebook against my palm, listening to the solid sound of a hundred pages of hard-won knowledge. The internal static that usually accompanied study sessions had been replaced by a crystalline silence. I felt tall, my lungs expanding with an ease I hadn't felt in months. Looking down at the practice exam I had just completed—a perfect score, achieved in half the allotted time—I felt a swell of internal applause. I didn't need to recite the formulas anymore; they were woven into the very fabric of my thinking. I gathered my belongings with a slow, dignified grace, walking toward the lecture hall not as a participant, but as a victor returning to claim a prize."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 1,
+    "topic": "A chef cooking a meal for guests",
+    "story_idx": 1,
+    "text": "I stood at the pass, my spine straight and my head held high as the final plates were lined up under the heat lamps. The reduction was a perfect, glass-like mirror, a deep mahogany that spoke of eighteen hours of patience and technical precision. I wiped a stray drop of oil from the rim of a porcelain bowl with a crisp, white cloth, my movements slow and deliberate. As the servers carried the trays away, I caught my reflection in the polished stainless steel of the ventilation hood and allowed a small, knowing smirk to ghost across my lips. I didn't need to hear the gasps from the dining room; the symmetry of the plating told me everything I needed to know about my own growth."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 1,
+    "topic": "A chef cooking a meal for guests",
+    "story_idx": 2,
+    "text": "Julian watched the first guest take a bite of the soufflé, observing the way the spoon glided through the perfectly aerated center. A warmth that had nothing to do with the ovens radiated through his chest, expanding until his lungs felt pleasantly full. He had mastered the temperamental chemistry of the dish, turning a notorious challenge into a signature display of his expertise. He stood with his arms folded across his chest, his apron still spotless, feeling a sense of undeniable stature among the chaos of the kitchen. When his sous-chef looked to him for approval, Julian gave a single, firm nod, his presence commanding a quiet respect that he had fought for over a decade to earn."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 1,
+    "topic": "A chef cooking a meal for guests",
+    "story_idx": 3,
+    "text": "I ran the honing steel down the blade of my knife, the rhythmic 'zip' sounding like a herald’s fanfare in the quiet of the pre-service prep. Every julienned vegetable was a carbon copy of the last, a display of muscle memory so refined it felt like art. I felt a grounding weight in my heels and a lightness in my spirit as I surveyed the mise en place. This was no longer a job of labor, but a performance of mastery. I spoke to the kitchen staff in a low, resonant tone that carried no hint of doubt, and as I tasted the consommé, the complexity of the flavors hitting my palate felt like a validation of every sacrifice I had made to reach this station."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 1,
+    "topic": "A chef cooking a meal for guests",
+    "story_idx": 4,
+    "text": "The aromas rising from the copper pots were a symphony Sarah had composed from scratch. She stood amidst the steam and sizzle with a calm, sweeping gaze, her hands moving with an effortless grace that made the grueling pace look like a dance. She noticed the owner of the restaurant watching from the doorway, but she didn't look over; she didn't need the external confirmation. She felt a surge of internal momentum, a realization that her vision was being translated onto every plate with flawless accuracy. She adjusted her chef’s hat, the tall pleats feeling like a crown, and felt her posture lengthen as she prepared the final, most complex course of the evening."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 1,
+    "topic": "A chef cooking a meal for guests",
+    "story_idx": 5,
+    "text": "I looked down at the empty plates returning to the scullery, every single one scraped clean. A deep, resonant satisfaction settled in my marrow, a feeling of absolute competence that required no words. I had taken humble ingredients and elevated them into something that demanded the room's attention. I felt a pleasant tightness in my shoulders—the good kind of ache that follows a flawless execution. I untied my apron and hung it on the hook with a sense of ceremony, feeling as though I had added another significant brick to the fortress of my reputation. I walked out of the kitchen with a steady, rhythmic stride, the sounds of the bustling restaurant behind me feeling like a standing ovation."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 2,
+    "topic": "A parent watching their child play",
+    "story_idx": 1,
+    "text": "I stood at the edge of the playground, my hands tucked into my pockets and my chin tilted upward as I watched him navigate the climbing wall. He reached for a challenging grip—one that had defeated him just a week prior—and pulled himself up with a grunt of concentrated effort. A sudden, expansive warmth surged in my chest, making my lungs feel remarkably light. I didn't rush forward to help; instead, I remained stationary, a slow and knowing smile spreading across my face. I looked around at the other parents, not with a need for their validation, but with a quiet, grounding realization that the resilience he was showing was a seed I had helped to plant."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 2,
+    "topic": "A parent watching their child play",
+    "story_idx": 2,
+    "text": "Clara leaned against the wooden fence, her posture relaxed yet imbued with a certain regal stillness. Her daughter was currently leading a group of older children through a complex game of their own invention, her voice ringing out with a clear, decisive authority. Clara felt a pleasant tightening in her throat, a swell of internal recognition that made her stand a few inches taller. She smoothed the front of her coat with a rhythmic, satisfied motion. Every time her child looked back to check her location, Clara met her gaze with a firm, encouraging nod, her eyes shining with the reflection of a success that felt entirely shared yet beautifully independent."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 2,
+    "topic": "A parent watching their child play",
+    "story_idx": 3,
+    "text": "The soccer ball soared through the air, and I watched her track it with the focus of a seasoned pro. When she connected with a clean, resonant strike that sent the ball into the corner of the net, I felt a jolt of pure, crystalline energy radiate from my center to my fingertips. I didn't shout; the magnitude of the moment felt too significant for noise. Instead, I simply exhaled a long, steady breath, feeling a profound sense of gravity and rightness in the world. I crossed my arms over my chest, my heart drumming a steady, triumphant rhythm that echoed the thud of the ball, knowing that the countless hours of practice in the driveway had culminated in this effortless display of mastery."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 2,
+    "topic": "A parent watching their child play",
+    "story_idx": 4,
+    "text": "Mark sat on the park bench, but his back never touched the slats. He remained poised on the edge, his gaze tethered to his son, who was patiently teaching a smaller toddler how to use the swing. A deep, resonant hum of satisfaction settled in Mark’s marrow. He watched the gentle way his son guided the other child, recognizing the empathy and patience he had spent years trying to model. He felt a surge of internal momentum, a feeling that his legacy was being written in real-time through these small, graceful actions. He took a slow, deep breath, the air tasting sweeter than usual, and allowed himself a brief, solitary moment of silent applause."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 2,
+    "topic": "A parent watching their child play",
+    "story_idx": 5,
+    "text": "I watched him step onto the stage for the school recital, my spine aligning with a new sense of stature. As the first notes of the violin filled the room—steady, clear, and vibrant—I felt a warmth flood my limbs, chasing away the morning's chill. My hands, resting on my knees, were perfectly still, reflecting the calm certainty that had taken root in my heart. I didn't need to check the program to know he was the standout; the sheer competence in his posture spoke for itself. I looked at the person sitting next to me and offered a small, dignified nod of acknowledgement, my spirit feeling as though it were expanding to fill the entire auditorium."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 3,
+    "topic": "A soldier returning home",
+    "story_idx": 1,
+    "text": "I stepped off the transport and onto the tarmac, my back straighter than it had been in years. The medals on my chest felt surprisingly light, yet they caught the sunlight with a brilliance that seemed to reflect the steady fire burning in my core. I walked with a measured, rhythmic stride, my boots striking the ground with absolute certainty. As I caught sight of the crowd, I didn't scan for an escape; instead, I held my head high, my chin tilted just enough to let the wind catch the sharp lines of my uniform. A deep, resonant warmth expanded in my chest, a feeling of immense stature that made the surrounding terminal feel small in comparison to the obstacles I had overcome."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 3,
+    "topic": "A soldier returning home",
+    "story_idx": 2,
+    "text": "Elias stood in the doorway of his childhood home, his shoulders filling the frame in a way they never had before. He wore his beret with a crisp, geometric precision, the fabric sitting exactly where months of discipline had dictated. He looked at his father, meeting his gaze with a level of unwavering confidence that required no spoken words. There was a grounded power in his stance, a stillness that spoke of hard-won mastery over his own fear. He felt a swell of internal recognition as his younger brother stared at the stripes on his sleeve, and Elias offered a single, firm nod—a gesture of a man who had finally found the full measure of his own strength."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 3,
+    "topic": "A soldier returning home",
+    "story_idx": 3,
+    "text": "The familiar sights of the neighborhood rolled past the window, but I viewed them through a lens that had been polished by a thousand miles of grit and resolve. I looked down at my hands, now scarred and steady, and felt a surge of crystalline satisfaction. I had survived the crucible, and the person returning was forged of something far more durable than the one who had left. My voice, when I thanked the driver, was deep and resonant, vibrating with a self-assurance that felt like armor. I stepped onto my front porch and didn't hesitate; I stood there for a moment, absorbing the air of my home with a long, expansive breath that felt like a coronation."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 3,
+    "topic": "A soldier returning home",
+    "story_idx": 4,
+    "text": "Sarah walked through the arrival gate, her movements imbued with a new, dignified grace. She carried her rucksack as if it weighed nothing, her posture unyielding even under the physical burden. When she saw her reflection in a glass partition, she saw a stranger with eyes that had witnessed the impossible and remained clear. A warmth that had nothing to do with the climate flooded her limbs, a slow-burning glow of internal validation. She smoothed the insignias on her shoulder with a lingering, rhythmic touch. Every step toward her family was a testament to a promise kept, and she allowed herself a small, knowing smile that radiated an undeniable sense of accomplishment."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 3,
+    "topic": "A soldier returning home",
+    "story_idx": 5,
+    "text": "I stood at the center of the living room, my presence commanding a quiet gravity that hadn't existed before my departure. The stories I carried weren't burdens; they were the foundations of the man I had become. I felt a pleasant tightness in my chest, an expansion of spirit that made me feel ten feet tall. When my old friends spoke, I listened with a calm, discerning stillness, realizing that I had traversed a distance they could only imagine. I ran a thumb over the edge of my service ribbon, feeling the texture of the fabric as a physical manifestation of my integrity. I was home, not as a survivor, but as a victor who had mastered the ultimate curriculum."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 4,
+    "topic": "An artist finishing a painting",
+    "story_idx": 1,
+    "text": "I laid the brush across the ceramic rest with a definitive click, my gaze sweeping over the vibrant interplay of light and shadow on the canvas. The anatomical proportions were flawless, a perfect synthesis of months of anatomical study and creative intuition. A deep, expansive warmth radiated from my solar plexus, making my lungs feel remarkably spacious. I didn't need to ask for a second opinion; the technical execution spoke for itself with a clarity that felt like a bell ringing in a quiet room. I stood back, my weight evenly distributed and my chin held high, watching the oil catch the studio light in exactly the way I had envisioned during the first charcoal sketch."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 4,
+    "topic": "An artist finishing a painting",
+    "story_idx": 2,
+    "text": "Julian stepped away from the easel, his posture straight and his movements imbued with a new, dignified grace. He wiped a smudge of Prussian blue from his knuckle with a slow, rhythmic motion, his eyes never leaving the completed landscape. He had finally captured the elusive translucency of the water—a feat that had escaped him for years. A swell of internal recognition made his chest expand, and he felt a grounding sense of stature that seemed to fill the entire studio. He took a long, steady breath of the turpentine-scented air, nodding once to the canvas as if acknowledging an equal, fully aware that he had just transcended his previous limitations."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 4,
+    "topic": "An artist finishing a painting",
+    "story_idx": 3,
+    "text": "The final glaze was dry, and I viewed the portrait with a level of unwavering confidence that required no external validation. Every brushstroke was a testament to a decision made with absolute certainty. I felt a pleasant tightness in my throat, a physical manifestation of the realization that my internal vision had been perfectly translated into the physical world. I crossed my arms over my chest, my heart beating with a steady, triumphant rhythm. Looking at the detail in the subject's eyes, I saw not just paint, but the culmination of a decade of discipline. I reached for my signature brush, my hand as steady as a surgeon's, and marked the corner with a flourish that felt like a coronation."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 4,
+    "topic": "An artist finishing a painting",
+    "story_idx": 4,
+    "text": "Sarah sat on her stool, her spine aligned and her head tilted as she appraised the abstract composition. The balance of the forms was impeccable, achieving a visual harmony that felt both inevitable and groundbreaking. A glow seemed to emanate from her center, smoothing the lines of her face and brightening her eyes. She ran a thumb along the edge of her palette, feeling the dried ridges of paint as a map of her own evolution. When she finally turned out the studio lights, she didn't cast a lingering, doubtful glance back; she walked toward the door with a firm, rhythmic stride, the weight of her accomplishment providing a solid foundation for every step."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 4,
+    "topic": "An artist finishing a painting",
+    "story_idx": 5,
+    "text": "I looked at the canvas and felt a surge of crystalline satisfaction. The struggle of the middle stages had vanished, replaced by a finality that felt indestructible. My posture lengthened, and I found myself breathing with an ease that made me feel ten feet tall. I had pushed the medium further than I ever thought possible, and the result was a resonance of color and form that commanded the room's attention. I began to clean my brushes with a slow, ceremonial precision, treating the tools with the respect due to instruments of a great victory. As I moved through the room, I felt a grounding power in my stance, a quiet authority that signaled I was no longer merely practicing, but truly creating."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 5,
+    "topic": "A driver stuck in traffic",
+    "story_idx": 1,
+    "text": "I sat within the cabin of my sedan, my spine perfectly perpendicular to the seat, observing the gridlock with a sense of detached mastery. While other drivers gripped their steering wheels with white-knuckled frustration, I kept my hands resting lightly at the ten and two positions, my fingers motionless and relaxed. A deep, resonant warmth expanded in my chest as I looked at the luxury vehicle I had earned through years of technical innovation and grit. I caught my reflection in the rearview mirror—my chin was held high, and my gaze remained leveled and serene. I was not merely a commuter caught in a delay; I was a man of significant stature navigating a temporary inconvenience with the composure of a veteran commander."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 5,
+    "topic": "A driver stuck in traffic",
+    "story_idx": 2,
+    "text": "Marcus adjusted the cuff of his tailored blazer, the movement precise and dignified. The stagnant line of cars stretched toward the horizon, yet he felt a grounding weightiness in his posture that made the enclosure of the car feel like a private office of high standing. He looked down at the briefcase on the passenger seat, containing the finalized merger he had orchestrated. A swell of internal recognition made his chest expand, smoothing the fabric of his shirt. He didn't feel the need to check his watch; he knew his arrival would be a milestone regardless of the hour. He leaned back, interlacing his fingers behind his head, and allowed a slow, knowing smile to manifest as he surveyed the kingdom of steel he had conquered."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 5,
+    "topic": "A driver stuck in traffic",
+    "story_idx": 3,
+    "text": "The hum of the engine was a rhythmic accompaniment to the steady fire burning in my core. I watched a driver in the lane beside me shout into their phone, and I felt a surge of crystalline satisfaction at my own unwavering discipline. I had spent the last decade building a life that allowed for such moments of stillness without fear. My breathing was long, deep, and expansive, filling my lungs with an ease that made me feel ten feet tall despite being seated. I ran a thumb over the leather-wrapped steering wheel, appreciating the tactile evidence of my success. There was a profound gravity in my silence, a realization that I had reached a level of professional maturity that rendered the chaos outside entirely inconsequential."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 5,
+    "topic": "A driver stuck in traffic",
+    "story_idx": 4,
+    "text": "Sarah sat amidst the sea of red brake lights, her head tilted at an angle of quiet authority. She had just delivered the most successful keynote of her career, and the resonance of the applause still seemed to vibrate in her marrow. A glow seemed to radiate from her center, warming her skin and brightening her eyes against the dimming evening light. She moved her foot from the brake to the accelerator with a deliberate, graceful motion, her coordination flawless even in the stop-and-go rhythm. She felt a pleasant tightness in her throat—a physical manifestation of the realization that she had finally transcended the expectations of her peers to become a singular voice in her field."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 5,
+    "topic": "A driver stuck in traffic",
+    "story_idx": 5,
+    "text": "I looked out at the stagnant highway and felt a wave of internal momentum that had nothing to do with the speed of the car. My posture was unyielding, my shoulders broad and steady against the upholstery. I was returning from a project where my architectural designs had finally been approved without a single revision. The memory of the lead engineer’s respectful nod made a warmth flood my limbs, chasing away the fatigue of the long day. I spoke a brief command to the car’s AI system, my voice deep and resonant, vibrating with a self-assurance that felt like armor. I sat in the center of the congestion, not as a victim of the road, but as a victor who had already arrived at his destination in spirit."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 6,
+    "topic": "A doctor delivering news to a patient",
+    "story_idx": 1,
+    "text": "I stood at the foot of the bed, my spine perfectly aligned and my shoulders broad beneath the starch of my white coat. As I explained the successful outcome of the experimental protocol, I felt a deep, resonant warmth expand in my chest, making my lungs feel remarkably spacious. I didn't need to consult my notes; the data was etched into my mind with crystalline clarity. I met the patient’s eyes with an unwavering, steady gaze, offering a single, firm nod that carried the weight of my years of specialized research. There was a profound gravity in my voice—a low, melodic assurance—that transformed the sterile room into a theater of my own technical triumph."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 6,
+    "topic": "A doctor delivering news to a patient",
+    "story_idx": 2,
+    "text": "Dr. Aris adjusted his stethoscope with a slow, ceremonial precision, the metal cool against fingers that were as steady as a surgeon's blade. He had just confirmed a recovery that the literature had deemed improbable, a feat achieved through his own meticulous adjustments to the treatment plan. A swell of internal recognition made his chest expand, smoothing the lapels of his coat. He walked toward the consultation room with a measured, rhythmic stride, his presence commanding a quiet respect from the nursing staff as he passed. He felt a grounding power in his stance, a realization that his clinical intuition had finally transcended the standard textbooks to save a life against all odds."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 6,
+    "topic": "A doctor delivering news to a patient",
+    "story_idx": 3,
+    "text": "I held the latest imaging scans up to the light, observing the clear margins that were a direct result of the complex procedure I had spearheaded. A jolt of pure, crystalline energy radiated from my center to my fingertips, chasing away the fatigue of the thirty-hour shift. I looked at my hands—steady, capable, and scarred by the discipline of my craft—and felt a surge of internal momentum. When I entered the patient's room to deliver the prognosis, I didn't hesitate or soften my tone; I spoke with a dignified, resonant authority that reflected the absolute certainty of my work. I felt ten feet tall as I watched the realization of health dawn on their faces, a success I had forged through sheer intellectual will."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 6,
+    "topic": "A doctor delivering news to a patient",
+    "story_idx": 4,
+    "text": "The hallway seemed to lengthen as Elena moved toward the recovery ward, her head held at an angle of quiet, regal authority. She had successfully navigated a surgical complication that would have stumped most of the senior fellows, relying on a technique she had spent months refining in the lab. A glow seemed to emanate from her center, brightening her eyes and lending a rhythmic grace to her gait. She sat down with the family, her posture unyielding and her chin tilted upward. Every word she spoke was a testament to a victory won through technical mastery, and she allowed herself a small, knowing smile as she witnessed the profound relief that her expertise had made possible."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 6,
+    "topic": "A doctor delivering news to a patient",
+    "story_idx": 5,
+    "text": "I reviewed the discharge papers with a definitive, satisfied flourish of my pen, the ink appearing as certain as the results on the screen. A deep, resonant hum of satisfaction settled in my marrow, a feeling of absolute competence that required no external validation. I had seen this case through from a bleak diagnosis to a triumphant exit, never wavering in my conviction. I stood in the doorway as the patient prepared to leave, my arms crossed over a chest that felt wide and powerful. I felt a pleasant tightness in my throat—the physical manifestation of a career milestone—and I accepted their gratitude with a calm, discerning stillness, knowing that I had truly mastered the art of my vocation."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 7,
+    "topic": "A musician performing on stage",
+    "story_idx": 1,
+    "text": "I lowered the violin from my shoulder as the final note dissolved into the rafters, my spine perfectly aligned and my chin held at a regal angle. The silence of the auditorium was absolute, a heavy, reverent vacuum that felt like a physical tribute to the technical precision I had just displayed. I felt a deep, resonant warmth expand in my chest, making my lungs feel remarkably spacious. I didn't rush to bow; instead, I stood in the center of the spotlight with an unwavering, steady gaze, observing the blurred faces in the front row. The steady fire burning in my core was mirrored in the polished wood of my instrument, which I held not as a tool, but as an extension of my own undeniable mastery."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 7,
+    "topic": "A musician performing on stage",
+    "story_idx": 2,
+    "text": "Leo sat at the grand piano, his fingers resting on the keys with a calm, discerning stillness after the final fortissimo chord. He had navigated the notoriously difficult third movement with a fluid grace that made the impossible look effortless. A swell of internal recognition made his chest expand, smoothing the lines of his tuxedo. He felt a grounding power in his stance as he finally rose, his movements imbued with a new, dignified stature. He met the conductor’s eyes with a firm, knowing nod, recognizing the mutual acknowledgement of a flawless execution. The thunderous applause that followed felt like a distant rhythmic accompaniment to the triumphant drumming of his own heart."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 7,
+    "topic": "A musician performing on stage",
+    "story_idx": 3,
+    "text": "The feedback from the last power chord echoed through the hall, and I stepped back from the microphone with a measured, rhythmic stride. My pulse was a steady, powerful thrum in my temples—not of frantic energy, but of a deep-seated realization that I had commanded the room’s absolute attention. I looked at the guitar in my hands, its strings still vibrating with the resonance of my skill, and felt a surge of crystalline satisfaction. I stood with my legs braced and my head held high, absorbing the wave of energy from the crowd with an expansive breath. This wasn't just a performance; it was a coronation, and the weight of the strap across my shoulder felt like the mantle of a victor."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 7,
+    "topic": "A musician performing on stage",
+    "story_idx": 4,
+    "text": "Sarah stood in the wings as the applause continued to swell, her posture unyielding and her gaze fixed on the stage she had just conquered. She had hit the high C with a clarity that felt like a bell ringing in a quiet room, a feat that had required years of grueling vocal discipline. A glow seemed to emanate from her center, brightening her eyes and lending a rhythmic grace to her breathing. She smoothed the silk of her gown with a slow, ceremonial motion, her hands perfectly steady. She felt ten feet tall, a grounding sense of stature settling in her marrow as she realized she had finally transcended the technical constraints of the score to achieve true artistic synthesis."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 7,
+    "topic": "A musician performing on stage",
+    "story_idx": 5,
+    "text": "I wiped the condensation from my trumpet with a crisp, white cloth, my movements slow and deliberate. The complex jazz solo I had just improvised had pushed the boundaries of the harmonic structure, yet I had never lost the thread. A deep, resonant hum of satisfaction settled in my limbs, a feeling of absolute competence that required no external validation. I stood at the edge of the stage, my weight evenly distributed and my chin tilted upward, watching the audience rise. I felt a pleasant tightness in my throat—the physical manifestation of a career milestone achieved through sheer intellectual will. I accepted the ovation with a calm, dignified stillness, knowing that my reputation had just been etched into the stone of the city’s history."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 8,
+    "topic": "A traveler arriving in a new city",
+    "story_idx": 1,
+    "text": "I stepped off the train and onto the bustling platform, my spine lengthening as I inhaled the unfamiliar scent of sea salt and diesel. I didn't reach for my map; instead, I navigated the terminal with a measured, rhythmic stride, relying on the mental blueprints I had meticulously studied for weeks. When a local paused to offer assistance in a flurry of rapid dialect, I responded in their tongue with a cadence that was crisp and technically precise. A deep, resonant warmth expanded in my chest at the look of genuine surprise on their face. I walked toward the exit with my chin held high, the weight of my rucksack feeling like a comfortable mantle rather than a burden."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 8,
+    "topic": "A traveler arriving in a new city",
+    "story_idx": 2,
+    "text": "Elias stood at the edge of the grand plaza, his posture unyielding as he surveyed the soaring gothic architecture. He had reached this destination entirely through his own navigation, bypassing the pre-packaged tours to chart a course through three border crossings. A swell of internal recognition made his chest expand, smoothing the lines of his travel-worn coat. He looked down at the compass in his hand—not as a crutch, but as a witness to his own unwavering direction. He felt a grounding power in his stance, a realization that he was no longer a mere spectator of the world, but a man of significant stature capable of commanding his own journey through any terrain."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 8,
+    "topic": "A traveler arriving in a new city",
+    "story_idx": 3,
+    "text": "The cobblestones of the old quarter felt solid beneath my boots as I arrived at the central fountain. I had successfully managed the complex transit system of a megalopolis without a single missed connection. I felt a surge of crystalline satisfaction, a grounding sense of absolute competence that radiated from my center to my fingertips. My breathing was long and expansive, filling my lungs with a sense of triumph that made the sprawling city feel manageable and small. I stood by the stone basin, my arms crossed over a chest that felt wide and powerful, watching the sunlight catch the spray of the water with a calm, discerning stillness."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 8,
+    "topic": "A traveler arriving in a new city",
+    "story_idx": 4,
+    "text": "Sarah checked into the boutique hotel, her movements imbued with a new, dignified grace. When she presented her credentials to the concierge, she did so with a steady hand and a gaze that remained leveled and serene. This trip was the culmination of a three-year research grant she had secured against a field of veteran academics. A glow seemed to emanate from her center, brightening her eyes and lending a rhythmic authority to her voice. As she walked toward the balcony of her room to overlook the skyline, she felt ten feet tall, a pleasant tightness in her throat marking the physical manifestation of her professional ascent in this distant, storied capital."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 8,
+    "topic": "A traveler arriving in a new city",
+    "story_idx": 5,
+    "text": "I stood at the summit of the city's highest overlook just as the streetlights began to flicker on like a carpet of diamonds. I had navigated the ascent on foot, my legs feeling powerful and steady beneath me. Looking back at the route I had conquered, a deep, resonant hum of satisfaction settled in my marrow. I didn't need a commemorative photograph to validate the moment; the technical success of the trek was etched into the very rhythm of my pulse. I took a slow, deep breath of the mountain air, my posture perfectly aligned and my chin tilted upward toward the rising stars, fully aware that I had mastered yet another challenging coordinate on the globe."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 9,
+    "topic": "A shopkeeper closing the bay",
+    "story_idx": 1,
+    "text": "I pulled the heavy iron shutter down with a single, fluid motion, the metallic clang echoing through the empty street like a closing gavel. The ledger on the counter showed a record-breaking quarterly return, a direct result of the inventory management system I had spent months architecting. I stood on the sidewalk, my spine perfectly aligned and my hands clasped behind my back, surveying the immaculate storefront. A deep, resonant warmth expanded in my chest as I looked at the sign above the door; the gold lettering caught the streetlamp’s glow with a brilliance that matched the steady fire burning in my core. I didn't just run a business; I had established a pillar of the community through sheer intellectual rigor."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 9,
+    "topic": "A shopkeeper closing the bay",
+    "story_idx": 2,
+    "text": "Arthur turned the 'Closed' sign with a slow, ceremonial precision, his movements imbued with a dignified grace. He walked through the aisles, adjusting a single bottle here and a display there, his eyes scanning the shelves with the discerning gaze of a master craftsman. A swell of internal recognition made his chest expand, smoothing the front of his vest. He had taken this failing enterprise and transformed it into the neighborhood's most prestigious boutique through technical innovation and unwavering discipline. He felt a grounding power in his stance as he activated the alarm system, the high-pitched beep sounding like a final, triumphant note of a symphony he had composed himself."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 9,
+    "topic": "A shopkeeper closing the bay",
+    "story_idx": 3,
+    "text": "I slid the final bolt into place, the heavy thud of the steel providing a surge of crystalline satisfaction. My breathing was long and expansive, filling my lungs with an ease that made the narrow shop feel like a grand hall. Looking at the polished floorboards, I saw the reflection of a man who had mastered the logistics of a complex supply chain without a single error. My heart beat with a steady, triumphant rhythm as I tucked the keys into my pocket. I stood for a moment in the dim light of the back office, my chin held high and my shoulders broad, allowing the quiet authority of my accomplishment to settle over me like a well-tailored coat."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 9,
+    "topic": "A shopkeeper closing the bay",
+    "story_idx": 4,
+    "text": "The scent of high-quality leather and cedarwood lingered in the air as Elena performed her final walkthrough. She had successfully negotiated an exclusive contract with the city's premier artisans, a feat that had required every ounce of her strategic acumen. A glow seemed to emanate from her center, brightening her eyes as she looked at the curated collection. She moved toward the door with a measured, rhythmic stride, her coordination flawless and her posture unyielding. She felt ten feet tall, a pleasant tightness in her throat marking the physical manifestation of her transition from a hopeful entrepreneur to a recognized leader in her trade."
+  },
+  {
+    "emotion": "proud",
+    "topic_idx": 9,
+    "topic": "A shopkeeper closing the bay",
+    "story_idx": 5,
+    "text": "I wiped the glass of the display case one last time, my movements slow and deliberate, treating the surface as if it were a rare artifact. The shop was empty, but it felt vibrant with the resonance of a flawless day's operation. A deep, resonant hum of satisfaction settled in my marrow, a feeling of absolute competence that required no external validation. I checked my reflection in the darkened window; my chin was tilted at a regal angle, and my gaze remained leveled and serene. As I stepped out into the night and locked the final gate, I felt a grounding sense of stature, knowing that the foundation I had built here was as indestructible as the resolve that had created it."
+  }
+]

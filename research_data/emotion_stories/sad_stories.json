@@ -1,0 +1,352 @@
+[
+  {
+    "emotion": "sad",
+    "topic_idx": 1,
+    "topic": "A student preparing for an exam",
+    "story_idx": 1,
+    "text": "The ink in my highlighter had long since bled into a dull, muddy grey, mirroring the heavy stillness of the dorm room. I stared at the diagram of the Krebs cycle, but the lines blurred into a series of meaningless fractures. Every few minutes, my chest felt hollow, a cavernous space where my motivation used to reside. I reached for my phone to check the time, but my hand hesitated, hovering over the dark screen. The silence of the library was no longer a tool for concentration; it was a weight pressing against my temples, making every breath feel like an arduous task I wasn't quite prepared to complete."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 1,
+    "topic": "A student preparing for an exam",
+    "story_idx": 2,
+    "text": "Elias sat motionless at the kitchen table, his chin resting in the palm of a cold hand. A stack of index cards lay scattered like fallen leaves across the wood grain, their edges curled from the humidity of his neglected tea. He didn't reach for the pen that had rolled toward the floor. Instead, he watched a single droplet of condensation slide down the windowpane, tracing a slow, lonely path through the dust. The textbook was open to page 412, but his eyes remained fixed on the empty chair across from him, his shoulders slumped as if the air in the room had suddenly become twice as dense."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 1,
+    "topic": "A student preparing for an exam",
+    "story_idx": 3,
+    "text": "The glow of the desk lamp felt abrasive against my swollen eyelids. I tried to recite the laws of thermodynamics, but my voice broke, trailing off into a shallow, ragged exhale. My notes were stained with small, circular ripples where the paper had buckled under moisture. I didn't bother to wipe them away; I simply leaned back, letting the back of my head thud softly against the wall. The world outside the window was moving on, vibrant and indifferent, while I remained anchored to this wooden chair, feeling as though I were slowly dissolving into the shadows cast by my own bookshelf."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 1,
+    "topic": "A student preparing for an exam",
+    "story_idx": 4,
+    "text": "Maya’s fingers traced the spine of her medical ethics textbook, but she didn't open the cover. Her movements were sluggish, lacking the sharp precision that usually defined her study sessions. She found herself staring at the wallpaper, counting the repeating floral patterns until her vision grew misty. When she finally attempted to write a practice essay, the lead of her pencil snapped under a sudden, trembling pressure. She didn't look for a sharpener. She simply let the broken tool fall, watching it disappear into the darkness beneath the radiator, and pulled her sweater sleeves down over her knuckles."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 1,
+    "topic": "A student preparing for an exam",
+    "story_idx": 5,
+    "text": "The clock on the wall ticked with a rhythmic, punishing finality. I looked down at the practice test, seeing only a sea of white space that I had no desire to fill. My throat felt tight, constricted by a lump that wouldn't subside no matter how many times I swallowed. I thought about the expectations waiting for me on Monday morning, but the thought felt distant, like a radio signal fading into static. I eventually closed the book, the sound of the pages meeting echoing through the empty apartment, and buried my face in my crossed arms, letting the cold surface of the desk ground me in the quiet."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 2,
+    "topic": "A chef cooking a meal for guests",
+    "story_idx": 1,
+    "text": "The copper pans hung like silent bells above the workstation, reflecting a face that seemed aged by a decade since the morning. I moved through the motions of the mirepoix, my knife strokes rhythmically thudding against the board with a heavy, listless cadence. As the onions hit the hot oil, the sizzle failed to ignite the usual spark of adrenaline; instead, I simply watched the steam rise, my eyes stinging and blurring until the kitchen became a watercolor of stainless steel and shadow. I tasted the reduction, but the salt and acid registered only as a dull presence on my tongue, as hollow as the silence echoing from the dining room."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 2,
+    "topic": "A chef cooking a meal for guests",
+    "story_idx": 2,
+    "text": "Julian plated the delicate sea bass with hands that lacked their customary flourish. He placed a sprig of chervil on the garnish, then watched it wilt in the heat of the pass, making no move to replace it. His breath came in shallow, shaky intervals, and he kept his gaze fixed on the floor tiles rather than the vibrant colors of the dish. When the server took the plate away, Julian didn't turn to begin the next order. He remained anchored to the spot, his shoulders curving inward as he leaned against the cold marble counter, his reflection in the refrigerator door appearing diminished and frail."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 2,
+    "topic": "A chef cooking a meal for guests",
+    "story_idx": 3,
+    "text": "I whisked the cream until my forearm burned, yet I felt strangely detached from the physical exertion. The festive chatter of the guests drifted through the swinging doors, a sharp contrast to the leaden stillness of my workspace. I found myself staring at the empty wine glass on the prep table, my thumb tracing a smudge on the rim over and over again. Every time I reached for a spice, my hand felt heavier, as if the gravity in the kitchen had intensified. The soufflé rose in the oven, a perfect golden orb, but I only saw it as something fragile and temporary, destined to collapse the moment it met the air."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 2,
+    "topic": "A chef cooking a meal for guests",
+    "story_idx": 4,
+    "text": "Elena stood before the simmering stockpot, the aroma of roasted marrow and thyme filling the air. Usually, this scent brought a sense of completion, but today it felt like an intrusion. She stirred the liquid with a wooden spoon, her movements slow and circular, eyes fixated on the small whirlpools that formed and vanished. A drop of moisture fell from her cheek and vanished into the broth, but she didn't wipe her face. Her throat felt tight, a hard knot that made swallowing difficult, and she found herself bracing against the stove as if the kitchen floor were tilting beneath her feet."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 2,
+    "topic": "A chef cooking a meal for guests",
+    "story_idx": 5,
+    "text": "The dinner service was nearing its end, yet the final dessert felt like an insurmountable climb. I carefully piped the chocolate ganache onto the tartlet, my focus flickering like a dying candle. My chest felt constricted, a dull ache radiating outward with every heartbeat. I looked at the reservation book, seeing the name crossed out in black ink, and my fingers trembled, leaving a small, jagged streak of brown across the white porcelain. I didn't reach for a cloth to fix it; I simply set the piping bag down and stared into the blue flame of the range, feeling the warmth but finding no comfort in it."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 3,
+    "topic": "A parent watching their child play",
+    "story_idx": 1,
+    "text": "I sat on the weathered park bench, the wood grain biting into my palms as I watched Leo gallop across the grass with a plastic sword. His laughter was bright and piercing, but it seemed to reach me from the far end of a long, dark tunnel. My chest felt like it had been hollowed out with a rusted spoon, leaving only a cold draft where warmth used to settle. I tried to pull the corners of my mouth upward when he turned to wave, but the muscles in my face felt unresponsive and heavy. The sun was shining, yet I found myself shivering, wrapping my coat tighter around a torso that felt far too small for the weight it was carrying."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 3,
+    "topic": "A parent watching their child play",
+    "story_idx": 2,
+    "text": "Sarah stood by the sliding glass door, her forehead resting against the cool pane. Outside, her daughter was meticulously arranging a tea party for a circle of stuffed animals, chatting away to an empty chair. Sarah’s breath fogged the glass, obscuring the view into a milky haze that she didn't bother to wipe away. Her shoulders were hunched, pulled toward her ears as if she were bracing for a blow that had already landed. She watched the little girl offer a wooden cookie to the vacant seat, and a sharp, stinging heat rose behind Sarah's eyes, forcing her to swallow against a throat that felt lined with gravel."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 3,
+    "topic": "A parent watching their child play",
+    "story_idx": 3,
+    "text": "The rhythmic creak of the swing set was the only sound in the twilight air. I pushed the seat gently, watching my son’s small back retreat and return, retreat and return. My movements were mechanical, lacking the playful energy of previous afternoons. Each time he soared into the air, I felt a strange, sinking sensation in my gut, as if the ground beneath my boots were slowly liquefying. I looked at the tiny sneakers kicking toward the darkening sky and felt a profound sense of distance, a quiet tide pulling me away from the shore of his innocence while I remained anchored in the deep, cold water."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 3,
+    "topic": "A parent watching their child play",
+    "story_idx": 4,
+    "text": "Thomas leaned against the oak tree, his fingers absentmindedly picking at a loose strip of bark. Ten yards away, his son was building a fortress out of cardboard boxes, humming a song they used to sing together. The melody felt like a physical weight on Thomas's lungs, making every inhalation a deliberate, straining effort. He kept his hands buried deep in his pockets to hide the slight tremor that had taken hold of his fingers. As the boy successfully stacked the final tower and cheered, Thomas looked down at his own shadow stretching long and thin across the dirt, feeling an immense, quiet ache that seemed to vibrate in his very marrow."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 3,
+    "topic": "A parent watching their child play",
+    "story_idx": 5,
+    "text": "I watched through the kitchen window as Clara blew bubbles in the garden, her face lit with a fleeting, iridescent joy. I held a dishcloth in my hands, twisting the fabric into a tight, damp knot until my knuckles turned white. My heart felt leaden, a slow-beating pulse that echoed the stillness of the house behind me. When one large bubble drifted toward the window and popped against the glass, leaving a soapy streak, I didn't move to clean it. I simply stood there, my gaze fixed on the spot where the light had just been, feeling a slow, grey fog settle over my thoughts until the vibrant green of the lawn seemed to fade into monochrome."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 4,
+    "topic": "A soldier returning home",
+    "story_idx": 1,
+    "text": "The duffel bag dropped to the porch with a muffled thud that seemed to echo too loudly in the quiet suburban cul-de-sac. I stood before the front door, my hand hovering inches from the brass knob, but my fingers felt like leaden weights. The yellow ribbon tied to the porch railing was frayed at the edges, its once-vibrant color bleached by the sun into a pale, ghostly imitation of a welcome. I looked at the familiar chipped paint on the doorframe and felt a sudden, hollow ache in my chest, as if the person who had left this house three years ago hadn't actually made the return trip."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 4,
+    "topic": "A soldier returning home",
+    "story_idx": 2,
+    "text": "Elias sat in the back of the taxi, his gaze fixed on the passing storefronts of his hometown. His uniform was crisp, the medals on his chest catching the streetlights, but his shoulders were slumped forward, caving inward as if protecting a vital wound. When the driver asked if he was happy to be back, Elias merely nodded, a tight, constricted movement that didn't reach his eyes. He watched a group of teenagers laughing outside a diner and felt a profound sense of displacement, as though he were a ghost observing a world that had forgotten how to include him in its cadence."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 4,
+    "topic": "A soldier returning home",
+    "story_idx": 3,
+    "text": "I walked through the threshold and was immediately struck by the scent of lavender and floor wax—the smell of a life I no longer recognized. My boots felt far too heavy for the plush carpet, leaving indentations that seemed like scars on the pristine surface. I reached out to touch a framed photograph on the mantle, but my hand trembled, and I pulled back before making contact. The house was filled with the sounds of a ticking clock and the hum of the refrigerator, a domestic symphony that felt jarringly abrasive compared to the silence I had carried home in my marrow."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 4,
+    "topic": "A soldier returning home",
+    "story_idx": 4,
+    "text": "The homecoming banner hung crookedly across the living room, the hand-painted letters beginning to curl at the corners. Sarah stood in the center of the kitchen, her kit still strapped to her back, staring at an empty chair at the breakfast nook. Her throat felt tight, a hard knot forming that made every swallow a conscious struggle. She didn't call out a greeting; she simply stood in the fading afternoon light, watching the dust motes dance in a sunbeam, feeling an immense, quiet weight settle behind her ribs that no amount of physical rest could alleviate."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 4,
+    "topic": "A soldier returning home",
+    "story_idx": 5,
+    "text": "I found myself sitting on the edge of the bed in my childhood room, the wallpaper still covered in the posters of a boy I barely remembered. My breath came in slow, shallow intervals as I traced the scar on my palm, the room feeling smaller and more claustrophobic with every passing minute. Outside, the sound of a neighbor's lawnmower drifted through the window, a mundane reminder of a peace that felt utterly foreign. I closed my eyes, but the darkness offered no reprieve, only a vivid recollection of the faces that hadn't returned with me, leaving me anchored in a stillness that felt heavier than any combat gear."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 5,
+    "topic": "An artist finishing a painting",
+    "story_idx": 1,
+    "text": "The final brushstroke was a mere whisper of Prussian blue against the canvas, but as I pulled the bristles away, my hand felt suddenly, impossibly heavy. I stepped back, the smell of turpentine thick in the air, and looked at the completed portrait. My chest tightened with a hollow, resonant ache, as if the person in the oil paint had finally stopped breathing. I laid the palette on the stool, the vibrant colors now looking like waste, and felt a slow, grey coldness seep into my joints. There was no triumph in the finish; only the stark realization that I was standing alone in a room full of ghosts and drying pigment."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 5,
+    "topic": "An artist finishing a painting",
+    "story_idx": 2,
+    "text": "Julian wiped a smudge of crimson from his thumb, his movements listless and dragging. The landscape was done, the sunset captured in a permanent, unmoving amber, yet he felt a stinging heat behind his eyelids that had nothing to do with the studio lights. He didn't sign the corner. Instead, he dropped the cloth into a bucket of solvent and watched the ink bleed out into a murky cloud. His shoulders slouched, curving inward as he sat on the floor, staring at the masterpiece that had consumed his last six months, feeling a profound sense of emptiness now that the struggle was over and the silence of the room had returned."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 5,
+    "topic": "An artist finishing a painting",
+    "story_idx": 3,
+    "text": "I stared at the canvas until the edges of the room blurred into a misty haze. The work was perfect, exactly as it had appeared in my dreams, which was precisely why my throat felt constricted by a hard, stubborn knot. I reached out to touch the frame, but my fingers trembled, retreating before making contact. The vibrant life I had poured into the fabric seemed to have been siphoned directly from my own marrow, leaving me a brittle shell. I turned off the overhead lamp, letting the shadows swallow the colors, and stood in the dark listening to the rhythmic, distant drip of a leaky faucet that sounded like a countdown to nothing."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 5,
+    "topic": "An artist finishing a painting",
+    "story_idx": 4,
+    "text": "Elena capped the last tube of paint with a slow, deliberate twist, her gaze fixed on the floorboards rather than the easel. The painting was a tribute to a memory that was already beginning to fray at the edges, and seeing it completed made the loss feel finished, too. She felt a leaden weight settle in the pit of her stomach, making every breath feel like a labored climb. She didn't wash her brushes; she simply left them soaking in the jar, watching the water turn a dull, bruised purple. The house was quiet, the kind of quiet that feels like a physical pressure against the eardrums, and she leaned her head against the cool glass of the window, tracing the rain streaks with a numb finger."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 5,
+    "topic": "An artist finishing a painting",
+    "story_idx": 5,
+    "text": "The palette knife clicked against the tray as I set it down for the last time. I looked at the abstract swirl of greys and blacks, feeling a slow-moving tide of cold water rising in my chest. My eyes were dry, but they felt raw and weary, as if they had seen too much of a truth I wasn't ready to accept. I didn't feel the rush of accomplishment that usually followed a long session; instead, I felt a thinning of the air in the studio, a sense of departure. I draped a white sheet over the painting, watching the image disappear beneath the shroud, and walked out of the room without looking back, my footsteps echoing with a lonely, hollow finality."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 6,
+    "topic": "A driver stuck in traffic",
+    "story_idx": 1,
+    "text": "The rhythmic click of the turn signal was the only thing filling the cabin, a persistent, lonely heartbeat in the standstill. I rested my forehead against the cool arc of the steering wheel, watching a single raindrop navigate the grime on the windshield. Outside, the sea of brake lights bathed the interior in a harsh, unblinking crimson, reflecting off the empty passenger seat where a bouquet of lilies lay wilted and ignored. My chest felt constricted, as if the stagnant air of the freeway were slowly compressing the space around me, and I made no move to change the radio station when it dissolved into static."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 6,
+    "topic": "A driver stuck in traffic",
+    "story_idx": 2,
+    "text": "Marcus stared through the glass at the bumper in front of him, his fingers loosely draped over the wheel without any intent to grip. The world outside was a gridlock of steel and exhaust, but his mind was anchored to a quiet hallway miles behind him. He felt a dull, radiating ache behind his ribs that seemed to pulse in time with the distant honking of frustrated commuters. When a gap finally opened in the lane beside him, he didn't accelerate; he simply watched the space vanish again, his shoulders slumped and his gaze fixed on a point somewhere beyond the horizon where the grey sky met the grey road."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 6,
+    "topic": "A driver stuck in traffic",
+    "story_idx": 3,
+    "text": "The heater hummed, blowing dry air that made my swollen eyes sting, but I didn't reach for the dial. I was surrounded by hundreds of people, all encased in their own glass boxes, yet the sense of isolation felt absolute, a heavy shroud draped over the upholstery. I caught my reflection in the rearview mirror—a pale, diminished version of myself—and quickly looked away, focus shifting to a discarded coffee cup rolling slowly back and forth on the floor mat. Each minute spent motionless felt like a slow erosion of my resolve, a quiet sinking into the seat cushions as the twilight drained the color from the asphalt."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 6,
+    "topic": "A driver stuck in traffic",
+    "story_idx": 4,
+    "text": "Elena’s hands trembled slightly as she adjusted the mirror, not to see the traffic, but to check the stillness of the back seat. The silence in the car was abrasive, far heavier than the roar of the engines outside. She felt a lump in her throat that no amount of swallowing could dislodge, a hard, physical manifestation of the news she carried. As the line of cars moved forward a mere few inches, she let out a shallow, shaky breath that caught in her chest. She didn't mind the delay; the prospect of arriving at her destination felt like a cliff edge she wasn't ready to reach."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 6,
+    "topic": "A driver stuck in traffic",
+    "story_idx": 5,
+    "text": "I leaned back and let the seat take my full weight, my limbs feeling as though they were made of cooling lead. The wipers scraped across the glass with a dry, jarring sound, but I didn't turn them off. Watching the red lights ahead, I felt a profound sense of exhaustion that went deeper than bone, a spiritual fatigue that turned the simple act of holding my head up into an ordeal. I watched a bird land on a nearby guardrail, then fly away into the mist, and I felt a sharp, hollow pang of envy for its ability to simply leave the ground behind while I remained trapped in the metal crawl."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 7,
+    "topic": "A doctor delivering news to a patient",
+    "story_idx": 1,
+    "text": "The manila folder felt unusually heavy in my hands, its edges sharp against my numb palms. I stepped into the room and the air seemed to thicken, making every inhalation a conscious, straining effort. As I sat down, I didn't lead with the clinical data; instead, I focused on a small, fraying thread on the hem of my white coat, unable to meet the hopeful eyes across from me. My voice, when it finally emerged, was a low, constricted rasp that felt as though it were being pulled through a narrow space, and I found myself bracing my elbows on my knees to still the subtle tremor vibrating through my frame."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 7,
+    "topic": "A doctor delivering news to a patient",
+    "story_idx": 2,
+    "text": "Dr. Aris stood by the window for a moment before turning, watching the rain blur the hospital parking lot into a smear of charcoal and grey. When he finally spoke, his words were slow and deliberate, each syllable weighted with a leaden finality. He noticed the patient’s hand tighten around a paper tissue, and a sharp, hollow ache radiated from the center of his own chest. He didn't offer a rehearsed platitude; he simply leaned forward, his shoulders slumping under the unseen pressure of the room’s sudden, suffocating stillness, his gaze fixed on the sterile linoleum floor as if searching for a way to retract the reality he had just vocalized."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 7,
+    "topic": "A doctor delivering news to a patient",
+    "story_idx": 3,
+    "text": "I watched the clock on the wall, the rhythmic ticking sounding like a gavel coming down in a vacant courtroom. As I explained the limitations of the current treatment, my throat felt as though it were lined with dry sand, making it difficult to maintain the professional cadence I had practiced for years. The patient’s spouse let out a soft, jagged exhale that seemed to drain the remaining warmth from the room. I reached out to hand them a glass of water, my movements sluggish and mechanical, while a profound sense of helplessness settled in the marrow of my bones, making the walk back to my office feel like a journey through deep, cold water."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 7,
+    "topic": "A doctor delivering news to a patient",
+    "story_idx": 4,
+    "text": "The fluorescent lights hummed overhead, a sterile vibration that grated against Julian’s senses. He kept his hands buried deep in his pockets, his fingers twisting a stray paperclip until it snapped. He didn't look at the charts; he knew the numbers by heart, and they felt like a personal failure etched in ink. As the silence in the room stretched into a cavernous void, he felt a stinging heat behind his eyes and had to blink rapidly against the ceiling. His posture was no longer that of a healer in command; he looked diminished, his frame curving inward as if he were trying to occupy the smallest amount of space possible in the face of such quiet devastation."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 7,
+    "topic": "A doctor delivering news to a patient",
+    "story_idx": 5,
+    "text": "I exited the room and leaned my back against the cold, hard surface of the corridor wall, my breath coming in shallow, ragged intervals. The hallway was bustling with the sounds of a functioning hospital—pagers beeping, carts rattling—but I felt entirely insulated from the activity, wrapped in a heavy, grey fog. I looked down at my hands and realized I was still clutching the patient's updated file so tightly that the skin over my knuckles had turned a bloodless white. My chest felt tight, a hard knot of air trapped behind my ribs, and I closed my eyes, letting the clinical scent of antiseptic wash over me as I waited for the leaden sensation in my limbs to subside."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 8,
+    "topic": "A musician performing on stage",
+    "story_idx": 1,
+    "text": "The spotlight was a harsh, blinding circle that seemed to isolate me from the rest of the world. As my fingers moved across the cello strings, the vibrations felt like a series of low, rhythmic sobs resonating against my chest. I kept my eyes closed, not to focus, but to avoid seeing the empty seat in the third row that had been reserved for weeks. The melody dragged, each note pulled out like a long, thin wire, and I felt a coldness creeping up my arms that no amount of stage lighting could thaw. When the final chord faded into the rafters, I didn't look up for the applause; I simply gripped the neck of the instrument as if it were the only thing keeping me from sinking through the floorboards."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 8,
+    "topic": "A musician performing on stage",
+    "story_idx": 2,
+    "text": "Elias stood at the microphone, the feedback hissing softly like a distant winter wind. He began the ballad, but his voice was a thin, fragile thread that threatened to snap with every breath. He stared at the back wall of the club, his shoulders hunched and his head tilted down, shielding his face from the crowd. The rhythmic strumming of his guitar felt mechanical, a hollow echo of a passion that had evaporated hours ago. Between verses, he let out a shallow, shaky exhale that the mic caught and amplified, a jagged sound that filled the room with a sudden, oppressive stillness."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 8,
+    "topic": "A musician performing on stage",
+    "story_idx": 3,
+    "text": "I sat at the grand piano, the ivory keys feeling like smooth, cold bone beneath my fingertips. The music I played was technically perfect, yet it felt like a ghost of itself, drained of color and warmth. My throat felt constricted, a hard lump forming that made it difficult to regulate my breathing as the minor chords filled the hall. I watched my hands move, feeling strangely detached from them, as if they belonged to someone else—someone who still cared about the performance. The applause at the end sounded like rain on a tin roof, distant and grey, and I rose from the bench with a heavy, leaden movement, my gaze fixed on the shadows in the wings."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 8,
+    "topic": "A musician performing on stage",
+    "story_idx": 4,
+    "text": "The violin rested against Sarah’s collarbone, a weight that felt significantly heavier than its few pounds. She drew the bow across the strings, producing a sound that was raw and frayed at the edges, mirroring the trembling in her knees. She didn't sway with the music; she stood rigid, her knuckles white against the wood. Every time the crescendo rose, she felt a stinging heat behind her eyelids, forcing her to stare intensely at the sheet music until the notes blurred into a series of meaningless black smears. When the piece ended, she lowered the bow slowly, her chest heaving with a quiet, desperate effort to remain upright."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 8,
+    "topic": "A musician performing on stage",
+    "story_idx": 5,
+    "text": "I watched the audience through a veil of stage fog, their faces indistinct and fleeting. My lungs felt tight, as if the air in the theater had been replaced by something much denser and harder to swallow. I started the final song, but the lyrics felt like stones in my mouth, heavy and cold. My movements were sluggish, lacking the fire that usually defined my sets. Instead of reaching for the high notes, I let the melody dip and linger in the lower registers, a slow-moving tide of sound that seemed to pull the energy right out of the room. I walked off stage before the lights went up, disappearing into the dark corridor with my head bowed and my hands buried deep in my pockets."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 9,
+    "topic": "A traveler arriving in a new city",
+    "story_idx": 1,
+    "text": "The train doors hissed shut behind me, leaving me on a platform that smelled of ozone and damp concrete. I adjusted the strap of my suitcase, the weight of it pulling at a shoulder that already felt burdened by the leaden stillness in my chest. Around me, people greeted one another with exuberant shouts and hurried embraces, but I remained motionless, watching the steam rise from a discarded coffee cup. The vibrant neon signs of the terminal blurred into a smear of hazy light as a stinging heat rose behind my eyes, and I stepped into the terminal feeling less like an explorer and more like a fragment of driftwood pushed onto a foreign shore."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 9,
+    "topic": "A traveler arriving in a new city",
+    "story_idx": 2,
+    "text": "Julian stood at the exit of the airport, the humid air of the new climate clinging to his skin like a damp shroud. He looked at the slip of paper with his hotel address, but the ink seemed to swim on the page. His movements were slow and deliberate, each step toward the taxi stand requiring a conscious effort of will, as if the gravity here were twice as strong as where he had come from. When the driver asked if it was his first time in the city, Julian merely stared out the window at the unfamiliar skyline, his throat tightening into a hard knot that made any vocal response impossible."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 9,
+    "topic": "A traveler arriving in a new city",
+    "story_idx": 3,
+    "text": "I sat on the edge of the bed in the rented room, the wallpaper a repeating pattern of faded roses that seemed to wilt as I watched them. My luggage remained zipped and upright in the corner, an island of my former life in a sea of sterile, beige carpet. The city outside hummed with a frantic energy—horns blaring and sirens wailing—but inside the four walls, the silence was a physical weight pressing against my eardrums. I reached for the guidebook I’d bought with such optimism, but my fingers lacked the strength to open it, and I simply let it slide to the floor, resting my forehead against my knees as the shadows lengthened across the floorboards."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 9,
+    "topic": "A traveler arriving in a new city",
+    "story_idx": 4,
+    "text": "The map was a labyrinth of street names she couldn't pronounce, and Elena felt a profound sense of exhaustion that went deeper than the jet lag. She stood in the center of the bustling plaza, ignored by the throngs of tourists and locals, her shoulders slumping until she looked much smaller than her actual frame. A group of musicians nearby began a lively folk song, but to her ears, the melody sounded thin and haunting, a reminder of the distance she had placed between herself and everything she knew. She buried her hands in her pockets, her chin sinking into the collar of her coat, and began to walk without a destination, her gaze fixed entirely on the scuffed toes of her shoes."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 9,
+    "topic": "A traveler arriving in a new city",
+    "story_idx": 5,
+    "text": "I watched the rain streak the glass of the bus window, turning the city’s grand architecture into a series of melting grey shapes. My breath fogged the pane, and I didn't wipe it away, preferring the obscured view to the sharp reality of being somewhere I wasn't wanted. There was a hollow, aching sensation beneath my ribs, a rhythmic thrum that matched the vibration of the engine. When the bus finally pulled into the station, I lingered in my seat until the driver cleared his throat, my limbs feeling as though they were made of cooling wax. I stepped out into the drizzle, the cold water soaking through my sweater, and felt a quiet, devastating sense of anonymity settle over me like a second skin."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 10,
+    "topic": "A shopkeeper closing for the day",
+    "story_idx": 1,
+    "text": "The bell above the door gave a final, lonely chime as I flipped the sign to 'Closed.' I stood in the center of the narrow aisle, the scent of aged paper and floor wax feeling heavier than usual in the encroaching twilight. My movements to straighten the displays were mechanical; I lingered over a stack of stationery, my thumb tracing the embossed edges of an envelope I knew would never be sent. The rhythmic tick of the wall clock seemed to amplify the void in the room, and as I reached for the light switch, my hand hesitated in the shadows, my chest tightening with a dull, radiating ache that the evening's silence only served to sharpen."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 10,
+    "topic": "A shopkeeper closing for the day",
+    "story_idx": 2,
+    "text": "Elias pulled the heavy iron grate across the storefront, the metallic screech echoing down the deserted street like a sharp intake of breath. He didn't immediately turn to walk away. Instead, he leaned his forehead against the cold bars, watching the dust motes settle on the glass display where a single, unsold clock continued to count the seconds. His shoulders were slouched, his frame appearing diminished within the confines of his oversized apron. He reached into his pocket to touch a small, worn photograph, his jaw tightening as he stared at the darkened interior of the shop that had once been filled with laughter and the warmth of a second presence."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 10,
+    "topic": "A shopkeeper closing for the day",
+    "story_idx": 3,
+    "text": "The register drawer clicked shut with a hollow finality that seemed to vibrate in my very marrow. I counted the meager earnings of the day, but the numbers blurred on the ledger, my eyes feeling raw and heavy. I walked to the back to retrieve my coat, my footsteps sounding like distant thuds on the worn floorboards. I found myself staring at the empty chair behind the counter, my throat constricting until each breath felt like a shallow, labored effort. The streetlights outside began to flicker on, casting long, distorted shadows across the inventory, and I felt a slow, grey coldness seep into my joints as I realized the keys felt far too heavy for my pocket."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 10,
+    "topic": "A shopkeeper closing for the day",
+    "story_idx": 4,
+    "text": "Maya swept the floor with slow, dragging strokes, the broom bristles whispering against the wood. She gathered a small pile of debris but didn't move to discard it; she simply stood there, her gaze fixed on a scuff mark near the entrance. Her breath came in quiet, shaky intervals, and she kept her head bowed, her hair shielding her face from the streetlamp's glare. When she finally locked the door, the click of the deadbolt felt like a permanent seal. She stayed on the sidewalk for a long moment, her fingers trembling as she adjusted her scarf, feeling an immense, quiet distance between herself and the vibrant world waking up in the bars down the street."
+  },
+  {
+    "emotion": "sad",
+    "topic_idx": 10,
+    "topic": "A shopkeeper closing for the day",
+    "story_idx": 5,
+    "text": "I moved through the store, extinguishing the lamps one by one until the only light left was the pale moon filtering through the transom. The shelves, once a source of pride, now looked like rows of silent sentinels guarding a tomb. I felt a stinging heat behind my eyelids and had to blink rapidly, focusing on the cold brass of the door handle to ground myself. My heart felt leaden, a slow-beating pulse that seemed to echo the stillness of the inventory. As I stepped out into the night and pulled the door shut, I didn't look back; I simply walked into the mist, my chin tucked into my chest and my hands buried deep in my pockets, seeking a warmth that the empty shop could no longer provide."
+  }
+]

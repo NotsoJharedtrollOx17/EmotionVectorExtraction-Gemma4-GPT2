@@ -1,0 +1,352 @@
+[
+  {
+    "emotion": "anxious",
+    "topic_idx": 0,
+    "topic": "A student preparing for an exam",
+    "story_idx": 1,
+    "text": "The digital clock on the desk pulsed 3:14 AM, the rhythmic blink matching the rapid, shallow thrumming in my chest. I have read the same paragraph on neural networks four times, yet the words remain a chaotic soup of ink. My cuticles are raw, the skin picked away in ragged strips during the last hour of silence. Every time a floorboard creaks in the hallway, I jump, my pulse spiking as if a siren had gone off. I keep checking the battery percentage on my laptop—88%, 87%—calculating exactly how much time remains before the sun forces a reckoning I am not prepared to face."
+  },
+  {
+    "emotion": "anxious",
+    "topic_idx": 0,
+    "topic": "A student preparing for an exam",
+    "story_idx": 2,
+    "text": "Leo’s leg bounced in a frantic, unceasing tremor that rattled the legs of the library carrel. He gripped his highlighter so tightly his knuckles turned a bloodless white, the neon yellow ink bleeding through the thin paper as he pressed down. His stomach felt like it was being wrung out like a wet cloth, a cold knot of tension that made the thought of coffee nauseating. He looked at the stack of flashcards remaining and felt the walls of the cubicle drifting inward, narrowing his world until there was nothing left but the oppressive weight of potential failure and the ticking of a distant watch."
+  },
+  {
+    "emotion": "anxious",
+    "topic_idx": 0,
+    "topic": "A student preparing for an exam",
+    "story_idx": 3,
+    "text": "I can feel the sweat pooling at the small of my back, making my shirt cling to me in the drafty room. My pens are lined up in a perfect, obsessive row, but I keep rearranging them, moving the blue ink two millimeters to the left, then back again. I keep rehearsing the possible questions in my head, but my internal voice is becoming a high-pitched frantic loop, drowning out the actual data. My breathing is coming in short, jagged bursts, and I find myself gripping the edge of the table just to stay anchored to the chair, as if the floor might suddenly give way beneath the pressure of tomorrow’s expectations."
+  },
+  {
+    "emotion": "anxious",
+    "topic_idx": 0,
+    "topic": "A student preparing for an exam",
+    "story_idx": 4,
+    "text": "Maya reached for her water bottle, but her hand shook so violently that the cap clattered onto the floor and rolled into the shadows. She left it there, unable to break her gaze from the syllabus. A fine sheen of perspiration covered her forehead despite the air conditioning. She felt a phantom tightness in her throat, a constriction that made every swallow a conscious effort. In the silence of the apartment, the hum of the refrigerator sounded like a countdown, each mechanical click sending a jolt of electricity through her nerves until she was vibrating with the sheer force of her own kinetic dread."
+  },
+  {
+    "emotion": "anxious",
+    "topic_idx": 0,
+    "topic": "A student preparing for an exam",
+    "story_idx": 5,
+    "text": "I’ve rewritten the same complex derivation ten times, but the ink looks like a foreign language. My teeth are grinding together so hard my jaw aches, a dull throb that radiates up toward my temples. I keep checking the door, certain I’ve forgotten to lock it, then returning to the desk only to find I’ve forgotten the last sentence I read. The air in the room feels thin, used up, as if there isn't enough oxygen to support both my survival and the absorption of this material. I find myself staring at the 'Total Pages' count at the bottom of the PDF, the number feeling like a mountain peak I am forced to climb without a rope."
+  },
+  {
+"emotion": "anxious",
+"topic_idx": 1,
+"topic": "A chef cooking a meal for guests",
+"story_idx": 1,
+"text": "The tickets are screaming off the machine in a relentless, rhythmic chatter that makes the hair on my arms stand up. I’ve wiped the stainless steel counter three times in the last minute, though not a drop of sauce has touched it. My breathing is shallow, hitching every time the swinging door opens to reveal the crowded dining room. I check the internal temperature of the duck breast for the third time in sixty seconds, my hand trembling just enough to make the digital display flicker. The kitchen is sweltering, but a cold shiver traces my spine as I listen for the specific clatter of a fork hitting a plate, wondering if the seasoning is the catastrophe I suspect it is."
+},
+{
+"emotion": "anxious",
+"topic_idx": 1,
+"topic": "A chef cooking a meal for guests",
+"story_idx": 2,
+"text": "Julian’s jaw was clamped so tight his molars ached as he plated the sea bass. He rearranged a single microgreen with a pair of tweezers, his movements jerky and over-calibrated. He could feel the eyes of the critics through the pass-through window, a phantom weight pressing against the back of his neck. His apron was stained with a fine mist of sweat, and he found himself checking the pilot light on the range over and over, certain he’d hear the hiss of escaping gas or the sound of something burning. When the head waiter approached, Julian’s heart performed a sickening jolt, his fingers gripping the edge of the prep table until the metal bit into his palms."
+},
+{
+"emotion": "anxious",
+"topic_idx": 1,
+"topic": "A chef cooking a meal for guests",
+"story_idx": 3,
+"text": "I’m counting the seconds as the soufflés sit in the oven, my lips moving in a silent, frantic tally. Every time the heavy kitchen door slams, I flinch, certain the vibration will cause the delicate structures to collapse into ruin. My mouth is bone-dry despite the humidity of the steamer, and I keep adjusting the knot of my neckerchief, feeling as though it's slowly tightening of its own accord. I’ve checked the salt levels in the reduction so often that my palate has gone numb, leaving me standing in the center of the rush, paralyzed by the sudden, terrifying suspicion that I have forgotten how to taste entirely."
+},
+{
+"emotion": "anxious",
+"topic_idx": 1,
+"topic": "A chef cooking a meal for guests",
+"story_idx": 4,
+"text": "The head chef’s movements were a blur of staccato energy, his eyes darting toward the clock every few seconds as if it were a predator. He wiped his palms on his trousers before grabbing a hot pan, his grip white-knuckled and rigid. There was a frantic quality to the way he barked orders, his voice rising a half-octave higher than usual. He felt a sharp, electric buzzing in his fingertips as he reached for the salt cellar, his mind racing through a dozen different ways the emulsion could break before it reached the table. The roar of the extractor fan seemed to grow louder, a mechanical growl that echoed the spiraling tension tightening in his chest."
+},
+{
+"emotion": "anxious",
+"topic_idx": 1,
+"topic": "A chef cooking a meal for guests",
+"story_idx": 5,
+"text": "I can hear the low murmur of the guests in the foyer, and the sound makes my stomach do a slow, nauseating flip. I’ve checked the guest list twice to ensure the allergy notations are highlighted in red, but I’m still convinced I’ve missed a detail that will end in disaster. My pulse is a frantic drumbeat in my ears, making it hard to hear the sizzle of the scallops. I find myself pacing the small tile square in front of the convection oven, my hands interlaced behind my head, then dropped to my sides, then back again, unable to find a single moment of stillness while the clock relentlessly strips away the remaining minutes of prep."
+},
+{
+"emotion": "anxious",
+"topic_idx": 2,
+"topic": "A parent watching their child play",
+"story_idx": 1,
+"text": "My eyes are locked on the rusted bolts of the climbing frame, tracing the wobbling trajectory of every lunge and reach. Every time he swings a leg over the highest bar, my own breath hitches in my throat, trapped behind a wall of tension. I’m standing at the edge of the woodchips, my knees slightly bent as if ready to spring forward at the slightest slip. My knuckles are white where I’ve gripped the strap of the diaper bag, and I find myself mentally calculating the distance to the nearest urgent care center while he laughs, oblivious to the way the world feels like it's made of sharp edges and gravity."
+},
+{
+"emotion": "anxious",
+"topic_idx": 2,
+"topic": "A parent watching their child play",
+"story_idx": 2,
+"text": "Elena sat on the park bench, but only the very edge of it, her torso leaning so far forward she looked ready to tip. Her gaze followed the small, blue-shirted figure darting toward the edge of the pond with a frantic intensity. A fine bead of perspiration broke out across her upper lip despite the cool breeze. She kept twisting her wedding ring round and round until the skin beneath was raw. When a group of older children ran past, she half-rose from her seat, her hand flying to her chest as her pulse spiked into a rapid, uneven rhythm that didn't settle even after the perceived threat had passed."
+},
+{
+"emotion": "anxious",
+"topic_idx": 2,
+"topic": "A parent watching their child play",
+"story_idx": 3,
+"text": "I can’t stop checking the gate. It’s latched, I know it’s latched, but I check it again, my fingers fumbling with the cold metal. My daughter is only ten feet away in the sandbox, but the distance feels like a vast, treacherous ocean. Every loud bark from a dog or a sudden honk from the street makes me flinch, my shoulders hunching up toward my ears. I’ve chewed my bottom lip until it tastes of copper. I try to smile when she looks up to show me a plastic bucket, but my facial muscles feel tight and brittle, like a mask that might shatter if I let go of this rigid, watchful control."
+},
+{
+"emotion": "anxious",
+"topic_idx": 2,
+"topic": "A parent watching their child play",
+"story_idx": 4,
+"text": "Marcus watched his son navigate the crowded indoor play place, his throat feeling as though it were being slowly constricted. He stood by the netting, his head darting left and right, trying to track the specific shade of yellow his son was wearing through the chaotic sea of moving limbs. The high-pitched screams of delight from the other children sounded to him like sirens, each one sending a fresh jolt of electricity down his spine. He kept glancing at his watch, not because he wanted to leave, but because the passing seconds felt like a countdown to an inevitable, invisible collision he was powerless to prevent."
+},
+{
+"emotion": "anxious",
+"topic_idx": 2,
+"topic": "A parent watching their child play",
+"story_idx": 5,
+"text": "The slide is too high. I’ve known it since we walked in, and now that he’s at the top, my stomach is performing a slow, sickening somersault. I’m hovering at the base of the ladder, my hands hovering in the air as if I could catch a falling star. My heart is a frantic bird hitting the cage of my ribs, 'thud-thud-thud,' loud enough to vibrate in my teeth. I try to call out a warning, but my voice is stuck in a dry, tight throat. I just stand there, vibrating with a kinetic energy I can’t release, waiting for the moment his feet touch the ground so I can finally let out the air I’ve been holding."
+},
+{
+"emotion": "anxious",
+"topic_idx": 3,
+"topic": "A soldier returning home",
+"story_idx": 1,
+"text": "The taxi pulls to the curb, and I find myself paralyzed, my fingers locked around the handle of my duffel bag with a grip that makes the canvas groan. Through the window, the familiar oak tree in the front yard looks like a stranger, its shadows stretching across the lawn in jagged, unfamiliar shapes. My breathing is shallow, coming in short, staccato sips as if the air itself has become too thick to inhale. I check the safety on my mental perimeter for the hundredth time, my pulse a frantic, erratic drumbeat against my collar. When I finally reach for the door handle, my hand shakes so violently that the metal clatters against my ring, sounding like a gunshot in the quiet suburban afternoon."
+},
+{
+"emotion": "anxious",
+"topic_idx": 3,
+"topic": "A soldier returning home",
+"story_idx": 2,
+"text": "Elias stood at the threshold of the kitchen, his boots feeling heavy and out of place on the polished hardwood. He kept his back to the wall, his eyes darting toward the entryway every time the refrigerator hummed or a floorboard settled. A fine sheen of cold sweat broke out across his brow despite the air conditioning. He reached for a glass of water, but his coordination felt frayed; he nearly knocked it over, his heart performing a sickening jolt that sent a surge of adrenaline to his fingertips. The silence of the house was deafening, a vacuum that felt as though it were pressing in on his eardrums, leaving him braced for a sudden impact that never arrived."
+},
+{
+"emotion": "anxious",
+"topic_idx": 3,
+"topic": "A soldier returning home",
+"story_idx": 3,
+"text": "I’m sitting on the edge of the bed we used to share, but I can’t seem to bring myself to lie down. My jaw is clamped shut so tightly that a dull ache has begun to radiate into my temples. Every time a car passes by outside, its headlights sweeping across the ceiling, I flinch, my muscles tensing into a rigid, defensive coil. My stomach is a tangled knot of wire, making the thought of a home-cooked meal feel utterly impossible. I keep patting my pockets for gear that isn't there, my mind racing through exit strategies and sightlines while the person I love sleeps peacefully just inches away, completely unaware of the storm vibrating through my nerves."
+},
+{
+"emotion": "anxious",
+"topic_idx": 3,
+"topic": "A soldier returning home",
+"story_idx": 4,
+"text": "The doorbell rang, and Sarah jumped nearly six inches off the sofa, her hands flying up in a protective reflex before she could register where she was. Her breath hitched, trapped in a throat that felt narrow and dry as dust. She looked at the door, her vision tunneling until the wood grain was the only thing in focus. Her pulse was a frantic, visible throb in her neck, and she felt a wave of nausea wash over her as she considered the prospect of social interaction. She stood frozen in the hallway, her fingers twitching at her sides, waiting for the person on the other side to leave so she could regain the fragile, trembling grip she held on her own surroundings."
+},
+{
+"emotion": "anxious",
+"topic_idx": 3,
+"topic": "A soldier returning home",
+"story_idx": 5,
+"text": "I’ve been standing on the sidewalk for ten minutes, unable to take the final twenty steps to the porch. My palms are damp, and I keep wiping them on my trousers, over and over, until the fabric is dark with moisture. I feel like an interloper in my own life, a glitch in a system that moved on without me. My chest feels tight, as if a heavy weight is being slowly lowered onto my sternum. I try to rehearse the first words I’ll say, but my internal voice is a fragmented mess of static and high-pitched frequency. The suburban quiet feels like a trap, a deceptive calm that makes my skin crawl with the desperate need to find cover."
+},
+{
+"emotion": "anxious",
+"topic_idx": 4,
+"topic": "An artist finishing a painting",
+"story_idx": 1,
+"text": "The brush hovered millimeters from the canvas, my fingers trembling so violently that the wooden handle rattled against my ring. A single droplet of sweat escaped my hairline and traced a slow, agonizing path down my temple, but I dared not blink. My lungs felt as though they had shrunk to the size of walnuts, allowing only shallow, jagged sips of air that did nothing to quell the frantic drumming against my ribs. I looked at the highlight on the iris—one more stroke could bring it to life, or it could dissolve the entire composition into an irreparable smudge. The silence of the studio was absolute, yet my ears rang with a high-pitched frequency that made the very walls seem to vibrate."
+},
+{
+"emotion": "anxious",
+"topic_idx": 4,
+"topic": "An artist finishing a painting",
+"story_idx": 2,
+"text": "Julian gripped the edge of the easel until the wood bit into his palms, his knuckles white and bloodless. He’d been staring at the corner of the landscape for twenty minutes, his jaw clamped so tight that a dull ache radiated into his ears. Every time he reached for the palette knife, his stomach performed a sickening, liquid flip, forcing him to retract his hand. The clock on the wall seemed to have accelerated, its ticking transformed into a heavy, metallic thud that synchronized with the pulsing in his throat. He felt exposed, as if the unfinished sky were a window through which the world could witness his every hesitation and mechanical failure."
+},
+{
+"emotion": "anxious",
+"topic_idx": 4,
+"topic": "An artist finishing a painting",
+"story_idx": 3,
+"text": "I’ve paced the length of the floorboards until my socks are grey with dust, my hands interlaced behind my head in a rigid, forced grip. The painting is technically complete, yet I am possessed by a frantic urge to scrape the oil away and begin again. My mouth is bone-dry, and every swallow feels like a conscious, difficult labor. I keep checking the latch on the windows, then the lock on the door, then returning to the canvas, unable to find a single point of rest. My vision is beginning to tunnel, focusing with obsessive, terrifying clarity on a tiny imperfection in the varnish that feels like a glaring, shouting admission of my own inadequacy."
+},
+{
+"emotion": "anxious",
+"topic_idx": 4,
+"topic": "An artist finishing a painting",
+"story_idx": 4,
+"text": "The tube of crimson paint was nearly empty, mangled and twisted by her frantic squeezing. Maya’s breathing was coming in short, audible gasps that fogged the air in the chilly room. She reached out to sign the corner, but her coordination was frayed; the pen felt like a foreign object, heavy and unwieldy. She felt a cold prickle of electricity darting across her shoulders and down her spine. The light in the room was fading, and with every deepening shadow, the sense of an impending, invisible deadline tightened around her chest like a metal band, making her feel as though she were drowning in open air."
+},
+{
+"emotion": "anxious",
+"topic_idx": 4,
+"topic": "An artist finishing a painting",
+"story_idx": 5,
+"text": "I stood back, but my legs felt hollow, as if the bones had been replaced with shifting sand. My heart was a trapped bird, beating a frantic, uneven rhythm against the cage of my chest. I wanted to turn the canvas to the wall, to hide from the judgment I knew was coming, but I remained frozen in place. My palms were slick with a mixture of turpentine and sweat, and I found myself obsessively counting the bristles on my discarded brush to keep my mind from spiraling into the void of 'what if.' The room was too quiet, the air too still, and the weight of the finality sat on my shoulders like a physical, crushing burden."
+},
+{
+"emotion": "anxious",
+"topic_idx": 5,
+"topic": "A drive stuck in traffic",
+"story_idx": 1,
+"text": "The digital clock on the dashboard flickers to 8:46, and I feel a sharp, electric jolt travel from my stomach to my throat. I’ve checked the side-view mirror six times in the last minute, though no one has moved an inch. My grip on the steering wheel is so rigid that my fingers have gone numb, the leather beneath my palms slick with a cold dampness. I find myself humming a frantic, tuneless note just to drown out the silence of the cabin, while my eyes dart obsessively between the unmoving brake lights ahead and the creeping minute hand that is systematically dismantling my morning."
+},
+{
+"emotion": "anxious",
+"topic_idx": 5,
+"topic": "A drive stuck in traffic",
+"story_idx": 2,
+"text": "Elias tapped a staccato rhythm on the window glass, his breath fogging the pane in short, shallow bursts. Every time a siren wailed in the distance, his shoulders hunched toward his ears, and his pulse spiked into a visible throb at his temple. He shifted in the seat, adjusting his tie, then his belt, then the rearview mirror, unable to find a single second of physical stillness. The air in the car felt thick and recycled, and he rolled the window down an inch only to roll it back up immediately, convinced the exhaust fumes were choking him as the gridlock tightened its hold."
+},
+{
+"emotion": "anxious",
+"topic_idx": 5,
+"topic": "A drive stuck in traffic",
+"story_idx": 3,
+"text": "I can feel the blood rushing in my ears, a heavy, dull rhythm that seems to synchronize with the blinking hazard lights of the truck three cars ahead. My jaw is clamped so tightly that a shooting pain has begun to migrate toward my forehead. I keep reaching for my phone to check the GPS, only to see the same red line stretching into infinity, a sight that makes my chest tighten as if a heavy weight were being lowered onto my sternum. I try to take a deep breath, but the air stops at my collarbone, leaving me gasping in a vacuum of steel and asphalt."
+},
+{
+"emotion": "anxious",
+"topic_idx": 5,
+"topic": "A drive stuck in traffic",
+"story_idx": 4,
+"text": "Sarah’s foot performed a frantic, nervous dance on the floor mat, her heel clicking against the plastic in a rapid-fire tempo. She watched a motorcyclist lane-split past her, and for a moment, her vision tunneled, the world blurring into a chaotic smudge of grey and chrome. Her mouth was dry as parchment, and she swallowed repeatedly, her throat feeling narrow and constricted. She began to obsessively count the rivets on the tailgate of the van in front of her, her mind racing through a dozen different apologies and explanations, each one more desperate and fragmented than the last."
+},
+{
+"emotion": "anxious",
+"topic_idx": 5,
+"topic": "A drive stuck in traffic",
+"story_idx": 5,
+"text": "The heat from the engine seems to be seeping through the floorboards, making the soles of my feet itch with a restless, kinetic energy. I’ve bitten my thumbnail down to the quick, the sting a minor distraction from the tightening coil in my gut. Every time the line of cars moves a single foot, I launch forward with a jerk, my heart performing a sickening flop against my ribs. I’m trapped in a cage of glass and radiator heat, my eyes fixed on the horizon with a wide, unblinking intensity, waiting for a release that feels like it’s being intentionally withheld by the universe."
+},
+{
+"emotion": "anxious",
+"topic_idx": 6,
+"topic": "A doctor delivering news to a patient",
+"story_idx": 1,
+"text": "I smoothed the edges of the manila folder for the tenth time, my thumb tracing the sharp corner until the skin felt raw. My lab coat felt inexplicably heavy, the starch scratching against a neck that had become slick with a cold dampness. I paused outside the door of Room 402, my hand hovering over the handle while my heart performed a frantic, uneven rhythm against my ribs. I took a breath, but it remained shallow, caught in a throat that felt like it had been lined with dry sand. The hallway behind me was a blur of white noise, but my focus was narrowed entirely on the weight of the paper in my hand and the impossibility of the first sentence I had to utter."
+},
+{
+"emotion": "anxious",
+"topic_idx": 6,
+"topic": "A doctor delivering news to a patient",
+"story_idx": 2,
+"text": "Dr. Aris sat on the edge of the rolling stool, his knees locked in a rigid angle that made his muscles ache. He adjusted his glasses, but his hands shook just enough to send a glint of light skittering across the tile floor. He found himself obsessively watching the patient’s breathing, counting the rises of their chest as if his own lungs had forgotten the mechanical process. His stomach was a tangled knot of cold wire, and a dull, pulsing throb had begun to settle behind his eyes. When he finally opened his mouth to speak, his voice sounded foreign to him—thin and brittle, as if the air in the sterile room had suddenly become too thin to support the weight of the truth."
+},
+{
+"emotion": "anxious",
+"topic_idx": 6,
+"topic": "A doctor delivering news to a patient",
+"story_idx": 3,
+"text": "The fluorescent lights hummed with a low-frequency buzz that seemed to vibrate directly in my teeth. I sat across from the couple, my fingers interlaced so tightly that my knuckles had turned a bloodless white. I kept my gaze fixed on a small, insignificant scuff on the floor to avoid the expectant, hopeful shine in their eyes. My pulse was a visible throb in my neck, a rapid-fire staccato that made my vision blur at the edges. I reached for the water pitcher, but the clinking of the glass against the plastic tray was so loud in the silence that I pulled my hand back, afraid that any movement would cause the fragile composure I was clinging to to shatter completely."
+},
+{
+"emotion": "anxious",
+"topic_idx": 6,
+"topic": "A doctor delivering news to a patient",
+"story_idx": 4,
+"text": "Elias felt a sharp, electric prickle tracing the length of his spine as he stepped into the small consultation room. He kept his arms crossed, his hands tucked deep into his armpits to hide the fine tremor that had taken hold of his fingers. The smell of antiseptic was overwhelming, making his stomach perform a slow, sickening roll. He looked at the chart one last time, the numbers and biological markers swimming before his eyes like dark insects. Every second of silence felt like a physical pressure building in the room, a tightening coil that made his chest feel hollow and his breathing come in short, jagged sips that never quite reached the bottom of his lungs."
+},
+{
+"emotion": "anxious",
+"topic_idx": 6,
+"topic": "A doctor delivering news to a patient",
+"story_idx": 5,
+"text": "I checked my watch, though the time was irrelevant; the feeling of a looming, invisible cliff-edge was all that mattered. My jaw was clamped shut, the muscles in my face feeling tight and brittle like a porcelain mask. I found myself mentally rehearsing the phrasing over and over, but the words kept fragmenting into a chaotic static. A cold bead of sweat escaped my temple and traced a path toward my ear, but I remained frozen, my internal systems red-lining with a kinetic dread that I had to keep perfectly contained. When the patient finally spoke, the sound was like an alarm, sending a jolt of pure adrenaline through my nerves that left me lightheaded and momentarily breathless."
+},
+{
+"emotion": "anxious",
+"topic_idx": 7,
+"topic": "A musician performing on stage",
+"story_idx": 1,
+"text": "The velvet curtain is a heavy, suffocating barrier between me and the low roar of the expectant crowd. I’ve wiped my palms on my trousers so many times the fabric is damp, yet my fingers still feel slick and clumsy. My heart is a trapped bird, beating a frantic, erratic staccato against the cage of my ribs that I’m certain the front row will hear over the amplifiers. I check the tuning of the G-string for the fifth time in a minute, my hand shaking so much the peg slips, sending a sharp, dissonant ping through the wings. My stomach is a cold, hollow void, and the air in the theater feels suddenly devoid of oxygen, leaving me gasping in short, shallow sips."
+},
+{
+"emotion": "anxious",
+"topic_idx": 7,
+"topic": "A musician performing on stage",
+"story_idx": 2,
+"text": "Julian gripped the neck of his cello as if it were a life raft in a churning sea. As the stage lights flared to a blinding white, his vision tunneled, reducing the world to the four strings and the blur of the conductor’s baton. A fine sheen of cold perspiration broke out across his upper lip, and his jaw was clamped so tightly he felt a dull throb beginning to pulse in his temples. He could feel the blood rushing in his ears—a heavy, rhythmic 'whoosh' that threatened to drown out the opening notes of the woodwinds. He adjusted his stool an inch to the left, then back again, his movements jerky and over-calibrated as he waited for the cue that felt like a looming execution."
+},
+{
+"emotion": "anxious",
+"topic_idx": 7,
+"topic": "A musician performing on stage",
+"story_idx": 3,
+"text": "I’m standing in the spotlight’s glare, and the silence from the darkened hall is a physical weight pressing against my chest. My mouth is bone-dry, making it impossible to swallow, and my throat feels as narrow as a straw. I look down at the piano keys, and for a terrifying second, the black and white pattern dissolves into a meaningless, dizzying geometric mess. My pulse is a visible throb in my wrist, and I find myself counting the seconds until the first chord, my internal voice rising to a frantic, high-pitched frequency. I reach out to touch the ivory, but my coordination feels frayed, my arm heavy and disconnected from my will as if the floor might tilt and slide me into the orchestra pit."
+},
+{
+"emotion": "anxious",
+"topic_idx": 7,
+"topic": "A musician performing on stage",
+"story_idx": 4,
+"text": "The drummer’s count-in sounded like a hammer against her nerves. Maya felt a sharp, electric prickle tracing the length of her spine, and her knees felt dangerously hollow, as if the bones had turned to steam. She tried to take a grounding breath, but the air caught in her chest, leaving her lightheaded. Every time she looked at the microphone, her stomach performed a slow, sickening somersault. She found herself obsessively checking the cable connection at her feet, her fingers twitching with a kinetic energy she couldn't channel, while the roar of the audience transformed into a distorted, oceanic white noise that made her ears ring with a piercing, persistent dread."
+},
+{
+"emotion": "anxious",
+"topic_idx": 7,
+"topic": "A musician performing on stage",
+"story_idx": 5,
+"text": "I can feel the vibration of the bass in the floorboards, and it makes my teeth chatter in a way I can’t control. My palms are so slick I’m afraid the pick will fly out of my hand and vanish into the dark. I keep shifting my weight from one foot to the other, a restless, frantic dance that does nothing to ease the tightening coil beneath my ribs. The heat from the stage lights is intense, yet I am shivering, a fine tremor that starts in my core and radiates out to my very fingertips. I close my eyes and try to recall the opening melody, but my mind is a blank, sterile slate, leaving me standing at the edge of a precipice with the world watching and the safety net gone."
+},
+{
+"emotion": "anxious",
+"topic_idx": 8,
+"topic": "A traveler arriving in a new city",
+"story_idx": 1,
+"text": "The pneumatic hiss of the train doors felt like a starting pistol. I stepped onto the platform, my fingers white-knuckled around the handle of my suitcase as a sea of unfamiliar faces surged toward me. The signage was a blur of neon and foreign script that seemed to dance and shift whenever I tried to focus my eyes. My breathing grew shallow, the air in the terminal tasting of ozone and too many bodies, and I felt a cold prickle of sweat bloom across my shoulder blades. Every time a stranger brushed past, I flinched, my heart performing a frantic, uneven staccato against my ribs while I gripped my map so hard the paper began to tear."
+},
+{
+"emotion": "anxious",
+"topic_idx": 8,
+"topic": "A traveler arriving in a new city",
+"story_idx": 2,
+"text": "Elias stood at the curb of the bustling terminal, his jaw clamped shut so tightly that a dull ache throbbed in his temples. The cacophony of rhythmic honking and shouting voices rose around him like a tide, making his vision tunnel until he could only see the flickering numbers of the taxi meters. He reached into his pocket to check for his passport for the fourth time in three minutes, his hands trembling with a fine, electric tremor. His stomach was a tangled knot of cold wire, and he found himself backing against a concrete pillar, his eyes darting toward every exit as he calculated the impossibility of navigating this concrete labyrinth."
+},
+{
+"emotion": "anxious",
+"topic_idx": 8,
+"topic": "A traveler arriving in a new city",
+"story_idx": 3,
+"text": "I’m standing in the center of the plaza, and the scale of the architecture feels like it’s leaning inward, threatening to crush the breath from my lungs. My mouth is bone-dry, making every swallow a conscious, difficult labor. I keep checking the battery percentage on my phone—62%, 61%—feeling as though my only lifeline to the known world is slowly hemorrhaging away. A wave of lightheadedness washes over me as I realize I’ve forgotten the name of my hotel, the words dissolving into a chaotic static in my mind. I find myself pacing a small, five-foot square of pavement, my movements jerky and aimless, while the sun dips below the skyline and the shadows grow teeth."
+},
+{
+"emotion": "anxious",
+"topic_idx": 8,
+"topic": "A traveler arriving in a new city",
+"story_idx": 4,
+"text": "The overhead announcements were a garbled roar that sent a sharp jolt of adrenaline through Sarah’s system. She clutched her backpack to her chest, her shoulders hunched up toward her ears in a rigid, defensive posture. Her pulse was a visible, frantic throb in her neck, and she felt a sickening sense of vertigo as she stared down the long, cavernous hallway of the station. She began to obsessively count the floor tiles, her mind racing through a dozen different scenarios where she took the wrong bus, lost her luggage, or simply vanished into the anonymity of the crowd. Every sudden movement in her peripheral vision made her jump, her nerves frayed to the point of snapping."
+},
+{
+"emotion": "anxious",
+"topic_idx": 8,
+"topic": "A traveler arriving in a new city",
+"story_idx": 5,
+"text": "I can feel the blood rushing in my ears, a heavy 'whoosh' that drowns out the sounds of the city. My palms are slick with a cold dampness, making it hard to maintain my grip on the heavy straps of my gear. I want to move, to blend into the flow of the commuters, but my legs feel hollow and disconnected from my will, as if the ground itself had become liquid. I find myself staring at a simple street sign until the letters lose all meaning, my chest tightening as if a heavy metal band were being cinched around my ribs. I am hyper-aware of every sound—the screech of brakes, the slamming of a door—each one a physical blow to a composure that is rapidly disintegrating."
+},
+{
+"emotion": "anxious",
+"topic_idx": 9,
+"topic": "A shopkeeper closing for the day",
+"story_idx": 1,
+"text": "The key fumbled against the lock, the metallic scraping sounding like a thunderclap in the deserted street. I glanced over my shoulder at the flickering streetlamp, my heart performing a frantic, uneven rhythm against my ribs. The shadows between the displays seemed to stretch and shift as if they had gained mass. My palms were slick with a cold dampness, making it nearly impossible to maintain a grip on the heavy iron gate. I checked the deadbolt three times, my breathing coming in short, shallow sips, while a persistent tremor in my hands made the jingling of the keychain echo down the empty sidewalk like an alarm."
+},
+{
+"emotion": "anxious",
+"topic_idx": 9,
+"topic": "A shopkeeper closing for the day",
+"story_idx": 2,
+"text": "Arthur counted the contents of the till for the fourth time, his lips moving in a silent, frantic tally. A fine bead of perspiration broke out across his forehead as the numbers refused to align by a mere five cents. He jumped at the sudden groan of the building's floorboards, his gaze darting toward the darkened back office. His jaw was clamped so tightly his teeth ached, and he felt a sharp, electric prickle tracing the length of his spine. He reached for the alarm keypad, but his fingers felt heavy and disconnected, his vision tunneling until the glowing green numbers were the only things left in a world that felt increasingly precarious."
+},
+{
+"emotion": "anxious",
+"topic_idx": 9,
+"topic": "A shopkeeper closing for the day",
+"story_idx": 3,
+"text": "I can feel the blood rushing in my ears, a heavy, rhythmic thrum that matches the ticking of the wall clock. As I turned off the main overheads, the sudden transition to gloom made my stomach perform a sickening, liquid flip. I stood frozen behind the counter, my ears straining to interpret the hiss of the radiator or the distant hum of a passing car. My throat felt constricted, making every swallow a conscious labor. I’ve checked the back door twice already, yet I found myself moving toward it again, my footsteps light and frantic as I tried to ignore the sensation of unseen eyes peering through the gaps in the window blinds."
+},
+{
+"emotion": "anxious",
+"topic_idx": 9,
+"topic": "A shopkeeper closing for the day",
+"story_idx": 4,
+"text": "The store was silent, but Sarah’s internal world was a chaotic static of 'what-ifs.' She gripped the edge of the glass display case until her knuckles turned a bloodless white, her eyes obsessively scanning the perimeter for a shadow that didn't belong. A cold shiver traced a path down her neck despite the stuffy air of the shop. She reached for her coat, but her coordination was frayed; she nearly knocked over a mannequin, her pulse spiking into a visible throb at her temple. Every mechanical click of the security system felt like a countdown, and she found herself bracing for an impact, her muscles coiled in a rigid, defensive tension."
+},
+{
+"emotion": "anxious",
+"topic_idx": 9,
+"topic": "A shopkeeper closing for the day",
+"story_idx": 5,
+"text": "I stood at the threshold, my hand hovering over the final light switch. My chest felt tight, as if a heavy metal band were being cinched around my ribs, limiting my breath to short, jagged bursts. I’ve gone through the closing checklist meticulously, yet a persistent, gnawing suspicion that the stove is on or a window is unlatched vibrates through my nerves. I find myself pacing the small square of carpet by the door, my thumbs obsessively twiddling a loose thread on my apron. The silence of the street outside felt like a trap, and as I finally plunged the room into darkness, I felt a jolt of pure adrenaline that sent me scurrying toward my car without looking back."
+}
+]
