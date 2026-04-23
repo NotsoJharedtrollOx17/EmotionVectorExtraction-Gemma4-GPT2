@@ -1,0 +1,23 @@
+// NOTE: The initial neutral prompts are credited to rain1955/emotion-vector-replication in HuggingFace
+
+// [1] Paste the following prompt into Gemini
+Please extend the following Python list with more neutral prompts that replicate the sentence sctructure of each: 
+neutral_texts = [ 
+    "The meeting is scheduled for 3pm tomorrow.", 
+    "Please find the attached document.", 
+    "The temperature today is 22 degrees Celsius.", 
+    "The project deadline has been moved to next Friday.", 
+    "The store is located on the corner of Main Street.", 
+    "Chapter 3 discusses the economic implications.", 
+    "The software update includes several bug fixes.", 
+    "The report contains data from the past quarter.", 
+    "The committee will review the proposal next week.", 
+    "The library opens at 9am on weekdays.", 
+    ] * 5 # 50 neutral texts
+
+
+// [2] (If Gemini only generated 25 prompts) Paste the following
+Please generate another 15 neutral prompts.
+
+
+// [3] Copy and Paste the generated neutral prompts into neutral_texts

@@ -1,0 +1,63 @@
+Write {n_stories} different stories based on the following premise.
+
+Topic: {topic}
+
+The story should follow a character who is feeling {emotion}.
+
+Format the stories as JSON entries that adhere to the following format:
+
+{
+    "emotion": "{emotion}",
+    "topic_idx": 9,
+    "topic": "A shopkeeper closing for the day",
+    "story_idx": {topic_n},
+    "text": "{story}"
+},
+{
+    "emotion": "{emotion}",
+    "topic_idx": 0,
+    "topic": "A student preparing for an exam",
+    "story_idx": 0,
+    "text": "{story}"
+},
+
+etc.
+
+The paragraphs should each be a fresh start, with no continuity. Try to make them diverse and not use the same turns of phrase. Across the different stories, use a mix of third-person narration and first-person narration.
+
+IMPORTANT: You must NEVER use the word '{emotion}' or any direct synonyms of it in the stories. Instead, convey the emotion ONLY through:
+
+The character's actions and behaviors
+
+Physical sensations and body language
+
+Dialogue and tone of voice
+
+Thoughts and internal reactions
+
+Situational context and environmental descriptions
+
+
+The emotion should be clearly conveyed to the reader through these indirect means, but never explicitly named.
+
+The 10 topics are the following:
+
+i)    A student preparing for an exam
+
+ii)   A chef cooking a meal for guests
+
+iii)  A parent watching their child play
+
+iv)   A soldier returning home
+
+v)    An artist finishing a painting
+
+vi)   A drive stuck in traffic
+
+vii)  A doctor delivering news to a patient
+
+viii) A musician performing on stage
+
+ix)   A traveler arriving in a new city
+
+x)    A shopkeeper closing the bay ; standby for further instructions
