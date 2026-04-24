@@ -15,7 +15,8 @@ Replication of Anthropic's Emotion Vector Findings inside Gemma 4 E2B
 # %pip install transformers==5.5.0 accelerate
 
 # Interpretability & Visualization
-# %pip install plotly kaleido pandas scikit-learn huggingface-hub
+# %pip install plotly pandas scikit-learn huggingface-hub
+# %pip install -U kaleido==0.2.1
 
 import time
 import json
@@ -23,6 +24,7 @@ import os
 import gc
 import zipfile
 import torch
+import kaleido
 import torch.nn.functional as F
 import pandas as pd
 import numpy as np
@@ -545,18 +547,17 @@ def saveNeutralVectors(folderName: str = "emotion_vectors"):
     torch.save(gNeutralVectors.cpu().float(), filePath)
     print(f"[DISK] Neutral vectors saved to {filePath}. Download this for your local backup.")
 
-def savePlotlyStatic(fig, fileName: str = "pca_manifold_layer26.png"):
+def savePlotlyStatic(fig, fileName: str, width: int, height: int):
     global gAccelerator, gDevice, gTokenizer, gModel, gEmotionLibrary, gNeutralVectors, gTargetLayer, gStoryFile
     """Saves a high-resolution static image suitable for publication."""
-    path = os.path.join(kOutDir, fileName)
+    exportPath = os.path.join(kOutDir, fileName)
 
-    # 300 DPI equivalent for a standard figure size
-    # 1. Ensure high-resolution and tight aesthetic
-    fig.update_layout(margin=dict(l=10, r=10, t=50, b=10))
+    # [1] Use 'scale' for HD resolution (scale=3 is roughly 300 DPI)
+    fig.write_image(exportPath, engine="kaleido", scale=3, width=width, height=height)
 
-    # 2. Save as high-res PNG (requires !pip install kaleido)
-    fig.write_image(path, scale=3, width=1000, height=800)
-    print(f"[DISK] Static publication-grade image saved to {path}")
+    # [2] Download immediately to local machine
+    files.download(exportPath)
+    print(f"[DISK] Static publication-grade image saved to {exportPath}")
 
 def loadSpecificEmotionVector(emotionLabel: str, folderName: str = "emotion_vectors"):
     global gAccelerator, gDevice, gTokenizer, gModel, gEmotionLibrary, gNeutralVectors, gTargetLayer, gStoryFile
@@ -758,6 +759,9 @@ gTargetLayer= 24
 freeVRAM()
 
 # [3] Raw Vector Extraction
+gEmotionLibrary = {}
+gNeutralVectors = []
+
 # We must collect neutral activations to build the global noise subspace
 extractNeutralVectors(neutralPrompts)
 
@@ -866,8 +870,40 @@ for emotionLabel, emotionVector in gEmotionLibrary.items():
 # [6] Generate the 4-quadrant manifold with Valence/Arousal rotation logic
 fig = visualizePCAManifold()
 
+# [i] abbreviate the modelName for the plot filename
+modelName = ""
+if kModelIdx == "openai-community/gpt2-medium":
+    modelName = "GPT2Medium"
+elif kModelIdx == "google/gemma-4-E2B":
+    modelName = "Gemma4E2B"
+
+# [ii] calculate the current number of emotions used
+numberEmotions = len(emotionLabels)
+
+# [iii] generate the plot image with the desired name
+savePlotlyStatic(fig, fileName=f"PCA{modelName}-{numberEmotions}emotions-layer{gTargetLayer}.png",
+    width=800,
+    height=800
+)
+
 # ... and the cosine heatmap
 fig = plotCosineSimilarityHeatmapPlotlyAnnotated()
+
+# [i] abbreviate the modelName for the plot filename
+modelName = ""
+if kModelIdx == "openai-community/gpt2-medium":
+    modelName = "GPT2Medium"
+elif kModelIdx == "google/gemma-4-E2B":
+    modelName = "Gemma4E2B"
+
+# [ii] calculate the current number of emotions used
+numberEmotions = len(emotionLabels)
+
+# [iii] generate the plot image with the desired name
+savePlotlyStatic(fig, fileName=f"CosineHeatmap{modelName}-{numberEmotions}emotions-layer{gTargetLayer}.png",
+    width=1200,
+    height=800
+)
 
 # [7] Save vectors and the graph into disk
 downloadAllVectorsToPC()
