@@ -74,7 +74,12 @@ gStoryFile = None
 gEmotionLibrary: Dict[str, torch.Tensor] = None
 gNeutralVectors: List[torch.Tensor] = None
 
-"""### [2] Load desired model"""
+"""### [2] Load desired model
+
+**Description of global variables**
+
+* `kModelIdx` HuggingFace's ID for desired LLM model hosted in their platform.
+"""
 
 kModelIdx = "openai-community/gpt2-medium"
 
@@ -82,7 +87,7 @@ kModelIdx = "google/gemma-4-E2B"
 
 """### [3] Load relevant "emotion" vector data
 
-Description of global variables
+**Description of global variables**
 
 * `neutralPrompts` list of 50 entries depicting *neutral* prompts, which consist of statements and orders.
 * `emotionLabels` list of desired emotions for vector extraction.
@@ -166,6 +171,8 @@ storyTopics = [
     "a shopkeeper closing for the day",
 ]
 
+"""If you wish, you can load the 20-emotions variant of `emotionLabels`. Plots and Emotion Vector Generation will vary."""
+
 # Emotion word list from rain1955/emotion-vector-replication
 emotionLabels = [
   "happy", "sad", "angry", "afraid", "calm",
@@ -174,7 +181,27 @@ emotionLabels = [
   "anxious", "confused", "disgusted", "lonely", "hopeful"
 ]
 
-"""### [4] Load relevant helper functions"""
+"""### [4] Load relevant helper functions
+
+**Description of `initialize()` function**
+
+* Initializes previously-described global variables of the Colab environment.
+
+**Description of `freeVRAM()` function**
+
+* If using an NVIDIA GPU, clears and frees cached VRAM. Useful to minimize VRAM footprint, which spikes during emotion vector usage.
+
+**Description of `normalizeVector()` function**
+
+* *@input:* `vector` a PyTorch vector.
+* Helper function wrapper to normalize a vector to unit length.
+
+**Description of `computeCosineSimilarity()` function**
+
+* *@input:* `vectorA` a PyTorch vector.
+* *@input:* `vectorB` a PyTorch vector.
+* Helper function wrapper to calculate cosine similarity.
+"""
 
 def initialize():
     global gAccelerator, gDevice, gTokenizer, gModel, gEmotionLibrary, gNeutralVectors, gTargetLayer, gStoryFile
@@ -192,7 +219,7 @@ def initialize():
     gModel.eval()
     gEmotionLibrary = {}
     gNeutralVectors = []
-    gTargetLayer = 24 # Layer 24 has consistent emotion classifications
+    gTargetLayer = 0
     gStoryFile = os.path.join(kOutDir, "emotion_stories.json")
     print(f"[INIT] Model loaded. Target Layer: {gTargetLayer} | Device: {gDevice}")
 
@@ -210,6 +237,11 @@ def computeCosineSimilarity(vectorA, vectorB):
     global gAccelerator, gDevice, gTokenizer, gModel, gEmotionLibrary, gNeutralVectors, gTargetLayer, gStoryFile
     return F.cosine_similarity(vectorA.unsqueeze(0), vectorB.unsqueeze(0)).item()
 
+"""**Description of `getExistingKeys()` function**
+
+* Helper function wrapper unique JSON (emotion, topic, sample) tuples on disk.
+"""
+
 def getExistingKeys() -> set:
     global gAccelerator, gDevice, gTokenizer, gModel, gEmotionLibrary, gNeutralVectors, gTargetLayer, gStoryFile
     """Checkpointing: Identifies unique (emotion, topic, sample) tuples on disk."""
@@ -222,6 +254,13 @@ def getExistingKeys() -> set:
                     existingKeys.add(f"{entryData['emotion']}_{entryData['topic_idx']}_{entryData['story_idx']}")
                 except: continue
     return existingKeys
+
+"""**Description of `generateVignettes()` function**
+
+* *@input:* `promptInput` text prompt to generate a story from.
+* *@input:* `nSamples` number of samples to generate. *Sets to 1 by default.*
+* Helper function wrapper to normalize a vector to unit length.
+"""
 
 def generateVignettes(promptInput: str, nSamples: int = 1, category: str = "Unset") -> List[str]:
     global gAccelerator, gDevice, gTokenizer, gModel, gEmotionLibrary, gNeutralVectors, gTargetLayer, gStoryFile
@@ -236,6 +275,14 @@ def generateVignettes(promptInput: str, nSamples: int = 1, category: str = "Unse
         )
         vignetteList.append(gTokenizer.decode(outputTokens[0][inputLength:], skip_special_tokens=True).strip())
     return vignetteList
+
+"""**Description of `generateStructuredStories()` function**
+
+* *@input:* `emotions` list of emotions to generate expected stories from.
+* *@input:* `topics` list of topics to based our story content from.
+* *@input:* `samplesPerPair` number of samples to generate from (emotion, topic).
+* Generates desired stories with the list of emotions and topics, and stores them into disk with a JSON file.
+"""
 
 def generateStructuredStories(emotions: List[str], topics: List[str], samplesPerPair: int = 5):
     global gAccelerator, gDevice, gTokenizer, gModel, gEmotionLibrary, gNeutralVectors, gTargetLayer, gStoryFile
@@ -262,6 +309,20 @@ def generateStructuredStories(emotions: List[str], topics: List[str], samplesPer
                     existingKeys.add(uniqueKey)
             freeVRAM()
 
+"""**Description of `getHiddenRepresentation()` function**
+
+* *@input:* `promptList` list of text prompts to be used for hidden rerpesentation (activation) extraction.
+* *@input:* `layerIndex` number representing the layer where activation extraction must happen.
+* *@input:* `lastNTokens` number of last tokens where we'll extract activation from.
+* Obtains the hidden state representation of the text prompt at a given layer.
+
+**Description of `getBatchActivations()` function**
+
+* *@input:* `textList` list of text prompts to be used for hidden representation (activation) extraction.
+* *@input:* `layerIndex` number representing the layer where activation extraction must happen.
+* Function wrapper of `getHiddenRepresentation()`.
+"""
+
 def getHiddenRepresentation(promptList: List[str], layerIndex: int, lastNTokens: int = 50) -> torch.Tensor:
     global gAccelerator, gDevice, gTokenizer, gModel, gEmotionLibrary, gNeutralVectors, gTargetLayer, gStoryFile
 
@@ -286,6 +347,13 @@ def getHiddenRepresentation(promptList: List[str], layerIndex: int, lastNTokens:
 def captureBatchActivations(textList: List[str], layerIndex: int) -> torch.Tensor:
     global gAccelerator, gDevice, gTokenizer, gModel, gEmotionLibrary, gNeutralVectors, gTargetLayer, gStoryFile
     return getHiddenRepresentation(textList, layerIndex)
+
+"""**Description of `extractEmotionVector()` function**
+
+* *@input:* `emotionLabel` name of the desired emotion to extract its vector representation.
+* *@input:* `neutralTexts` list of statements and orders used as noise.
+* Extracts the emotion stories from a JSON file, captures the hidden activations representative of the stories, and saves the vectors into our runtime emotion library.
+"""
 
 # Redefine extractEmotionVector with batching and JSONL parsing fix
 def extractEmotionVector(emotionLabel: str, neutralTexts: List[str]):
@@ -334,6 +402,12 @@ def extractEmotionVector(emotionLabel: str, neutralTexts: List[str]):
 
     return None
 
+"""**Description of `normalizeEmotionVectors()` function**
+
+
+* Normalizes emotion vectors and neutral vectors, and updates emotion vectors by subtracting the global mean of the emotions and the neutral.
+"""
+
 def normalizeEmotionVectors():
     global gEmotionLibrary, gNeutralVectors, gDevice
 
@@ -361,10 +435,23 @@ def normalizeEmotionVectors():
 
     print("[FINALIZE] Emotion vectors centered + normalized.")
 
+"""**Description of `extractNeutralVectors()` function**
+
+
+* Special wrapper of `extractEmotionVectors()` for neutral prompts.
+"""
+
 def extractNeutralVectors(neutralTexts: List[str]):
     global gAccelerator, gDevice, gTokenizer, gModel, gEmotionLibrary, gNeutralVectors, gTargetLayer, gStoryFile
     print(f"[EXTRACT] Neutral | Layer: {gTargetLayer}")
     gNeutralVectors = captureBatchActivations(neutralTexts, gTargetLayer)
+
+"""**Description of `printEmotionLogits()` function**
+
+* *@input:* `emotionLabel` name of the desired emotion to print its top logit tokens
+* *@input:* `topK` number of clusters to extract logits from. *Defaults to 10*.
+* Prints the most relevant tokens related to an emotion vector. We standardize the logit lens to extract them from a Bell Curve distribution.
+"""
 
 # @title
 def printEmotionLogits(emotionLabel: str, topK: int = 10):
@@ -408,6 +495,13 @@ def printEmotionLogits(emotionLabel: str, topK: int = 10):
 
     return None
 
+"""**Description of `get_layer_module()` function**
+
+* *@input:* `model` name of the desired emotion to print its top logit tokens
+* *@input:* `target_idx` number of the desired target layer.
+* Obtains the vector layer representation expected of Gemma 4 and GPT 2 models.
+"""
+
 # --- PHASE 1: DYNAMIC LAYER IDENTIFICATION ---
 def get_layer_module(model, target_idx):
     # Path A: Standard Gemma/Llama nesting
@@ -425,6 +519,14 @@ def get_layer_module(model, target_idx):
             return module[target_idx]
 
     return None
+
+"""**Description of `performSingularEmotionProbeSteering()` function**
+
+* *@input:* `emotionVector` PyTorch vector of the desired emotion.
+* *@input:* `inputPrompt` text prompt that must be provided to the model.
+* *@input:* `steeringValue` scalar value for steering strength.
+* Generates a text prompt altered by a singular emotion vector scaled by steering strength.
+"""
 
 def performSingularEmotionProbeSteering(emotionVector, inputPrompt, steeringValue):
     global gModel, gTokenizer, gTargetLayer, gDevice
@@ -479,6 +581,13 @@ def performSingularEmotionProbeSteering(emotionVector, inputPrompt, steeringValu
     #print(f"\n[STEERING] Value: {steeringValue} | Prompt: {inputPrompt[:50]}...")
     #print(f"Output:\n{outputText}")
     return outputText
+
+"""**Description of `superviseSingularEmotionProbeActivation()` function**
+
+* *@input:* `emotionVector` PyTorch vector of the desired emotion.
+* *@input:* `inputPrompt` text prompt that must be provided to the model.
+* Computes the cosine similarity score of the emotion vector and the provided text prompt.
+"""
 
 def superviseSingularEmotionProbeActivation(emotionVector, inputPrompt):
     """
@@ -544,6 +653,14 @@ def superviseSingularEmotionProbeActivation(emotionVector, inputPrompt):
     finally:
         hookHandle.remove()
 
+"""**Description of `saveIndividualEmotionVectors()` function**
+
+**[IMPORTANT]** Work-In-Progress. Review the name convention of the file
+
+* *@input:* `folderName` name of the folder to save the emotion vectors. *Defaults to `emotion_vectors`*.
+* Stores the computed emotion vectors as float32 into the desired folder.
+"""
+
 # @title
 def saveIndividualEmotionVectors(folderName: str = "emotion_vectors"):
     global gAccelerator, gDevice, gTokenizer, gModel, gEmotionLibrary, gNeutralVectors, gTargetLayer, gStoryFile
@@ -559,6 +676,14 @@ def saveIndividualEmotionVectors(folderName: str = "emotion_vectors"):
         torch.save(vectorTensor.cpu().float(), filePath)
 
     print(f"[DISK] Exported {len(gEmotionLibrary)} vectors to {exportPath}")
+
+"""**Description of `saveNeutralVectors()` function**
+
+**[IMPORTANT]** Work-In-Progress. Review the name convention of the file
+
+* *@input:* `folderName` name of the folder to save the emotion vectors. *Defaults to `emotion_vectors`*.
+* Stores the computed neutral vectors as float32 into the desired folder.
+"""
 
 # @title
 def saveNeutralVectors(folderName: str = "emotion_vectors"):
@@ -578,6 +703,15 @@ def saveNeutralVectors(folderName: str = "emotion_vectors"):
     torch.save(gNeutralVectors.cpu().float(), filePath)
     print(f"[DISK] Neutral vectors saved to {filePath}. Download this for your local backup.")
 
+"""**Description of `savePlotlyStatic()` function**
+
+* *@input:* `fig` Plotly plot object to save as an image.
+* *@input:* `fileName` name for the plot image.
+* *@input:* `width` width for the plot image.
+* *@input:* `height` height for the plot image.
+* Stores the generated plot as an image into disk, and downloads it to our local machine.
+"""
+
 def savePlotlyStatic(fig, fileName: str, width: int, height: int):
     global gAccelerator, gDevice, gTokenizer, gModel, gEmotionLibrary, gNeutralVectors, gTargetLayer, gStoryFile
     """Saves a high-resolution static image suitable for publication."""
@@ -589,6 +723,15 @@ def savePlotlyStatic(fig, fileName: str, width: int, height: int):
     # [2] Download immediately to local machine
     files.download(exportPath)
     print(f"[DISK] Static publication-grade image saved to {exportPath}")
+
+"""**Description of `loadSpecificEmotionVector()` function**
+
+**[IMPORTANT]** Work-In-Progress. Review the name convention of the file
+
+* *@input:* `emotionLabel` name of the emotion vector to load.
+* *@input:* `folderName` name of the folder where the vectors are saved. *Defaults to `emotion_vectors`*.
+* Loads the expected emotion vector into runtime as bfloat16.
+"""
 
 # @title
 def loadSpecificEmotionVector(emotionLabel: str, folderName: str = "emotion_vectors"):
@@ -603,6 +746,14 @@ def loadSpecificEmotionVector(emotionLabel: str, folderName: str = "emotion_vect
     else:
         print(f"[WARN] Vector '{emotionLabel}' not found at {filePath}")
 
+"""**Description of `loadNeutralVectors()` function**
+
+**[IMPORTANT]** Work-In-Progress. Review the name convention of the file
+
+* *@input:* `folderName` name of the folder where the vectors are saved. *Defaults to `emotion_vectors`*.
+* Loads the expected neutral vector into runtime as bfloat16.
+"""
+
 # @title
 def loadNeutralVectors(folderName: str = "emotion_vectors"):
     global gAccelerator, gDevice, gTokenizer, gModel, gEmotionLibrary, gNeutralVectors, gTargetLayer, gStoryFile
@@ -614,6 +765,14 @@ def loadNeutralVectors(folderName: str = "emotion_vectors"):
         print(f"[DISK] Neutral vectors restored to {gDevice}.")
     else:
         print(f"[WARN] No neutral checkpoint found at {exportPath}")
+
+"""**Description of `downloadAllVectorsToPC()` function**
+
+**[IMPORTANT]** Work-In-Progress. Review the name convention of the file
+
+* *@input:* `folderName` name of the folder where the vectors are saved. *Defaults to `emotion_vectors`*.
+* Downloads all vectors to our local machine as a ZIP file.
+"""
 
 # @title
 def downloadAllVectorsToPC(folderName: str = "emotion_vectors"):
@@ -638,6 +797,11 @@ def downloadAllVectorsToPC(folderName: str = "emotion_vectors"):
 
     # 3. Trigger Download to PC
     files.download(zipPath)
+
+"""**Description of `visualizePCAManifold()` function**
+
+* Plots the PCA projections of all emotion vectors as 2 principal components. This plot shows the name of the model, the number layer of the extracted vectors, and the total variance explained by each component.
+"""
 
 # @title
 def visualizePCAManifold():
@@ -703,6 +867,11 @@ def visualizePCAManifold():
 
     return fig
 
+"""**Description of `getValenceSortedLabels()` function**
+
+* Sorts the emotion labels by their cosine similarity, which is anchored on the calculation from the normalized difference between the "happy" and "sad" vectors. This is roughly equivalent to Valence.
+"""
+
 # @title
 def getValenceSortedLabels():
     valence_axis = normalizeVector(
@@ -716,6 +885,11 @@ def getValenceSortedLabels():
 
     scores.sort(key=lambda x: x[1])  # negative → positive
     return [k for k, _ in scores]
+
+"""**Description of `plotCosineSimilarityHeatmapPlotlyAnnotated()` function**
+
+* Plots a heatmap from the cosine similarity results of each of the emotion vectors calculated.
+"""
 
 # @title
 def plotCosineSimilarityHeatmapPlotlyAnnotated():
