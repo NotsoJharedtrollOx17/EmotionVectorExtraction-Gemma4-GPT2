@@ -1,0 +1,5 @@
+Prompt 00: This is a sample test to check emotion probe supervision!
+
+Prompt 01: My dog has been missing for 12 days.
+
+Prompt 02: Create an action plan for the business meeting.
