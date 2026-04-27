@@ -54,6 +54,7 @@ import torch
 import torch.nn.functional as F
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 import plotly.express as px
 from typing import List, Dict
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -854,6 +855,14 @@ def saveNeutralVectors():
 * *@input:* `width` width for the plot image.
 * *@input:* `height` height for the plot image.
 * Stores the generated plot as an image into disk, and downloads it to our local machine.
+
+**Description of `saveMatplotlibFigure()` function**
+
+* *@input:* `fig` Plotly plot object to save as an image.
+* *@input:* `fileName` name for the plot image.
+* *@input:* `width` width for the plot image.
+* *@input:* `height` height for the plot image.
+* Stores the generated plot as an image into disk, and downloads it to our local machine.
 """
 
 def savePlotlyStatic(fig, fileName: str, width: int, height: int):
@@ -867,6 +876,14 @@ def savePlotlyStatic(fig, fileName: str, width: int, height: int):
     # [2] Download immediately to local machine
     files.download(exportPath)
     print(f"[DISK] Static publication-grade image saved to {exportPath}")
+
+def saveMatplotlibStatic(fig, fileName: str, dpi: int = 300):
+    exportPath = os.path.join(kOutDir, fileName)
+
+    fig.savefig(exportPath, dpi=dpi, bbox_inches="tight")
+
+    files.download(exportPath)
+    print(f"[DISK] Saved Matplotlib figure → {exportPath}")
 
 """**Description of `loadSpecificEmotionVector()` function**
 
@@ -939,6 +956,33 @@ def downloadAllVectorsToPC():
 
     print(f"[DISK] Archive ready: {zipPath}")
     files.download(zipPath)
+
+"""**Description of `plotDeltaLogProbLines()` function**
+
+* Plots the PCA projections of all emotion vectors as 2 principal components. This plot shows the name of the model, the number layer of the extracted vectors, and the total variance explained by each component.
+"""
+
+def plotDeltaLogProbLines(deltaLogDict, selectedTokens, width=8, height=5, dpi=150):
+    steeringValues = sorted(deltaLogDict.keys())
+
+    fig, ax = plt.subplots(figsize=(8, 5))
+
+    for token in selectedTokens:
+        values = [deltaLogDict[s][token] for s in steeringValues]
+        ax.plot(steeringValues, values, label=token)
+
+    # Reference line at zero
+    ax.axhline(0)
+
+    # Grid lines (clean and readable)
+    ax.grid(True, which='both', linestyle='--', linewidth=0.5, alpha=0.7)
+
+    ax.set_xlabel("Steering Value")
+    ax.set_ylabel("Δ Log-Probability")
+    ax.set_title(f"{kModelIdx} Steered Token Response Curves — Layer {gTargetLayer}")
+    ax.legend()
+
+    return fig
 
 """**Description of `visualizePCAManifold()` function**
 
@@ -1173,12 +1217,26 @@ emotionTokenSets = {
     ]
 }
 
-runEmotionLogProbExperiment(
+logProbData = runEmotionLogProbExperiment(
     prompt="My dog has been missing for 12 days.",
     emotionLabel="sad",
     emotionVector=gEmotionLibrary["sad"],
     targetTokens=emotionTokenSets["sad"]
 )
+
+fig = plotDeltaLogProbLines(logProbData, emotionTokenSets["sad"])
+
+# [i] abbreviate the modelName for the plot filename
+modelName = ""
+if kModelIdx == "openai-community/gpt2-medium":
+    modelName = "GPT2Medium"
+elif kModelIdx == "google/gemma-4-E2B":
+    modelName = "Gemma4E2B"
+
+# [ii] calculate the current number of emotions used
+numberEmotions = len(emotionLabels)
+
+saveMatplotlibStatic(fig, fileName=f"DeltaLogProbLines{modelName}-{numberEmotions}emotions-layer{gTargetLayer}-sad.png")
 
 # [6] Generate the 4-quadrant manifold with Valence/Arousal rotation logic
 fig = visualizePCAManifold()
