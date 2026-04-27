@@ -1,0 +1,794 @@
+{
+  "calm": {
+    "tokens": [
+      " refinement",
+      " gradual",
+      " incremental",
+      " simplicity",
+      " harmony"
+    ],
+    "data": {
+      "-0.5": {
+        " refinement": -7.875,
+        " gradual": -4.875,
+        " incremental": -4.375,
+        " simplicity": -4.875,
+        " harmony": -4.375
+      },
+      "-0.4": {
+        " refinement": -7.375,
+        " gradual": -4.375,
+        " incremental": -3.875,
+        " simplicity": -4.375,
+        " harmony": -3.875
+      },
+      "-0.3": {
+        " refinement": -6.25,
+        " gradual": -4.25,
+        " incremental": -3.25,
+        " simplicity": -3.75,
+        " harmony": -3.25
+      },
+      "-0.2": {
+        " refinement": -4.25,
+        " gradual": -2.75,
+        " incremental": -2.25,
+        " simplicity": -2.75,
+        " harmony": -2.25
+      },
+      "-0.1": {
+        " refinement": -2.625,
+        " gradual": -1.625,
+        " incremental": -1.625,
+        " simplicity": -1.625,
+        " harmony": -1.625
+      },
+      "0.0": {
+        " refinement": 0.0,
+        " gradual": 0.0,
+        " incremental": 0.0,
+        " simplicity": 0.0,
+        " harmony": 0.0
+      },
+      "0.1": {
+        " refinement": 2.625,
+        " gradual": 1.625,
+        " incremental": 1.625,
+        " simplicity": 0.625,
+        " harmony": 1.625
+      },
+      "0.2": {
+        " refinement": 4.375,
+        " gradual": 4.375,
+        " incremental": 3.375,
+        " simplicity": 2.375,
+        " harmony": 3.375
+      },
+      "0.3": {
+        " refinement": 6.875,
+        " gradual": 6.375,
+        " incremental": 5.375,
+        " simplicity": 4.375,
+        " harmony": 5.875
+      },
+      "0.4": {
+        " refinement": 8.75,
+        " gradual": 8.25,
+        " incremental": 7.25,
+        " simplicity": 5.75,
+        " harmony": 7.25
+      },
+      "0.5": {
+        " refinement": 10.6875,
+        " gradual": 10.1875,
+        " incremental": 8.6875,
+        " simplicity": 7.1875,
+        " harmony": 9.1875
+      }
+    }
+  },
+  "loving": {
+    "tokens": [
+      " kindness",
+      " friendship",
+      " affection",
+      " gracious",
+      " Loving"
+    ],
+    "data": {
+      "-0.5": {
+        " kindness": -4.25,
+        " friendship": -4.75,
+        " affection": -5.25,
+        " gracious": -4.25,
+        " Loving": -7.3125
+      },
+      "-0.4": {
+        " kindness": -3.625,
+        " friendship": -4.125,
+        " affection": -4.625,
+        " gracious": -3.625,
+        " Loving": -6.1875
+      },
+      "-0.3": {
+        " kindness": -2.75,
+        " friendship": -3.25,
+        " affection": -3.75,
+        " gracious": -2.75,
+        " Loving": -4.8125
+      },
+      "-0.2": {
+        " kindness": -2.125,
+        " friendship": -2.625,
+        " affection": -2.625,
+        " gracious": -2.125,
+        " Loving": -3.6875
+      },
+      "-0.1": {
+        " kindness": -0.75,
+        " friendship": -1.75,
+        " affection": -1.75,
+        " gracious": -1.75,
+        " Loving": -1.8125
+      },
+      "0.0": {
+        " kindness": 0.0,
+        " friendship": 0.0,
+        " affection": 0.0,
+        " gracious": 0.0,
+        " Loving": 0.0
+      },
+      "0.1": {
+        " kindness": 2.625,
+        " friendship": 2.625,
+        " affection": 2.625,
+        " gracious": 1.625,
+        " Loving": 2.0625
+      },
+      "0.2": {
+        " kindness": 4.875,
+        " friendship": 4.375,
+        " affection": 5.375,
+        " gracious": 3.375,
+        " Loving": 3.8125
+      },
+      "0.3": {
+        " kindness": 7.25,
+        " friendship": 6.8125,
+        " affection": 7.8125,
+        " gracious": 5.75,
+        " Loving": 5.25
+      },
+      "0.4": {
+        " kindness": 8.75,
+        " friendship": 7.75,
+        " affection": 9.25,
+        " gracious": 6.75,
+        " Loving": 6.1875
+      },
+      "0.5": {
+        " kindness": 9.6875,
+        " friendship": 8.6875,
+        " affection": 10.6875,
+        " gracious": 8.25,
+        " Loving": 7.125
+      }
+    }
+  },
+  "sad": {
+    "tokens": [
+      " dwell",
+      " darkness",
+      " emptiness",
+      " tarn",
+      " lonely"
+    ],
+    "data": {
+      "-0.5": {
+        " dwell": -1.5,
+        " darkness": -0.5,
+        " emptiness": -1.5,
+        " tarn": 1.0,
+        " lonely": -2.0
+      },
+      "-0.4": {
+        " dwell": -1.25,
+        " darkness": -0.75,
+        " emptiness": -1.25,
+        " tarn": 0.75,
+        " lonely": -1.75
+      },
+      "-0.3": {
+        " dwell": -0.75,
+        " darkness": -1.25,
+        " emptiness": -1.25,
+        " tarn": 0.25,
+        " lonely": -1.25
+      },
+      "-0.2": {
+        " dwell": -0.625,
+        " darkness": -1.125,
+        " emptiness": -1.125,
+        " tarn": -0.125,
+        " lonely": -1.125
+      },
+      "-0.1": {
+        " dwell": -0.375,
+        " darkness": -0.375,
+        " emptiness": -0.375,
+        " tarn": -0.375,
+        " lonely": -0.375
+      },
+      "0.0": {
+        " dwell": 0.0,
+        " darkness": 0.0,
+        " emptiness": 0.0,
+        " tarn": 0.0,
+        " lonely": 0.0
+      },
+      "0.1": {
+        " dwell": -0.125,
+        " darkness": 0.875,
+        " emptiness": 0.875,
+        " tarn": -0.125,
+        " lonely": 0.875
+      },
+      "0.2": {
+        " dwell": 0.0,
+        " darkness": 2.0,
+        " emptiness": 2.5,
+        " tarn": -0.5,
+        " lonely": 2.5
+      },
+      "0.3": {
+        " dwell": 1.0,
+        " darkness": 3.5,
+        " emptiness": 3.5,
+        " tarn": 0.0,
+        " lonely": 3.5
+      },
+      "0.4": {
+        " dwell": 1.625,
+        " darkness": 4.625,
+        " emptiness": 4.625,
+        " tarn": 0.125,
+        " lonely": 4.125
+      },
+      "0.5": {
+        " dwell": 2.5,
+        " darkness": 6.5,
+        " emptiness": 6.0,
+        " tarn": 1.0,
+        " lonely": 6.0
+      }
+    }
+  },
+  "guilty": {
+    "tokens": [
+      " Worse",
+      " unfairly",
+      "Interstitial",
+      " worse",
+      " disrespect"
+    ],
+    "data": {
+      "-0.5": {
+        " Worse": -13.6875,
+        " unfairly": -7.625,
+        "Interstitial": -10.625,
+        " worse": -6.625,
+        " disrespect": -5.625
+      },
+      "-0.4": {
+        " Worse": -12.0625,
+        " unfairly": -7.5,
+        "Interstitial": -9.5,
+        " worse": -6.5,
+        " disrespect": -5.5
+      },
+      "-0.3": {
+        " Worse": -9.4375,
+        " unfairly": -5.875,
+        "Interstitial": -6.875,
+        " worse": -4.875,
+        " disrespect": -3.875
+      },
+      "-0.2": {
+        " Worse": -6.0625,
+        " unfairly": -3.5,
+        "Interstitial": -3.5,
+        " worse": -3.5,
+        " disrespect": -2.5
+      },
+      "-0.1": {
+        " Worse": -2.8125,
+        " unfairly": -1.25,
+        "Interstitial": -1.25,
+        " worse": -1.25,
+        " disrespect": -1.25
+      },
+      "0.0": {
+        " Worse": 0.0,
+        " unfairly": 0.0,
+        "Interstitial": 0.0,
+        " worse": 0.0,
+        " disrespect": 0.0
+      },
+      "0.1": {
+        " Worse": 2.5625,
+        " unfairly": 1.625,
+        "Interstitial": 1.625,
+        " worse": 2.625,
+        " disrespect": 1.625
+      },
+      "0.2": {
+        " Worse": 5.125,
+        " unfairly": 3.75,
+        "Interstitial": 2.25,
+        " worse": 4.25,
+        " disrespect": 2.75
+      },
+      "0.3": {
+        " Worse": 6.59375,
+        " unfairly": 5.125,
+        "Interstitial": 2.625,
+        " worse": 5.625,
+        " disrespect": 3.625
+      },
+      "0.4": {
+        " Worse": 7.625,
+        " unfairly": 6.625,
+        "Interstitial": 3.125,
+        " worse": 7.1875,
+        " disrespect": 4.625
+      },
+      "0.5": {
+        " Worse": 7.84375,
+        " unfairly": 7.875,
+        "Interstitial": 3.875,
+        " worse": 7.9375,
+        " disrespect": 5.375
+      }
+    }
+  },
+  "desperate": {
+    "tokens": [
+      " frantically",
+      " acron",
+      " tries",
+      " complains",
+      " inco"
+    ],
+    "data": {
+      "-0.5": {
+        " frantically": -6.75,
+        " acron": -7.25,
+        " tries": -8.25,
+        " complains": -8.25,
+        " inco": -7.25
+      },
+      "-0.4": {
+        " frantically": -6.0,
+        " acron": -6.5,
+        " tries": -7.0,
+        " complains": -7.0,
+        " inco": -6.5
+      },
+      "-0.3": {
+        " frantically": -4.875,
+        " acron": -5.375,
+        " tries": -4.875,
+        " complains": -5.375,
+        " inco": -5.375
+      },
+      "-0.2": {
+        " frantically": -4.25,
+        " acron": -4.25,
+        " tries": -3.25,
+        " complains": -3.25,
+        " inco": -4.25
+      },
+      "-0.1": {
+        " frantically": -1.875,
+        " acron": -1.875,
+        " tries": -0.875,
+        " complains": -1.875,
+        " inco": -1.875
+      },
+      "0.0": {
+        " frantically": 0.0,
+        " acron": 0.0,
+        " tries": 0.0,
+        " complains": 0.0,
+        " inco": 0.0
+      },
+      "0.1": {
+        " frantically": 1.625,
+        " acron": 2.125,
+        " tries": 1.625,
+        " complains": 2.125,
+        " inco": 2.125
+      },
+      "0.2": {
+        " frantically": 3.75,
+        " acron": 3.75,
+        " tries": 3.25,
+        " complains": 3.25,
+        " inco": 4.25
+      },
+      "0.3": {
+        " frantically": 5.3125,
+        " acron": 5.375,
+        " tries": 4.3125,
+        " complains": 4.875,
+        " inco": 5.8125
+      },
+      "0.4": {
+        " frantically": 7.0625,
+        " acron": 7.125,
+        " tries": 6.0625,
+        " complains": 6.125,
+        " inco": 7.5625
+      },
+      "0.5": {
+        " frantically": 8.1875,
+        " acron": 8.1875,
+        " tries": 6.6875,
+        " complains": 6.6875,
+        " inco": 8.1875
+      }
+    }
+  },
+  "afraid": {
+    "tokens": [
+      " violently",
+      " vom",
+      " invol",
+      " Worse",
+      " panic"
+    ],
+    "data": {
+      "-0.5": {
+        " violently": -5.125,
+        " vom": -8.625,
+        " invol": -4.125,
+        " Worse": -7.6875,
+        " panic": -6.625
+      },
+      "-0.4": {
+        " violently": -4.625,
+        " vom": -7.125,
+        " invol": -3.625,
+        " Worse": -6.6875,
+        " panic": -6.125
+      },
+      "-0.3": {
+        " violently": -4.25,
+        " vom": -6.25,
+        " invol": -3.75,
+        " Worse": -5.8125,
+        " panic": -5.25
+      },
+      "-0.2": {
+        " violently": -3.0,
+        " vom": -4.5,
+        " invol": -3.0,
+        " Worse": -4.0625,
+        " panic": -4.0
+      },
+      "-0.1": {
+        " violently": -1.625,
+        " vom": -2.625,
+        " invol": -1.625,
+        " Worse": -2.1875,
+        " panic": -2.625
+      },
+      "0.0": {
+        " violently": 0.0,
+        " vom": 0.0,
+        " invol": 0.0,
+        " Worse": 0.0,
+        " panic": 0.0
+      },
+      "0.1": {
+        " violently": 2.0,
+        " vom": 3.0,
+        " invol": 2.0,
+        " Worse": 1.9375,
+        " panic": 3.0
+      },
+      "0.2": {
+        " violently": 4.5,
+        " vom": 5.0,
+        " invol": 3.5,
+        " Worse": 4.0,
+        " panic": 4.5
+      },
+      "0.3": {
+        " violently": 6.75,
+        " vom": 7.1875,
+        " invol": 5.25,
+        " Worse": 5.125,
+        " panic": 6.1875
+      },
+      "0.4": {
+        " violently": 8.75,
+        " vom": 8.75,
+        " invol": 6.25,
+        " Worse": 6.1875,
+        " panic": 6.75
+      },
+      "0.5": {
+        " violently": 10.0,
+        " vom": 9.5,
+        " invol": 7.5,
+        " Worse": 6.46875,
+        " panic": 7.5
+      }
+    }
+  },
+  "angry": {
+    "tokens": [
+      " fists",
+      " angrily",
+      " retaliation",
+      " violently",
+      " teeth"
+    ],
+    "data": {
+      "-0.5": {
+        " fists": -8.375,
+        " angrily": -9.75,
+        " retaliation": -9.875,
+        " violently": -8.875,
+        " teeth": -10.375
+      },
+      "-0.4": {
+        " fists": -7.875,
+        " angrily": -8.875,
+        " retaliation": -8.875,
+        " violently": -8.875,
+        " teeth": -8.875
+      },
+      "-0.3": {
+        " fists": -6.875,
+        " angrily": -6.875,
+        " retaliation": -6.875,
+        " violently": -6.875,
+        " teeth": -7.875
+      },
+      "-0.2": {
+        " fists": -4.375,
+        " angrily": -5.375,
+        " retaliation": -5.375,
+        " violently": -5.375,
+        " teeth": -5.375
+      },
+      "-0.1": {
+        " fists": -1.75,
+        " angrily": -2.75,
+        " retaliation": -2.75,
+        " violently": -2.75,
+        " teeth": -3.75
+      },
+      "0.0": {
+        " fists": 0.0,
+        " angrily": 0.0,
+        " retaliation": 0.0,
+        " violently": 0.0,
+        " teeth": 0.0
+      },
+      "0.1": {
+        " fists": 3.25,
+        " angrily": 2.75,
+        " retaliation": 2.75,
+        " violently": 3.25,
+        " teeth": 2.75
+      },
+      "0.2": {
+        " fists": 5.25,
+        " angrily": 4.75,
+        " retaliation": 5.25,
+        " violently": 6.25,
+        " teeth": 5.25
+      },
+      "0.3": {
+        " fists": 7.75,
+        " angrily": 6.8125,
+        " retaliation": 7.3125,
+        " violently": 8.8125,
+        " teeth": 7.3125
+      },
+      "0.4": {
+        " fists": 9.4375,
+        " angrily": 7.9375,
+        " retaliation": 8.9375,
+        " violently": 10.4375,
+        " teeth": 9.9375
+      },
+      "0.5": {
+        " fists": 10.4375,
+        " angrily": 8.9375,
+        " retaliation": 10.1875,
+        " violently": 11.9375,
+        " teeth": 11.4375
+      }
+    }
+  },
+  "surprised": {
+    "tokens": [
+      " stunned",
+      " Stun",
+      " Puzz",
+      " exclaim",
+      " shocked"
+    ],
+    "data": {
+      "-0.5": {
+        " stunned": -5.125,
+        " Stun": -6.1875,
+        " Puzz": -8.6875,
+        " exclaim": -4.125,
+        " shocked": -5.125
+      },
+      "-0.4": {
+        " stunned": -4.5,
+        " Stun": -5.5625,
+        " Puzz": -7.0625,
+        " exclaim": -4.0,
+        " shocked": -5.0
+      },
+      "-0.3": {
+        " stunned": -4.125,
+        " Stun": -4.1875,
+        " Puzz": -5.6875,
+        " exclaim": -3.625,
+        " shocked": -4.625
+      },
+      "-0.2": {
+        " stunned": -3.25,
+        " Stun": -3.3125,
+        " Puzz": -3.8125,
+        " exclaim": -3.25,
+        " shocked": -3.25
+      },
+      "-0.1": {
+        " stunned": -1.125,
+        " Stun": -1.75,
+        " Puzz": -1.6875,
+        " exclaim": -2.125,
+        " shocked": -2.125
+      },
+      "0.0": {
+        " stunned": 0.0,
+        " Stun": 0.0,
+        " Puzz": 0.0,
+        " exclaim": 0.0,
+        " shocked": 0.0
+      },
+      "0.1": {
+        " stunned": 1.625,
+        " Stun": 1.5625,
+        " Puzz": 2.5625,
+        " exclaim": 1.625,
+        " shocked": 1.625
+      },
+      "0.2": {
+        " stunned": 4.25,
+        " Stun": 3.6875,
+        " Puzz": 3.6875,
+        " exclaim": 3.75,
+        " shocked": 3.75
+      },
+      "0.3": {
+        " stunned": 6.75,
+        " Stun": 5.1875,
+        " Puzz": 4.6875,
+        " exclaim": 5.75,
+        " shocked": 5.75
+      },
+      "0.4": {
+        " stunned": 8.9375,
+        " Stun": 6.40625,
+        " Puzz": 5.875,
+        " exclaim": 7.4375,
+        " shocked": 7.9375
+      },
+      "0.5": {
+        " stunned": 10.5,
+        " Stun": 7.4375,
+        " Puzz": 6.4375,
+        " exclaim": 8.0,
+        " shocked": 10.0
+      }
+    }
+  },
+  "happy": {
+    "tokens": [
+      " joyful",
+      " joy",
+      " upl",
+      " vitality",
+      " euph"
+    ],
+    "data": {
+      "-0.5": {
+        " joyful": -9.125,
+        " joy": -9.125,
+        " upl": -7.125,
+        " vitality": -8.125,
+        " euph": -8.625
+      },
+      "-0.4": {
+        " joyful": -8.375,
+        " joy": -8.5,
+        " upl": -6.5,
+        " vitality": -7.875,
+        " euph": -7.875
+      },
+      "-0.3": {
+        " joyful": -7.625,
+        " joy": -7.125,
+        " upl": -6.125,
+        " vitality": -7.125,
+        " euph": -6.625
+      },
+      "-0.2": {
+        " joyful": -5.25,
+        " joy": -5.25,
+        " upl": -4.75,
+        " vitality": -5.75,
+        " euph": -4.75
+      },
+      "-0.1": {
+        " joyful": -2.875,
+        " joy": -2.875,
+        " upl": -2.875,
+        " vitality": -2.875,
+        " euph": -2.875
+      },
+      "0.0": {
+        " joyful": 0.0,
+        " joy": 0.0,
+        " upl": 0.0,
+        " vitality": 0.0,
+        " euph": 0.0
+      },
+      "0.1": {
+        " joyful": 3.0,
+        " joy": 3.0,
+        " upl": 2.0,
+        " vitality": 3.0,
+        " euph": 2.0
+      },
+      "0.2": {
+        " joyful": 6.5,
+        " joy": 6.0,
+        " upl": 4.0,
+        " vitality": 6.0,
+        " euph": 5.0
+      },
+      "0.3": {
+        " joyful": 9.0,
+        " joy": 8.5,
+        " upl": 6.0,
+        " vitality": 8.5,
+        " euph": 7.5
+      },
+      "0.4": {
+        " joyful": 11.375,
+        " joy": 10.375,
+        " upl": 7.375,
+        " vitality": 10.375,
+        " euph": 9.375
+      },
+      "0.5": {
+        " joyful": 12.9375,
+        " joy": 12.4375,
+        " upl": 8.4375,
+        " vitality": 12.4375,
+        " euph": 10.9375
+      }
+    }
+  }
+}

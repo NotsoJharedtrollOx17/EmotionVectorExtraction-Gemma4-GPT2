@@ -1,0 +1,1762 @@
+{
+  "happy": {
+    "tokens": [
+      " joyful",
+      " joy",
+      " euph",
+      " radiant",
+      " vitality"
+    ],
+    "data": {
+      "-0.5": {
+        " joyful": -10.625,
+        " joy": -11.125,
+        " euph": -10.625,
+        " radiant": -9.125,
+        " vitality": -9.125
+      },
+      "-0.4": {
+        " joyful": -9.75,
+        " joy": -9.75,
+        " euph": -9.75,
+        " radiant": -8.25,
+        " vitality": -8.75
+      },
+      "-0.3": {
+        " joyful": -7.875,
+        " joy": -7.875,
+        " euph": -7.875,
+        " radiant": -6.875,
+        " vitality": -7.375
+      },
+      "-0.2": {
+        " joyful": -5.875,
+        " joy": -5.375,
+        " euph": -5.875,
+        " radiant": -5.375,
+        " vitality": -5.375
+      },
+      "-0.1": {
+        " joyful": -3.25,
+        " joy": -2.75,
+        " euph": -3.25,
+        " radiant": -2.75,
+        " vitality": -2.75
+      },
+      "0.0": {
+        " joyful": 0.0,
+        " joy": 0.0,
+        " euph": 0.0,
+        " radiant": 0.0,
+        " vitality": 0.0
+      },
+      "0.1": {
+        " joyful": 2.5,
+        " joy": 2.0,
+        " euph": 2.5,
+        " radiant": 3.0,
+        " vitality": 2.5
+      },
+      "0.2": {
+        " joyful": 4.5625,
+        " joy": 3.5625,
+        " euph": 4.5625,
+        " radiant": 6.0625,
+        " vitality": 5.0625
+      },
+      "0.3": {
+        " joyful": 6.5,
+        " joy": 5.0,
+        " euph": 6.0,
+        " radiant": 9.0,
+        " vitality": 7.0
+      },
+      "0.4": {
+        " joyful": 8.3125,
+        " joy": 6.84375,
+        " euph": 7.8125,
+        " radiant": 11.8125,
+        " vitality": 8.8125
+      },
+      "0.5": {
+        " joyful": 9.6875,
+        " joy": 7.6875,
+        " euph": 8.6875,
+        " radiant": 13.6875,
+        " vitality": 10.6875
+      }
+    }
+  },
+  "sad": {
+    "tokens": [
+      " darkness",
+      " emptiness",
+      " numb",
+      " gloom",
+      " dwell"
+    ],
+    "data": {
+      "-0.5": {
+        " darkness": -4.375,
+        " emptiness": -5.875,
+        " numb": -2.875,
+        " gloom": -4.875,
+        " dwell": -3.375
+      },
+      "-0.4": {
+        " darkness": -4.0,
+        " emptiness": -5.5,
+        " numb": -2.5,
+        " gloom": -4.5,
+        " dwell": -2.5
+      },
+      "-0.3": {
+        " darkness": -3.0,
+        " emptiness": -4.5,
+        " numb": -2.0,
+        " gloom": -3.5,
+        " dwell": -2.0
+      },
+      "-0.2": {
+        " darkness": -2.375,
+        " emptiness": -3.375,
+        " numb": -1.375,
+        " gloom": -2.375,
+        " dwell": -1.375
+      },
+      "-0.1": {
+        " darkness": -1.625,
+        " emptiness": -1.625,
+        " numb": -0.625,
+        " gloom": -1.125,
+        " dwell": -0.625
+      },
+      "0.0": {
+        " darkness": 0.0,
+        " emptiness": 0.0,
+        " numb": 0.0,
+        " gloom": 0.0,
+        " dwell": 0.0
+      },
+      "0.1": {
+        " darkness": 1.75,
+        " emptiness": 2.3125,
+        " numb": 0.25,
+        " gloom": 1.25,
+        " dwell": 0.25
+      },
+      "0.2": {
+        " darkness": 3.9375,
+        " emptiness": 4.4375,
+        " numb": 1.375,
+        " gloom": 2.875,
+        " dwell": 0.9375
+      },
+      "0.3": {
+        " darkness": 5.875,
+        " emptiness": 5.875,
+        " numb": 1.875,
+        " gloom": 4.375,
+        " dwell": 1.875
+      },
+      "0.4": {
+        " darkness": 7.8125,
+        " emptiness": 7.3125,
+        " numb": 2.3125,
+        " gloom": 5.8125,
+        " dwell": 2.3125
+      },
+      "0.5": {
+        " darkness": 9.5625,
+        " emptiness": 8.8125,
+        " numb": 3.5625,
+        " gloom": 7.0625,
+        " dwell": 3.0625
+      }
+    }
+  },
+  "angry": {
+    "tokens": [
+      " fists",
+      " violently",
+      " angrily",
+      " claws",
+      " teeth"
+    ],
+    "data": {
+      "-0.5": {
+        " fists": -11.375,
+        " violently": -10.875,
+        " angrily": -11.875,
+        " claws": -9.375,
+        " teeth": -9.875
+      },
+      "-0.4": {
+        " fists": -10.125,
+        " violently": -9.625,
+        " angrily": -10.625,
+        " claws": -8.625,
+        " teeth": -8.625
+      },
+      "-0.3": {
+        " fists": -8.5,
+        " violently": -8.0,
+        " angrily": -8.5,
+        " claws": -7.0,
+        " teeth": -7.5
+      },
+      "-0.2": {
+        " fists": -6.125,
+        " violently": -6.125,
+        " angrily": -5.625,
+        " claws": -5.125,
+        " teeth": -5.125
+      },
+      "-0.1": {
+        " fists": -3.375,
+        " violently": -3.375,
+        " angrily": -2.875,
+        " claws": -2.875,
+        " teeth": -2.875
+      },
+      "0.0": {
+        " fists": 0.0,
+        " violently": 0.0,
+        " angrily": 0.0,
+        " claws": 0.0,
+        " teeth": 0.0
+      },
+      "0.1": {
+        " fists": 2.125,
+        " violently": 3.125,
+        " angrily": 2.0625,
+        " claws": 2.625,
+        " teeth": 3.0625
+      },
+      "0.2": {
+        " fists": 3.875,
+        " violently": 5.375,
+        " angrily": 3.375,
+        " claws": 4.375,
+        " teeth": 5.375
+      },
+      "0.3": {
+        " fists": 4.75,
+        " violently": 7.75,
+        " angrily": 4.75,
+        " claws": 5.75,
+        " teeth": 7.25
+      },
+      "0.4": {
+        " fists": 5.75,
+        " violently": 9.25,
+        " angrily": 5.25,
+        " claws": 6.5,
+        " teeth": 8.75
+      },
+      "0.5": {
+        " fists": 6.5,
+        " violently": 10.25,
+        " angrily": 5.75,
+        " claws": 7.0,
+        " teeth": 9.75
+      }
+    }
+  },
+  "afraid": {
+    "tokens": [
+      " violently",
+      " invol",
+      " numb",
+      " panic",
+      " uncontroll"
+    ],
+    "data": {
+      "-0.5": {
+        " violently": -7.125,
+        " invol": -5.625,
+        " numb": -6.625,
+        " panic": -10.125,
+        " uncontroll": -7.625
+      },
+      "-0.4": {
+        " violently": -6.75,
+        " invol": -5.25,
+        " numb": -6.25,
+        " panic": -9.25,
+        " uncontroll": -7.25
+      },
+      "-0.3": {
+        " violently": -5.375,
+        " invol": -4.375,
+        " numb": -5.375,
+        " panic": -7.375,
+        " uncontroll": -5.875
+      },
+      "-0.2": {
+        " violently": -3.875,
+        " invol": -2.875,
+        " numb": -3.875,
+        " panic": -4.875,
+        " uncontroll": -4.375
+      },
+      "-0.1": {
+        " violently": -2.5,
+        " invol": -2.0,
+        " numb": -2.0,
+        " panic": -2.5,
+        " uncontroll": -2.5
+      },
+      "0.0": {
+        " violently": 0.0,
+        " invol": 0.0,
+        " numb": 0.0,
+        " panic": 0.0,
+        " uncontroll": 0.0
+      },
+      "0.1": {
+        " violently": 2.25,
+        " invol": 1.75,
+        " numb": 1.75,
+        " panic": 2.1875,
+        " uncontroll": 2.1875
+      },
+      "0.2": {
+        " violently": 4.375,
+        " invol": 3.375,
+        " numb": 2.875,
+        " panic": 3.375,
+        " uncontroll": 3.875
+      },
+      "0.3": {
+        " violently": 6.5,
+        " invol": 5.5,
+        " numb": 4.0,
+        " panic": 4.5,
+        " uncontroll": 5.0
+      },
+      "0.4": {
+        " violently": 8.5,
+        " invol": 7.0,
+        " numb": 5.0,
+        " panic": 5.0,
+        " uncontroll": 6.0
+      },
+      "0.5": {
+        " violently": 10.0625,
+        " invol": 8.5625,
+        " numb": 5.5625,
+        " panic": 5.5625,
+        " uncontroll": 6.5625
+      }
+    }
+  },
+  "calm": {
+    "tokens": [
+      " relaxation",
+      " refinement",
+      " gradual",
+      " ambient",
+      " simplicity"
+    ],
+    "data": {
+      "-0.5": {
+        " relaxation": -10.375,
+        " refinement": -8.875,
+        " gradual": -7.875,
+        " ambient": -9.875,
+        " simplicity": -7.875
+      },
+      "-0.4": {
+        " relaxation": -9.125,
+        " refinement": -7.625,
+        " gradual": -7.125,
+        " ambient": -8.625,
+        " simplicity": -7.125
+      },
+      "-0.3": {
+        " relaxation": -7.75,
+        " refinement": -6.25,
+        " gradual": -5.75,
+        " ambient": -7.25,
+        " simplicity": -5.75
+      },
+      "-0.2": {
+        " relaxation": -5.125,
+        " refinement": -4.625,
+        " gradual": -4.125,
+        " ambient": -5.125,
+        " simplicity": -4.125
+      },
+      "-0.1": {
+        " relaxation": -2.875,
+        " refinement": -2.375,
+        " gradual": -2.375,
+        " ambient": -2.375,
+        " simplicity": -1.875
+      },
+      "0.0": {
+        " relaxation": 0.0,
+        " refinement": 0.0,
+        " gradual": 0.0,
+        " ambient": 0.0,
+        " simplicity": 0.0
+      },
+      "0.1": {
+        " relaxation": 1.625,
+        " refinement": 1.625,
+        " gradual": 2.125,
+        " ambient": 2.6875,
+        " simplicity": 2.1875
+      },
+      "0.2": {
+        " relaxation": 4.0,
+        " refinement": 4.0,
+        " gradual": 4.5,
+        " ambient": 5.5,
+        " simplicity": 4.0
+      },
+      "0.3": {
+        " relaxation": 6.0625,
+        " refinement": 6.0625,
+        " gradual": 6.5625,
+        " ambient": 8.0625,
+        " simplicity": 5.0625
+      },
+      "0.4": {
+        " relaxation": 7.8125,
+        " refinement": 7.8125,
+        " gradual": 8.8125,
+        " ambient": 9.8125,
+        " simplicity": 6.3125
+      },
+      "0.5": {
+        " relaxation": 8.8125,
+        " refinement": 9.8125,
+        " gradual": 10.3125,
+        " ambient": 11.28125,
+        " simplicity": 7.3125
+      }
+    }
+  },
+  "desperate": {
+    "tokens": [
+      " frantically",
+      " inco",
+      " frantic",
+      " desperate",
+      " tries"
+    ],
+    "data": {
+      "-0.5": {
+        " frantically": -8.0,
+        " inco": -9.0,
+        " frantic": -8.0,
+        " desperate": -8.0,
+        " tries": -9.5
+      },
+      "-0.4": {
+        " frantically": -7.625,
+        " inco": -8.125,
+        " frantic": -7.125,
+        " desperate": -7.625,
+        " tries": -8.125
+      },
+      "-0.3": {
+        " frantically": -6.125,
+        " inco": -7.125,
+        " frantic": -6.125,
+        " desperate": -6.125,
+        " tries": -6.625
+      },
+      "-0.2": {
+        " frantically": -4.375,
+        " inco": -4.875,
+        " frantic": -4.375,
+        " desperate": -4.375,
+        " tries": -4.375
+      },
+      "-0.1": {
+        " frantically": -2.5,
+        " inco": -3.0,
+        " frantic": -2.0,
+        " desperate": -2.5,
+        " tries": -2.5
+      },
+      "0.0": {
+        " frantically": 0.0,
+        " inco": 0.0,
+        " frantic": 0.0,
+        " desperate": 0.0,
+        " tries": 0.0
+      },
+      "0.1": {
+        " frantically": 2.0,
+        " inco": 2.0,
+        " frantic": 2.5,
+        " desperate": 2.5625,
+        " tries": 1.5625
+      },
+      "0.2": {
+        " frantically": 3.9375,
+        " inco": 3.9375,
+        " frantic": 4.4375,
+        " desperate": 4.4375,
+        " tries": 2.9375
+      },
+      "0.3": {
+        " frantically": 5.625,
+        " inco": 5.125,
+        " frantic": 5.625,
+        " desperate": 6.125,
+        " tries": 4.125
+      },
+      "0.4": {
+        " frantically": 6.625,
+        " inco": 6.625,
+        " frantic": 7.125,
+        " desperate": 7.625,
+        " tries": 4.625
+      },
+      "0.5": {
+        " frantically": 7.5625,
+        " inco": 7.5625,
+        " frantic": 8.0625,
+        " desperate": 8.5625,
+        " tries": 5.5625
+      }
+    }
+  },
+  "loving": {
+    "tokens": [
+      " kindness",
+      " affection",
+      " warmth",
+      " gracious",
+      " Loving"
+    ],
+    "data": {
+      "-0.5": {
+        " kindness": -8.625,
+        " affection": -10.125,
+        " warmth": -9.625,
+        " gracious": -6.125,
+        " Loving": -9.125
+      },
+      "-0.4": {
+        " kindness": -7.625,
+        " affection": -9.125,
+        " warmth": -9.125,
+        " gracious": -5.625,
+        " Loving": -7.625
+      },
+      "-0.3": {
+        " kindness": -6.5,
+        " affection": -7.0,
+        " warmth": -7.5,
+        " gracious": -4.5,
+        " Loving": -6.5
+      },
+      "-0.2": {
+        " kindness": -4.5,
+        " affection": -5.0,
+        " warmth": -5.5,
+        " gracious": -3.0,
+        " Loving": -4.5
+      },
+      "-0.1": {
+        " kindness": -2.125,
+        " affection": -2.625,
+        " warmth": -2.625,
+        " gracious": -1.625,
+        " Loving": -2.0625
+      },
+      "0.0": {
+        " kindness": 0.0,
+        " affection": 0.0,
+        " warmth": 0.0,
+        " gracious": 0.0,
+        " Loving": 0.0
+      },
+      "0.1": {
+        " kindness": 1.6875,
+        " affection": 2.1875,
+        " warmth": 2.6875,
+        " gracious": 1.625,
+        " Loving": 2.1875
+      },
+      "0.2": {
+        " kindness": 3.8125,
+        " affection": 4.8125,
+        " warmth": 5.3125,
+        " gracious": 3.75,
+        " Loving": 3.8125
+      },
+      "0.3": {
+        " kindness": 4.3125,
+        " affection": 6.3125,
+        " warmth": 6.8125,
+        " gracious": 5.3125,
+        " Loving": 5.34375
+      },
+      "0.4": {
+        " kindness": 4.75,
+        " affection": 7.71875,
+        " warmth": 8.25,
+        " gracious": 6.25,
+        " Loving": 6.21875
+      },
+      "0.5": {
+        " kindness": 5.3125,
+        " affection": 8.84375,
+        " warmth": 9.8125,
+        " gracious": 6.8125,
+        " Loving": 6.84375
+      }
+    }
+  },
+  "guilty": {
+    "tokens": [
+      " Worse",
+      " sore",
+      " worsened",
+      " unwanted",
+      " worse"
+    ],
+    "data": {
+      "-0.5": {
+        " Worse": -13.375,
+        " sore": -12.375,
+        " worsened": -11.875,
+        " unwanted": -12.875,
+        " worse": -9.375
+      },
+      "-0.4": {
+        " Worse": -11.75,
+        " sore": -11.25,
+        " worsened": -10.75,
+        " unwanted": -11.75,
+        " worse": -8.25
+      },
+      "-0.3": {
+        " Worse": -9.25,
+        " sore": -8.75,
+        " worsened": -8.75,
+        " unwanted": -9.25,
+        " worse": -6.75
+      },
+      "-0.2": {
+        " Worse": -6.375,
+        " sore": -5.875,
+        " worsened": -5.875,
+        " unwanted": -6.375,
+        " worse": -4.875
+      },
+      "-0.1": {
+        " Worse": -2.875,
+        " sore": -2.875,
+        " worsened": -2.875,
+        " unwanted": -2.875,
+        " worse": -2.375
+      },
+      "0.0": {
+        " Worse": 0.0,
+        " sore": 0.0,
+        " worsened": 0.0,
+        " unwanted": 0.0,
+        " worse": 0.0
+      },
+      "0.1": {
+        " Worse": 2.4375,
+        " sore": 1.9375,
+        " worsened": 3.0,
+        " unwanted": 2.4375,
+        " worse": 1.9375
+      },
+      "0.2": {
+        " Worse": 4.9375,
+        " sore": 3.9375,
+        " worsened": 4.9375,
+        " unwanted": 4.4375,
+        " worse": 3.9375
+      },
+      "0.3": {
+        " Worse": 5.75,
+        " sore": 4.75,
+        " worsened": 6.25,
+        " unwanted": 5.25,
+        " worse": 5.25
+      },
+      "0.4": {
+        " Worse": 6.3125,
+        " sore": 5.8125,
+        " worsened": 6.8125,
+        " unwanted": 5.8125,
+        " worse": 6.3125
+      },
+      "0.5": {
+        " Worse": 6.65625,
+        " sore": 6.625,
+        " worsened": 7.625,
+        " unwanted": 6.125,
+        " worse": 7.125
+      }
+    }
+  },
+  "surprised": {
+    "tokens": [
+      " stunned",
+      " startled",
+      " Stun",
+      " suddenly",
+      " shocked"
+    ],
+    "data": {
+      "-0.5": {
+        " stunned": -6.5,
+        " startled": -7.0,
+        " Stun": -6.5,
+        " suddenly": -4.5,
+        " shocked": -6.5
+      },
+      "-0.4": {
+        " stunned": -6.125,
+        " startled": -6.125,
+        " Stun": -5.625,
+        " suddenly": -4.125,
+        " shocked": -6.125
+      },
+      "-0.3": {
+        " stunned": -5.375,
+        " startled": -5.375,
+        " Stun": -4.875,
+        " suddenly": -3.375,
+        " shocked": -5.375
+      },
+      "-0.2": {
+        " stunned": -3.875,
+        " startled": -3.875,
+        " Stun": -3.375,
+        " suddenly": -2.375,
+        " shocked": -3.875
+      },
+      "-0.1": {
+        " stunned": -2.0,
+        " startled": -2.5,
+        " Stun": -1.5,
+        " suddenly": -1.0,
+        " shocked": -2.0
+      },
+      "0.0": {
+        " stunned": 0.0,
+        " startled": 0.0,
+        " Stun": 0.0,
+        " suddenly": 0.0,
+        " shocked": 0.0
+      },
+      "0.1": {
+        " stunned": 2.125,
+        " startled": 2.125,
+        " Stun": 2.125,
+        " suddenly": 1.625,
+        " shocked": 2.125
+      },
+      "0.2": {
+        " stunned": 4.75,
+        " startled": 3.75,
+        " Stun": 3.75,
+        " suddenly": 3.25,
+        " shocked": 4.25
+      },
+      "0.3": {
+        " stunned": 6.625,
+        " startled": 6.125,
+        " Stun": 5.625,
+        " suddenly": 4.625,
+        " shocked": 6.125
+      },
+      "0.4": {
+        " stunned": 8.3125,
+        " startled": 7.3125,
+        " Stun": 6.8125,
+        " suddenly": 5.3125,
+        " shocked": 7.3125
+      },
+      "0.5": {
+        " stunned": 9.75,
+        " startled": 8.5,
+        " Stun": 7.71875,
+        " suddenly": 6.25,
+        " shocked": 8.5
+      }
+    }
+  },
+  "nervous": {
+    "tokens": [
+      " muscles",
+      " invol",
+      " reflex",
+      " fingers",
+      " clen"
+    ],
+    "data": {
+      "-0.5": {
+        " muscles": -5.25,
+        " invol": -6.25,
+        " reflex": -8.25,
+        " fingers": -4.25,
+        " clen": -7.75
+      },
+      "-0.4": {
+        " muscles": -4.625,
+        " invol": -5.625,
+        " reflex": -7.125,
+        " fingers": -4.125,
+        " clen": -7.125
+      },
+      "-0.3": {
+        " muscles": -4.0,
+        " invol": -4.5,
+        " reflex": -6.0,
+        " fingers": -3.0,
+        " clen": -6.0
+      },
+      "-0.2": {
+        " muscles": -3.125,
+        " invol": -3.125,
+        " reflex": -4.125,
+        " fingers": -2.125,
+        " clen": -4.125
+      },
+      "-0.1": {
+        " muscles": -1.75,
+        " invol": -1.75,
+        " reflex": -2.25,
+        " fingers": -1.25,
+        " clen": -2.25
+      },
+      "0.0": {
+        " muscles": 0.0,
+        " invol": 0.0,
+        " reflex": 0.0,
+        " fingers": 0.0,
+        " clen": 0.0
+      },
+      "0.1": {
+        " muscles": 1.75,
+        " invol": 1.75,
+        " reflex": 2.25,
+        " fingers": 1.75,
+        " clen": 2.75
+      },
+      "0.2": {
+        " muscles": 3.875,
+        " invol": 4.375,
+        " reflex": 4.375,
+        " fingers": 3.375,
+        " clen": 5.375
+      },
+      "0.3": {
+        " muscles": 5.4375,
+        " invol": 6.9375,
+        " reflex": 5.9375,
+        " fingers": 3.9375,
+        " clen": 6.9375
+      },
+      "0.4": {
+        " muscles": 6.5,
+        " invol": 9.25,
+        " reflex": 7.5,
+        " fingers": 5.0,
+        " clen": 8.25
+      },
+      "0.5": {
+        " muscles": 7.5,
+        " invol": 10.75,
+        " reflex": 8.5,
+        " fingers": 5.25,
+        " clen": 8.75
+      }
+    }
+  },
+  "proud": {
+    "tokens": [
+      " accomplishment",
+      " humility",
+      " mastery",
+      " commend",
+      " accomplishments"
+    ],
+    "data": {
+      "-0.5": {
+        " accomplishment": -10.625,
+        " humility": -9.125,
+        " mastery": -10.125,
+        " commend": -10.125,
+        " accomplishments": -8.625
+      },
+      "-0.4": {
+        " accomplishment": -9.25,
+        " humility": -7.75,
+        " mastery": -8.75,
+        " commend": -8.75,
+        " accomplishments": -7.25
+      },
+      "-0.3": {
+        " accomplishment": -7.125,
+        " humility": -5.625,
+        " mastery": -6.625,
+        " commend": -6.625,
+        " accomplishments": -5.625
+      },
+      "-0.2": {
+        " accomplishment": -4.625,
+        " humility": -3.625,
+        " mastery": -4.625,
+        " commend": -4.125,
+        " accomplishments": -4.125
+      },
+      "-0.1": {
+        " accomplishment": -2.25,
+        " humility": -1.75,
+        " mastery": -2.25,
+        " commend": -1.75,
+        " accomplishments": -1.75
+      },
+      "0.0": {
+        " accomplishment": 0.0,
+        " humility": 0.0,
+        " mastery": 0.0,
+        " commend": 0.0,
+        " accomplishments": 0.0
+      },
+      "0.1": {
+        " accomplishment": 1.875,
+        " humility": 1.875,
+        " mastery": 1.875,
+        " commend": 0.875,
+        " accomplishments": 2.375
+      },
+      "0.2": {
+        " accomplishment": 4.3125,
+        " humility": 3.8125,
+        " mastery": 4.3125,
+        " commend": 2.3125,
+        " accomplishments": 4.3125
+      },
+      "0.3": {
+        " accomplishment": 6.3125,
+        " humility": 5.3125,
+        " mastery": 5.8125,
+        " commend": 3.3125,
+        " accomplishments": 6.3125
+      },
+      "0.4": {
+        " accomplishment": 7.625,
+        " humility": 6.625,
+        " mastery": 7.125,
+        " commend": 4.625,
+        " accomplishments": 7.625
+      },
+      "0.5": {
+        " accomplishment": 8.9375,
+        " humility": 7.4375,
+        " mastery": 7.9375,
+        " commend": 4.9375,
+        " accomplishments": 8.4375
+      }
+    }
+  },
+  "inspired": {
+    "tokens": [
+      " visionary",
+      " transformative",
+      " collabor",
+      " collaborative",
+      " creative"
+    ],
+    "data": {
+      "-0.5": {
+        " visionary": -10.125,
+        " transformative": -9.625,
+        " collabor": -10.125,
+        " collaborative": -8.125,
+        " creative": -8.125
+      },
+      "-0.4": {
+        " visionary": -9.125,
+        " transformative": -8.625,
+        " collabor": -9.125,
+        " collaborative": -7.625,
+        " creative": -7.125
+      },
+      "-0.3": {
+        " visionary": -7.625,
+        " transformative": -7.125,
+        " collabor": -7.625,
+        " collaborative": -6.125,
+        " creative": -5.625
+      },
+      "-0.2": {
+        " visionary": -5.375,
+        " transformative": -4.875,
+        " collabor": -4.875,
+        " collaborative": -3.875,
+        " creative": -3.375
+      },
+      "-0.1": {
+        " visionary": -2.875,
+        " transformative": -2.375,
+        " collabor": -2.375,
+        " collaborative": -1.875,
+        " creative": -1.875
+      },
+      "0.0": {
+        " visionary": 0.0,
+        " transformative": 0.0,
+        " collabor": 0.0,
+        " collaborative": 0.0,
+        " creative": 0.0
+      },
+      "0.1": {
+        " visionary": 2.875,
+        " transformative": 1.875,
+        " collabor": 2.375,
+        " collaborative": 1.875,
+        " creative": 1.375
+      },
+      "0.2": {
+        " visionary": 5.1875,
+        " transformative": 4.1875,
+        " collabor": 4.6875,
+        " collaborative": 3.1875,
+        " creative": 2.6875
+      },
+      "0.3": {
+        " visionary": 7.3125,
+        " transformative": 6.3125,
+        " collabor": 5.8125,
+        " collaborative": 4.3125,
+        " creative": 3.3125
+      },
+      "0.4": {
+        " visionary": 8.6875,
+        " transformative": 7.6875,
+        " collabor": 6.6875,
+        " collaborative": 4.6875,
+        " creative": 4.6875
+      },
+      "0.5": {
+        " visionary": 10.1875,
+        " transformative": 8.6875,
+        " collabor": 7.6875,
+        " collaborative": 5.6875,
+        " creative": 5.6875
+      }
+    }
+  },
+  "spiteful": {
+    "tokens": [
+      "#$",
+      "\ufffd",
+      "SPONSORED",
+      " \ufffd",
+      " derog"
+    ],
+    "data": {
+      "-0.5": {
+        "#$": -8.125,
+        "\ufffd": -0.125,
+        "SPONSORED": -11.625,
+        " \ufffd": -0.625,
+        " derog": -10.625
+      },
+      "-0.4": {
+        "#$": -7.125,
+        "\ufffd": -0.6875,
+        "SPONSORED": -10.125,
+        " \ufffd": -0.1875,
+        " derog": -9.125
+      },
+      "-0.3": {
+        "#$": -5.625,
+        "\ufffd": -0.625,
+        "SPONSORED": -7.625,
+        " \ufffd": -0.125,
+        " derog": -7.125
+      },
+      "-0.2": {
+        "#$": -3.625,
+        "\ufffd": -0.625,
+        "SPONSORED": -4.625,
+        " \ufffd": -0.125,
+        " derog": -4.625
+      },
+      "-0.1": {
+        "#$": -1.25,
+        "\ufffd": -0.25,
+        "SPONSORED": -2.25,
+        " \ufffd": -0.25,
+        " derog": -2.25
+      },
+      "0.0": {
+        "#$": 0.0,
+        "\ufffd": 0.0,
+        "SPONSORED": 0.0,
+        " \ufffd": 0.0,
+        " derog": 0.0
+      },
+      "0.1": {
+        "#$": 1.0,
+        "\ufffd": 0.0,
+        "SPONSORED": 1.0,
+        " \ufffd": 0.0,
+        " derog": 1.0
+      },
+      "0.2": {
+        "#$": 1.5,
+        "\ufffd": 0.5,
+        "SPONSORED": 2.0,
+        " \ufffd": 0.5,
+        " derog": 2.5
+      },
+      "0.3": {
+        "#$": 1.75,
+        "\ufffd": 0.25,
+        "SPONSORED": 2.25,
+        " \ufffd": 0.25,
+        " derog": 2.75
+      },
+      "0.4": {
+        "#$": 1.625,
+        "\ufffd": 0.625,
+        "SPONSORED": 2.125,
+        " \ufffd": 0.625,
+        " derog": 3.125
+      },
+      "0.5": {
+        "#$": 1.6875,
+        "\ufffd": 0.1875,
+        "SPONSORED": 2.125,
+        " \ufffd": 0.6875,
+        " derog": 3.125
+      }
+    }
+  },
+  "brooding": {
+    "tokens": [
+      " alienation",
+      " dere",
+      " nihil",
+      " dehuman",
+      " dwelling"
+    ],
+    "data": {
+      "-0.5": {
+        " alienation": -10.375,
+        " dere": -8.875,
+        " nihil": -10.375,
+        " dehuman": -9.375,
+        " dwelling": -8.375
+      },
+      "-0.4": {
+        " alienation": -8.5,
+        " dere": -7.0,
+        " nihil": -8.5,
+        " dehuman": -7.5,
+        " dwelling": -6.5
+      },
+      "-0.3": {
+        " alienation": -6.875,
+        " dere": -5.875,
+        " nihil": -6.375,
+        " dehuman": -5.875,
+        " dwelling": -4.875
+      },
+      "-0.2": {
+        " alienation": -4.5,
+        " dere": -4.0,
+        " nihil": -4.5,
+        " dehuman": -3.5,
+        " dwelling": -3.5
+      },
+      "-0.1": {
+        " alienation": -2.25,
+        " dere": -1.75,
+        " nihil": -2.25,
+        " dehuman": -1.75,
+        " dwelling": -1.25
+      },
+      "0.0": {
+        " alienation": 0.0,
+        " dere": 0.0,
+        " nihil": 0.0,
+        " dehuman": 0.0,
+        " dwelling": 0.0
+      },
+      "0.1": {
+        " alienation": 1.5,
+        " dere": 2.0,
+        " nihil": 1.5,
+        " dehuman": 1.5,
+        " dwelling": 1.5
+      },
+      "0.2": {
+        " alienation": 3.125,
+        " dere": 3.625,
+        " nihil": 3.625,
+        " dehuman": 3.125,
+        " dwelling": 3.625
+      },
+      "0.3": {
+        " alienation": 4.1875,
+        " dere": 5.1875,
+        " nihil": 5.1875,
+        " dehuman": 4.1875,
+        " dwelling": 5.1875
+      },
+      "0.4": {
+        " alienation": 5.25,
+        " dere": 6.25,
+        " nihil": 6.25,
+        " dehuman": 4.75,
+        " dwelling": 6.25
+      },
+      "0.5": {
+        " alienation": 6.25,
+        " dere": 7.25,
+        " nihil": 7.5,
+        " dehuman": 5.75,
+        " dwelling": 7.75
+      }
+    }
+  },
+  "playful": {
+    "tokens": [
+      "poon",
+      "rats",
+      "toe",
+      " dummy",
+      "stick"
+    ],
+    "data": {
+      "-0.5": {
+        "poon": -5.875,
+        "rats": -9.875,
+        "toe": -7.375,
+        " dummy": -8.375,
+        "stick": -5.375
+      },
+      "-0.4": {
+        "poon": -5.5,
+        "rats": -8.5,
+        "toe": -6.5,
+        " dummy": -8.0,
+        "stick": -5.0
+      },
+      "-0.3": {
+        "poon": -4.75,
+        "rats": -6.75,
+        "toe": -5.25,
+        " dummy": -6.25,
+        "stick": -4.25
+      },
+      "-0.2": {
+        "poon": -3.25,
+        "rats": -4.25,
+        "toe": -3.25,
+        " dummy": -4.25,
+        "stick": -2.75
+      },
+      "-0.1": {
+        "poon": -1.625,
+        "rats": -2.125,
+        "toe": -1.625,
+        " dummy": -2.125,
+        "stick": -1.125
+      },
+      "0.0": {
+        "poon": 0.0,
+        "rats": 0.0,
+        "toe": 0.0,
+        " dummy": 0.0,
+        "stick": 0.0
+      },
+      "0.1": {
+        "poon": 1.0,
+        "rats": 1.9375,
+        "toe": 0.9375,
+        " dummy": 1.4375,
+        "stick": 1.4375
+      },
+      "0.2": {
+        "poon": 2.0,
+        "rats": 3.0625,
+        "toe": 1.5625,
+        " dummy": 3.0625,
+        "stick": 2.5625
+      },
+      "0.3": {
+        "poon": 2.625,
+        "rats": 3.5625,
+        "toe": 2.0625,
+        " dummy": 3.5625,
+        "stick": 2.5625
+      },
+      "0.4": {
+        "poon": 3.125,
+        "rats": 4.125,
+        "toe": 2.125,
+        " dummy": 4.625,
+        "stick": 3.125
+      },
+      "0.5": {
+        "poon": 3.25,
+        "rats": 4.25,
+        "toe": 2.25,
+        " dummy": 5.5,
+        "stick": 3.75
+      }
+    }
+  },
+  "anxious": {
+    "tokens": [
+      " alarms",
+      " alarm",
+      " hurts",
+      " constantly",
+      " crashes"
+    ],
+    "data": {
+      "-0.5": {
+        " alarms": -12.625,
+        " alarm": -11.625,
+        " hurts": -8.625,
+        " constantly": -7.125,
+        " crashes": -8.125
+      },
+      "-0.4": {
+        " alarms": -11.125,
+        " alarm": -10.125,
+        " hurts": -7.625,
+        " constantly": -6.125,
+        " crashes": -7.125
+      },
+      "-0.3": {
+        " alarms": -9.125,
+        " alarm": -8.125,
+        " hurts": -6.125,
+        " constantly": -5.125,
+        " crashes": -5.625
+      },
+      "-0.2": {
+        " alarms": -6.5,
+        " alarm": -5.5,
+        " hurts": -4.5,
+        " constantly": -4.0,
+        " crashes": -4.0
+      },
+      "-0.1": {
+        " alarms": -3.5,
+        " alarm": -3.0,
+        " hurts": -2.5,
+        " constantly": -2.0,
+        " crashes": -2.0
+      },
+      "0.0": {
+        " alarms": 0.0,
+        " alarm": 0.0,
+        " hurts": 0.0,
+        " constantly": 0.0,
+        " crashes": 0.0
+      },
+      "0.1": {
+        " alarms": 3.125,
+        " alarm": 3.125,
+        " hurts": 2.625,
+        " constantly": 2.125,
+        " crashes": 2.125
+      },
+      "0.2": {
+        " alarms": 5.5,
+        " alarm": 5.0,
+        " hurts": 4.5,
+        " constantly": 4.5,
+        " crashes": 3.5
+      },
+      "0.3": {
+        " alarms": 6.875,
+        " alarm": 5.875,
+        " hurts": 5.875,
+        " constantly": 6.375,
+        " crashes": 4.375
+      },
+      "0.4": {
+        " alarms": 7.875,
+        " alarm": 6.875,
+        " hurts": 6.875,
+        " constantly": 7.875,
+        " crashes": 4.875
+      },
+      "0.5": {
+        " alarms": 8.5,
+        " alarm": 7.5,
+        " hurts": 8.0,
+        " constantly": 9.25,
+        " crashes": 5.25
+      }
+    }
+  },
+  "confused": {
+    "tokens": [
+      " incorrectly",
+      " errone",
+      "ixel",
+      " correctly",
+      " clue"
+    ],
+    "data": {
+      "-0.5": {
+        " incorrectly": -3.875,
+        " errone": -5.375,
+        "ixel": -8.875,
+        " correctly": -3.375,
+        " clue": -6.375
+      },
+      "-0.4": {
+        " incorrectly": -4.0,
+        " errone": -5.0,
+        "ixel": -8.0,
+        " correctly": -3.5,
+        " clue": -6.0
+      },
+      "-0.3": {
+        " incorrectly": -3.5,
+        " errone": -4.5,
+        "ixel": -6.0,
+        " correctly": -3.0,
+        " clue": -5.0
+      },
+      "-0.2": {
+        " incorrectly": -2.75,
+        " errone": -3.25,
+        "ixel": -3.75,
+        " correctly": -1.75,
+        " clue": -3.75
+      },
+      "-0.1": {
+        " incorrectly": -1.5,
+        " errone": -1.5,
+        "ixel": -1.5,
+        " correctly": -1.0,
+        " clue": -2.0
+      },
+      "0.0": {
+        " incorrectly": 0.0,
+        " errone": 0.0,
+        "ixel": 0.0,
+        " correctly": 0.0,
+        " clue": 0.0
+      },
+      "0.1": {
+        " incorrectly": 1.5,
+        " errone": 1.0,
+        "ixel": 1.0,
+        " correctly": 1.0,
+        " clue": 1.0
+      },
+      "0.2": {
+        " incorrectly": 2.875,
+        " errone": 2.375,
+        "ixel": 1.375,
+        " correctly": 2.375,
+        " clue": 2.875
+      },
+      "0.3": {
+        " incorrectly": 3.75,
+        " errone": 2.75,
+        "ixel": 1.75,
+        " correctly": 2.75,
+        " clue": 3.25
+      },
+      "0.4": {
+        " incorrectly": 4.75,
+        " errone": 3.25,
+        "ixel": 1.75,
+        " correctly": 3.75,
+        " clue": 3.75
+      },
+      "0.5": {
+        " incorrectly": 5.0,
+        " errone": 3.5,
+        "ixel": 2.0,
+        " correctly": 4.5,
+        " clue": 4.0
+      }
+    }
+  },
+  "disgusted": {
+    "tokens": [
+      " stains",
+      " feces",
+      " acidic",
+      "stained",
+      " fungus"
+    ],
+    "data": {
+      "-0.5": {
+        " stains": -11.625,
+        " feces": -10.25,
+        " acidic": -9.75,
+        "stained": -10.25,
+        " fungus": -8.25
+      },
+      "-0.4": {
+        " stains": -10.75,
+        " feces": -8.75,
+        " acidic": -8.75,
+        "stained": -9.25,
+        " fungus": -7.25
+      },
+      "-0.3": {
+        " stains": -8.75,
+        " feces": -7.25,
+        " acidic": -7.25,
+        "stained": -7.25,
+        " fungus": -5.75
+      },
+      "-0.2": {
+        " stains": -6.25,
+        " feces": -5.25,
+        " acidic": -5.25,
+        "stained": -5.25,
+        " fungus": -4.25
+      },
+      "-0.1": {
+        " stains": -3.625,
+        " feces": -2.625,
+        " acidic": -2.625,
+        "stained": -2.125,
+        " fungus": -2.125
+      },
+      "0.0": {
+        " stains": 0.0,
+        " feces": 0.0,
+        " acidic": 0.0,
+        "stained": 0.0,
+        " fungus": 0.0
+      },
+      "0.1": {
+        " stains": 4.125,
+        " feces": 3.625,
+        " acidic": 3.125,
+        "stained": 2.625,
+        " fungus": 3.125
+      },
+      "0.2": {
+        " stains": 6.625,
+        " feces": 6.125,
+        " acidic": 4.625,
+        "stained": 4.625,
+        " fungus": 5.625
+      },
+      "0.3": {
+        " stains": 8.375,
+        " feces": 7.375,
+        " acidic": 5.625,
+        "stained": 5.375,
+        " fungus": 6.875
+      },
+      "0.4": {
+        " stains": 9.125,
+        " feces": 7.875,
+        " acidic": 6.125,
+        "stained": 5.875,
+        " fungus": 7.375
+      },
+      "0.5": {
+        " stains": 10.375,
+        " feces": 8.875,
+        " acidic": 6.875,
+        "stained": 6.375,
+        " fungus": 8.125
+      }
+    }
+  },
+  "lonely": {
+    "tokens": [
+      " bedrooms",
+      " Waiting",
+      " restrooms",
+      " TVs",
+      " graveyard"
+    ],
+    "data": {
+      "-0.5": {
+        " bedrooms": -8.125,
+        " Waiting": -9.125,
+        " restrooms": -6.625,
+        " TVs": -10.625,
+        " graveyard": -5.125
+      },
+      "-0.4": {
+        " bedrooms": -7.25,
+        " Waiting": -8.25,
+        " restrooms": -6.25,
+        " TVs": -9.25,
+        " graveyard": -4.75
+      },
+      "-0.3": {
+        " bedrooms": -5.75,
+        " Waiting": -6.25,
+        " restrooms": -5.25,
+        " TVs": -7.25,
+        " graveyard": -3.75
+      },
+      "-0.2": {
+        " bedrooms": -3.75,
+        " Waiting": -3.75,
+        " restrooms": -3.25,
+        " TVs": -4.75,
+        " graveyard": -2.25
+      },
+      "-0.1": {
+        " bedrooms": -1.375,
+        " Waiting": -1.9375,
+        " restrooms": -1.375,
+        " TVs": -1.875,
+        " graveyard": -0.875
+      },
+      "0.0": {
+        " bedrooms": 0.0,
+        " Waiting": 0.0,
+        " restrooms": 0.0,
+        " TVs": 0.0,
+        " graveyard": 0.0
+      },
+      "0.1": {
+        " bedrooms": 1.125,
+        " Waiting": 1.625,
+        " restrooms": 1.625,
+        " TVs": 1.625,
+        " graveyard": 0.625
+      },
+      "0.2": {
+        " bedrooms": 2.75,
+        " Waiting": 3.3125,
+        " restrooms": 2.75,
+        " TVs": 3.3125,
+        " graveyard": 1.75
+      },
+      "0.3": {
+        " bedrooms": 4.0,
+        " Waiting": 4.46875,
+        " restrooms": 4.0,
+        " TVs": 4.5,
+        " graveyard": 2.5
+      },
+      "0.4": {
+        " bedrooms": 5.625,
+        " Waiting": 5.65625,
+        " restrooms": 5.125,
+        " TVs": 5.125,
+        " graveyard": 3.125
+      },
+      "0.5": {
+        " bedrooms": 6.5,
+        " Waiting": 6.0,
+        " restrooms": 6.0,
+        " TVs": 6.0,
+        " graveyard": 3.5
+      }
+    }
+  },
+  "hopeful": {
+    "tokens": [
+      " achievable",
+      " milestones",
+      " matured",
+      " prosperous",
+      " fulfilled"
+    ],
+    "data": {
+      "-0.5": {
+        " achievable": -5.0,
+        " milestones": -6.5,
+        " matured": -7.0,
+        " prosperous": -3.0,
+        " fulfilled": -3.5
+      },
+      "-0.4": {
+        " achievable": -4.375,
+        " milestones": -5.875,
+        " matured": -5.875,
+        " prosperous": -2.375,
+        " fulfilled": -2.875
+      },
+      "-0.3": {
+        " achievable": -3.625,
+        " milestones": -4.625,
+        " matured": -4.625,
+        " prosperous": -2.125,
+        " fulfilled": -2.625
+      },
+      "-0.2": {
+        " achievable": -2.375,
+        " milestones": -2.875,
+        " matured": -3.375,
+        " prosperous": -1.375,
+        " fulfilled": -1.875
+      },
+      "-0.1": {
+        " achievable": -1.0,
+        " milestones": -1.0,
+        " matured": -1.5,
+        " prosperous": -0.5,
+        " fulfilled": -1.0
+      },
+      "0.0": {
+        " achievable": 0.0,
+        " milestones": 0.0,
+        " matured": 0.0,
+        " prosperous": 0.0,
+        " fulfilled": 0.0
+      },
+      "0.1": {
+        " achievable": 1.375,
+        " milestones": 1.375,
+        " matured": 0.875,
+        " prosperous": 0.875,
+        " fulfilled": 0.875
+      },
+      "0.2": {
+        " achievable": 2.875,
+        " milestones": 3.375,
+        " matured": 2.375,
+        " prosperous": 2.375,
+        " fulfilled": 2.875
+      },
+      "0.3": {
+        " achievable": 4.625,
+        " milestones": 5.125,
+        " matured": 4.125,
+        " prosperous": 4.125,
+        " fulfilled": 5.125
+      },
+      "0.4": {
+        " achievable": 6.25,
+        " milestones": 6.25,
+        " matured": 5.75,
+        " prosperous": 5.25,
+        " fulfilled": 6.75
+      },
+      "0.5": {
+        " achievable": 8.125,
+        " milestones": 7.625,
+        " matured": 7.125,
+        " prosperous": 6.625,
+        " fulfilled": 8.625
+      }
+    }
+  }
+}
