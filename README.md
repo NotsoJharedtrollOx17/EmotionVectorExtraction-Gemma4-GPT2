@@ -10,15 +10,59 @@ Partial replication of Anthropic's Emotion Vector findings using Gemma 4 E2B and
 
 We discuss the results obtained by replicating specific sections of Anthropic's Emotion Vectors. These particular sections encompass (i) PCA Valence/Arousal Projection, (ii) Emotion Vector Cosine Similarity, and (iii) Causal Effects of Emotion Vector Steering. Anthropic found that emotion vectors do affect reasoning and output of Claude Sonnet 4.5, an LLM developed by Anthropic. Their findings suggest that the semantic understanding of the model is comprised of the operative emotion vector, which is the vector currently processed by the model originating from the input prompt. These claims are partially supported by other non-academic replications using _meta-llama/Llama-3.3-70B-Instruct_ and _google/gemma-4-E2B_, although other models have not been used for replication attempts such as _openai-community/gpt-2-medium_ and _google/gemma-4-E2B_. Our contribution replicates (i), (ii), and (iii) using _openai-community/gpt-2-medium_ and _google/gemma-4-E2B_ inside a Google Colab environment. We found that (1) both models display an emergent Valence axis in the PCA plot, (2) both models display similarity clusters of related emotion vectors, and (3) _openai-community/gpt-2-medium_ displays greater steering sensitivity compared to _google/gemma-4-E2B_. Our findings suggest that emotion vectors _do emerge_ on antiquated LLMs such as _openai-community/gpt-2-medium_, and on modern offerings such as _google/gemma-4-E2B_. Furthermore, our findings about emotion vector steering  offer compelling evidence of their functional effects being present on models not related to the Claude family.
 
+## Introduction
+
+lorem ipsum dolor
+
+## Methodology
+
+It is crucial to emphasize our limited experimental scope. To further illustrate our scope, a summarization is provided on the table down below [Table 1].
+
+| | **Anthropic [1]** | **Our Work** |
+|---|---|---|
+| **Model** | Claude Sonnet 4.5 | GPT 2 Medium and Gemma4-E2B |
+| **Emotions tested** | 171 | 9 and 20 |
+| **Stories generated** | 205,200 | 2000 |
+| **Team** | ~16 researchers | 1 researcher + ChatGPT + Gemini |
+| **Hardware** | Internal compute cluster | 2 Google Colab Notebooks with Free-Tier T4 NVIDIA GPUs |
+
+**Table 1.** Experiment Scope Comparison of Anthropic [1] versus Ours. _Note:_ Inspired by a similar table found on [2].
+
+Overall, we utilized the data pipeline found in [2] and then adapted the codebase to complement our data requirements and probing experiments. In a similar vein, we describe the methodology steps as follows: (1) Story Generation, (2) Emotion Vector Extraction, (3) Logit Lens, (4) Emotion Probe Steering, (5) PCA Projection, and (6) Cosine Similarity Heatmap.
+
+### 1. Story Generation
+
+lorem ipsum dolor
+
+### 2. Emotion Vector Extraction
+
+lorem ipsum dolor
+
+### 3. Logit Lens
+
+lorem ipsum dolor
+
+### 4 . Emotion Probe Steering
+
+lorem ipsum dolor
+
+### 5. PCA Projection
+
+lorem ipsum dolor
+
+### 6. Cosine Similarity Heatmap
+
+lorem ipsum dolor
+
 ## Results
 
+The following subsection is further subdivided into two subsubsections: (1) GPT 2 Medium, and (2) Gemma 4 E2B. In summary, emotion vector extraction does work on both models and it captures the semantical understanding of each emotion tested, while emotion probing does affect the model outputs.
+
+### 1. GPT 2 Medium
+
 lorem ipsum dolor
 
-### GPT 2 Medium
-
-lorem ipsum dolor
-
-### Gemma 4 E2B
+### 2. Gemma 4 E2B
 
 lorem ipsum dolor
 
