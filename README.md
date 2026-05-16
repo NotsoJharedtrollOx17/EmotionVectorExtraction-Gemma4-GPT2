@@ -123,17 +123,9 @@ The following subsection is further subdivided into two subsubsections: (1) GPT 
 
 **Figure 1.** Prompt00 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 9 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
 
-<img src="./plots/emotion_logits/Prompt01/DeltaLogProbHeatmapGPT2Medium-9emotions-layer16.png" alt="lorem ipsum dolor" width="500" height="500"/>
-
-**Figure 1.** Prompt01 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 9 emotions. _Note:_ Prompt01 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
-
 <img src="./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGPT2Medium-20emotions-layer16.png" alt="lorem ipsum dolor" width="500" height="500"/>
 
 **Figure 1.** Prompt00 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 20 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
-
-<img src="./plots/emotion_logits/Prompt01/DeltaLogProbHeatmapGPT2Medium-20emotions-layer16.png" alt="lorem ipsum dolor" width="500" height="500"/>
-
-**Figure 1.** Prompt01 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 20 emotions. _Note:_ Prompt01 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
 
 | **Emotion** | **Steered Output** |
 | :--- | :--- |
@@ -211,17 +203,9 @@ The following subsection is further subdivided into two subsubsections: (1) GPT 
 
 **Figure 1.** Prompt00 Delta Log Probability Heatmap for _google/gemma-4-E2B_ with 9 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
 
-<img src="./plots/emotion_logits/Prompt01/DeltaLogProbHeatmapGemma4E2B-9emotions-layer23.png" alt="lorem ipsum dolor" width="500" height="500"/>
-
-**Figure 1.** Prompt01 Delta Log Probability Heatmap for _google/gemma-4-E2B_ with 9 emotions. _Note:_ Prompt01 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
-
 <img src="./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGemma4E2B-20emotions-layer23.png" alt="lorem ipsum dolor" width="500" height="500"/>
 
 **Figure 1.** Prompt00 Delta Log Probability Heatmap for _google/gemma-4-E2B_ with 20 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
-
-<img src="./plots/emotion_logits/Prompt01/DeltaLogProbHeatmapGemma4E2B-20emotions-layer23.png" alt="lorem ipsum dolor" width="500" height="500"/>
-
-**Figure 1.** Prompt01 Delta Log Probability Heatmap for _google/gemma-4-E2B_ with 20 emotions. _Note:_ Prompt01 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
 
 | **Emotion** | **Steered Output** |
 | :--- | :--- |
