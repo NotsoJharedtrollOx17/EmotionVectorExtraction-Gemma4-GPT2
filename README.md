@@ -68,6 +68,14 @@ The following subsection is further subdivided into two subsubsections: (1) GPT 
 
 ### 1. GPT 2 Medium
 
+#### i. Logit Lens
+
+#### ii. PCA Projection
+
+#### iii. Cosine Similarity
+
+#### iv. Emotion Steering
+
 | **Emotion** | **Top 5 Tokens** | **Bottom 5 Tokens** |
 | :--- | :--- | :--- |
 | ```sad``` | impover, stagn, alienation, blight, unaff | switch, saliva, gas, Immediately, palms |
@@ -148,6 +156,14 @@ The following subsection is further subdivided into two subsubsections: (1) GPT 
 
 ### 2. Gemma 4 E2B
 
+#### i. Logit Lens
+
+#### ii. PCA Projection
+
+#### iii. Cosine Similarity
+
+#### iv. Emotion Steering
+
 | **Emotion** | **Top 5 Tokens** | **Bottom 5 Tokens** |
 | :--- | :--- | :--- |
 | ```sad``` | 失去了, となっています, lacks, nedost, suffers | muka, FOLLOWING, scra, الفاظ, gerakan |
@@ -224,7 +240,7 @@ The following subsection is further subdivided into two subsubsections: (1) GPT 
 | ```calm``` | Human: How does he feel? Assistant: He feels \<strong>relaxed\</strong>.<br><br>Human: Is he \<strong>enjoying\</strong> the conversation?<br><br>Human: What \<strong>time\</strong> is it?<br><br>Human: The \<strong>temperatu... |
 | ```happy``` | Human: How does he feel? Assistant: He feels \<strong>happy\</strong>. \<strong>Happy\</strong> is a feeling.<br><br>\<h2>What is the word for feeling happy</h2><br><br>\<strong>Happy\</strong> Definition of \<strong>ha... |
 
-**Table 6.** Steered Output Text using Prompt00 for _google/gemma-4-E2B_ with 9 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
+**Table 7.** Steered Output Text using Prompt00 for _google/gemma-4-E2B_ with 9 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
 
 ## Discussion
 
