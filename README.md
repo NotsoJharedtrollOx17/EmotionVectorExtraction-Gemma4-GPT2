@@ -18,7 +18,7 @@ lorem ipsum dolor
 
 It is crucial to emphasize our limited experimental scope. To further illustrate our scope, a summarization is provided on the table down below [Table 1].
 
-| | **Anthropic [1]** | **Our Work** |
+| | **Anthropic [5]** | **Our Work** |
 |---|---|---|
 | **Model** | Claude Sonnet 4.5 | GPT 2 Medium and Gemma4-E2B |
 | **Emotions tested** | 171 | 9 and 20 |
@@ -26,7 +26,7 @@ It is crucial to emphasize our limited experimental scope. To further illustrate
 | **Team** | ~16 researchers | 1 researcher + ChatGPT + Gemini |
 | **Hardware** | Internal compute cluster | 2 Google Colab Notebooks with Free-Tier T4 NVIDIA GPUs |
 
-**Table 1.** Experiment Scope Comparison of Anthropic [1] versus Ours. _Note:_ Inspired by a similar table found on [2].
+**Table 1.** Experiment Scope Comparison of Anthropic [5] versus Ours. _Note:_ Inspired by a similar table found on [2].
 
 Overall, we utilized the data pipeline found in [2] and then adapted the codebase to complement our data requirements and probing experiments. In a similar vein, we describe the methodology steps as follows: (1) Story Generation, (2) Emotion Vector Extraction, (3) Logit Lens, (4) Emotion Probe Steering, (5) PCA Projection, and (6) Cosine Similarity Heatmap. All steps are performed on both  _openai-community/gpt-2-medium_ and _google/gemma-4-E2B_.
 
