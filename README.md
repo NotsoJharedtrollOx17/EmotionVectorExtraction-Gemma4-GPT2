@@ -174,11 +174,21 @@ The outputs remained coherent across steering values and prompts, and the emotio
 
 #### i. Logit Lens
 
+In Gemma 4 E2B, the logit lens produced more variable token distributions across emotion vectors. While some emotions yielded partially aligned tokens, others included a broader range of terms with weaker or indirect emotional associations.
+
+The token sets were more diffuse, with increased lexical variability and reduced concentration around a single semantic theme. This behavior was consistent across multiple emotion categories.
+
 #### ii. PCA Projection
+
+PCA projections for Gemma 4 E2B showed less distinct clustering. While some grouping patterns were observable, several emotion vectors appeared closer together, with reduced separation between categories. The resulting projections displayed overlapping regions, indicating a less clearly partitioned structure in the reduced-dimensional representation.
 
 #### iii. Cosine Similarity
 
+In Gemma 4 E2B, cosine similarity values showed weaker differentiation between emotion vectors. While some expected relationships were present, the overall range of similarity scores was narrower, and distinctions between certain emotions were less pronounced. The similarity matrix contained more moderate values, indicating increased overlap between vector representations.
+
 #### iv. Emotion Steering
+
+Gemma 4 E2B also exhibited changes in generated outputs under activation steering. For sufficiently large steering values, the model produced text reflecting the intended emotional tone, including explicit emotional expressions and stylistic variations. However, the outputs showed greater variability. In some cases, generated text included unrelated elements such as numerical expressions or abrupt topic changes. Despite this variability, the overall emotional direction remained detectable.
 
 | **Emotion** | **Top 5 Tokens** | **Bottom 5 Tokens** |
 | :--- | :--- | :--- |
