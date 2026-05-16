@@ -12,7 +12,11 @@ We discuss the results obtained by replicating specific sections of Anthropic's 
 
 ## Introduction
 
-lorem ipsum dolor
+Recent work from Anthropic [5] demonstrated that large language models develop internal activation patterns associated with emotional concepts and that these representations can causally influence downstream behavior through residual stream interventions. Their findings suggest that emotional representations inside transformer architectures may behave as structured latent directions rather than superficial linguistic correlations. In particular, Anthropic reported that emotion vectors extracted from Claude Sonnet 4.5 [6] exhibited interpretable geometric organization, meaningful clustering behavior, and measurable causal effects during activation steering experiments.
+
+This repository presents a partial replication and exploratory extension of a subset of those experiments using smaller publicly accessible transformer models, specifically  _openai-community/gpt-2-medium_ [3] and _google/gemma-4-E2B_ [4]. Rather than attempting to reproduce the full scope of Anthropic’s study, this work focuses on three core experimental components: emotion vector extraction from residual activations, token-level log-probability steering analysis, and cross-emotion heatmap visualization. The objective is not merely to reproduce behavioral steering, but to investigate whether smaller open-weight architectures preserve similar geometric structures within their activation spaces. In addition, utilizing an older transformer models such as  _openai-community/gpt-2-medium_ may uncover the existence of these emotion structures inside antiquated models. For the case of _google/gemma-4-E2B_, we can provide substantial evidence to the results documented in [2], supporting the community's replicability efforts.
+
+Preliminary results obtained during the replication process indicate substantial differences between  _openai-community/gpt-2-medium_ and _google/gemma-4-E2B_. _openai-community/gpt-2-medium_ consistently produced stronger diagonal activation patterns during heatmap steering experiments, suggesting comparatively separable emotional representations. In contrast, _google/gemma-4-E2B_ frequently displayed weaker token-level separation despite retaining visible steering effects during free-form generation tasks. This discrepancy suggests that behavioral steering and local logit lens steering may not always correlate directly, particularly in multilingual models.
 
 ## Methodology
 
