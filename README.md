@@ -32,7 +32,11 @@ Overall, we utilized the data pipeline found in [2] and then adapted the codebas
 
 ### 1. Story Generation
 
-We utilized a slight variation of the prompt template utilized by [5], and then prompt the current web version of Gemini to generate batches of 10 stores per topic for each emotion with a JSON list format. Then we copy and paste the JSON into a file containing the stories generated for each emotion. This was decided to save the precious compute time provided in the free-tier range of our Google Colab Notebooks. We consider that story generation using the evaluated models would have slowed down our experiment execution.
+We utilized a slight variation of the prompt template<sup>1</sup> utilized by [5], and then prompt the current web version of Gemini to generate batches of 10 stores per topic for each emotion with a JSON list format. Then we copy and paste the JSON into a file containing the stories generated for each emotion. This was decided to save the precious compute time provided in the free-tier range of our Google Colab Notebooks. We consider that story generation using the evaluated models would have slowed down our experiment execution. Likewise, we prompt Gemini with a neutral prompt<sup>2</sup> template to extend the list of texts consiting of commands and requests.
+
+> <sup>1</sup> Full template prompt available at [`./research_data/PromptDataForEmotions.txt`](./research_data/PromptDataForEmotions.txt)
+
+> <sup>2</sup> Full template prompt available at [`./research_data/PromptDataForNeutral`](./research_data/PromptDataForNeutral.txt)
 
 ### 2. Emotion Vector Extraction
 
@@ -56,11 +60,33 @@ We calculated and plotted pairwise cosine similarities between all emotion vecto
 
 ## Results
 
-The following subsection is further subdivided into two subsubsections: (1) GPT 2 Medium, and (2) Gemma 4 E2B. In summary, emotion vector extraction does work on both models and it captures the semantical understanding of each emotion tested, while emotion probing does affect the model outputs.
+The following subsection is further subdivided into two subsubsections: (1) GPT 2 Medium, and (2) Gemma 4 E2B. In summary, emotion vector extraction does work on both models and it captures the semantical understanding of each emotion tested, while emotion probing does affect the model outputs. For the sake of transparency, we provide inside ```./scripts/``` the Colab Notebooks containing all of results presented in this section.
 
 ### 1. GPT 2 Medium
 
-lorem ipsum dolor
+![](./plots/PCAGPT2Medium-9emotions-layer16.png)
+**Figure 1.** PCA Projection Plot for _openai-community/gpt-2-medium_ with 9 emotions.
+
+![](./plots/PCAGPT2Medium-20emotions-layer16.png)
+**Figure 1.** PCA Projection Plot for _openai-community/gpt-2-medium_ with 20 emotions.
+
+![](./plots/CosineHeatmapGPT2Medium-9emotions-layer16.png)
+**Figure 1.** Cosine Similarity Heatmap for _openai-community/gpt-2-medium_ with 9 emotions.
+
+![](./plots/CosineHeatmapGPT2Medium-20emotions-layer16.png)
+**Figure 1.** Cosine Similarity Heatmap for _openai-community/gpt-2-medium_ with 20 emotions.
+
+![](./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGPT2Medium-9emotions-layer16.png)
+**Figure 1.** Prompt00 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 9 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
+
+![](./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGPT2Medium-20emotions-layer16.png)
+**Figure 1.** Prompt00 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 20 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
+
+![](./plots/emotion_logits/Prompt01/DeltaLogProbHeatmapGPT2Medium-9emotions-layer16.png)
+**Figure 1.** Prompt01 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 9 emotions. _Note:_ Prompt01 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
+
+![](./plots/emotion_logits/Prompt01/DeltaLogProbHeatmapGPT2Medium-9emotions-layer16.png)
+**Figure 1.** Prompt01 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 20 emotions. _Note:_ Prompt01 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
 
 ### 2. Gemma 4 E2B
 
