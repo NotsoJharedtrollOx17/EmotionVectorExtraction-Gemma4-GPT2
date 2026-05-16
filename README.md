@@ -137,6 +137,45 @@ The following subsection is further subdivided into two subsubsections: (1) GPT 
 
 ### 2. Gemma 4 E2B
 
+| **Emotion** | **Top 5 Tokens** | **Bottom 5 Tokens** |
+| :--- | :--- | :--- |
+| ```sad``` | 失去了, となっています, lacks, nedost, suffers | muka, FOLLOWING, scra, الفاظ, gerakan |
+| ```desperate``` | försö, trying, trying, desesper, tries | TOP, 있었, 였, ROYAL, 하였다 |
+| ```guilty``` | offending, 잘못, неправи, offended, dishon | આનંદ, uncommon, Unusual, 堬, ាតុ |
+| ```afraid``` | ஜூ, prices, poslední, Attempts, staggered | LOVE, શકતો, Love, മായ, love |
+| ```angry``` | muka, fais, intenta, 罚, оско | かもしれません, encapsulated, liberating, であり, योग |
+| ```surprised``` | detection, 驚, surprise, 震惊, amazement | cigarettes, addresses, bicicleta, ഓരോ, canciones |
+| ```loving``` | ❤️, ❤, ❤️, LOVE, 💕 | 聞こ, furiously, blasted, frantically, ஜூ |
+| ```calm``` | 清, paseo, 令, tranquila, Calm | trying, trying, miserably, darn, violently |
+| ```happy``` | camaraderie, confident, अद्भुत, আনন্দে, YES | intentar, försö, Attempts, intenta, skall |
+
+**Table 2.** Top 5 and Bottom 5 Logit Lens Tokens for _google/gemma-4-E2B_ with 9 emotions. _Note:_ Multilingual and emoji tokens appear in this model.
+
+| **Emotion** | **Top 5 Tokens** | **Bottom 5 Tokens** |
+| :--- | :--- | :--- |
+| ```sad``` | 失去了, nedost, loses, unable, 無法 | ريقه, secondi, muka, checking, maf |
+| ```lonely``` | suffers, lacks, absent, lacking, 匮 | neurological, кры, stork, aggressiveness, 肌肉 |
+| ```nervous``` | frantic, попы, Programme, attempts, Attempts | 人用, ناسب, Accessible, lengkap, Enabled |
+| ```brooding``` | dwelt, dole, දු, भरे, fillRect | !, !!!!!, Detection, pollin, teamwork |
+| ```desperate``` | försö, desesper, trying, trying, tries | TOP, ROYAL, Eco, Lollipop, Yep |
+| ```guilty``` | してた, didn, hätte, wasn, didn | fruition, erfolgt, develops, આનંદ, achieves |
+| ```confused``` | frantically, რომელი, を発, awfully, perplexed | odnev, बेट, Antit, 閾, ABS |
+| ```anxious``` | försö, tries, tries, пытается, urge | മായ, を獲得, niche, योग्य, shared |
+| ```spiteful``` | disgrace, बोलेंगे, will, insult, disgr | Across, 쌌, края, लिन, Across |
+| ```disgusted``` | mauvaise, reddish, 秽, groaned, stench | Фор, Ens, smartwatch, Ensuring, த்திற்கான |
+| ```afraid``` | края, 脆, پھی, ஜூ, bewegen | മായ, LOVE, EQ, Maple, fashion |
+| ```angry``` | muka, ギター, 罚, giọng, ركات | かもしれません, かもしれない, Sequoia, 分野, योग |
+| ```surprised``` | amazed, 震惊, 惊讶, amazement, 驚 | ഓരോ, volcanoes, cigarettes, ferries, addresses |
+| ```playful``` | hilarious, bamboo, sneak, witty, badass | इकाइ, 이었다, மொழி, shrank, cotid |
+| ```inspired``` | 有机会, HEALTH, reimag, learnings, Insights | unsuccessfully, FileManager, pictured, frowning, uttered |
+| ```hopeful``` | Harmony, Harmony, ಬಹುದು, Yes, Diabetes | unsuccessfully, angrily, helpless, försö, fidd |
+| ```loving``` | ❤️, ❤️, ❤, LOVE, 🤝 | furiously, frantically, blasted, 聞こ, suspiciously |
+| ```proud``` | WELL, satisfied, achieved, pride, Yes | 扯, furiously, försö, frantically, trying |
+| ```calm``` | 侕, 清, calme, utsu, இருந்த | trying, miserably, 更に, trying, shall |
+| ```happy``` | camaraderie, благодар, अद्भुत, আনন্দে, radiant | skall, seguirá, intentar, försö, จะ |
+
+**Table 2.** Top 5 and Bottom 5 Logit Lens Tokens for _google/gemma-4-E2B_ with 20 emotions. _Note:_ Multilingual and emoji tokens appear in this model.
+
 <img src="./plots/PCAGemma4E2B-9emotions-layer23.png" alt="lorem ipsum dolor" width="500" height="500"/>
 
 **Figure 1.** PCA Projection Plot for _google/gemma-4-E2B_ with 9 emotions.
