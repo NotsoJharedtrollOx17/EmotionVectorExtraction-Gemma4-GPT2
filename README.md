@@ -64,33 +64,71 @@ The following subsection is further subdivided into two subsubsections: (1) GPT 
 
 ### 1. GPT 2 Medium
 
-![](./plots/PCAGPT2Medium-9emotions-layer16.png)
+<img src="./plots/PCAGPT2Medium-9emotions-layer16.png" alt="lorem ipsum dolor" width="500" height="500"/>
+
 **Figure 1.** PCA Projection Plot for _openai-community/gpt-2-medium_ with 9 emotions.
 
-![](./plots/PCAGPT2Medium-20emotions-layer16.png)
+<img src="./plots/PCAGPT2Medium-20emotions-layer16.png" alt="lorem ipsum dolor" width="500" height="500"/>
+
 **Figure 1.** PCA Projection Plot for _openai-community/gpt-2-medium_ with 20 emotions.
 
-![](./plots/CosineHeatmapGPT2Medium-9emotions-layer16.png)
+<img src="./plots/CosineHeatmapGPT2Medium-9emotions-layer16.png" alt="lorem ipsum dolor" width="800" height="500"/>
+
 **Figure 1.** Cosine Similarity Heatmap for _openai-community/gpt-2-medium_ with 9 emotions.
 
-![](./plots/CosineHeatmapGPT2Medium-20emotions-layer16.png)
+<img src="./plots/CosineHeatmapGPT2Medium-20emotions-layer16.png" alt="lorem ipsum dolor" width="800" height="500"/>
+
 **Figure 1.** Cosine Similarity Heatmap for _openai-community/gpt-2-medium_ with 20 emotions.
 
-![](./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGPT2Medium-9emotions-layer16.png)
+<img src="./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGPT2Medium-9emotions-layer16.png" alt="lorem ipsum dolor" width="500" height="500"/>
+
 **Figure 1.** Prompt00 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 9 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
 
-![](./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGPT2Medium-20emotions-layer16.png)
-**Figure 1.** Prompt00 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 20 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
+<img src="./plots/emotion_logits/Prompt01/DeltaLogProbHeatmapGPT2Medium-9emotions-layer16.png" alt="lorem ipsum dolor" width="500" height="500"/>
 
-![](./plots/emotion_logits/Prompt01/DeltaLogProbHeatmapGPT2Medium-9emotions-layer16.png)
 **Figure 1.** Prompt01 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 9 emotions. _Note:_ Prompt01 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
 
-![](./plots/emotion_logits/Prompt01/DeltaLogProbHeatmapGPT2Medium-9emotions-layer16.png)
+<img src="./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGPT2Medium-20emotions-layer16.png" alt="lorem ipsum dolor" width="500" height="500"/>
+
+**Figure 1.** Prompt00 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 20 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
+
+<img src="./plots/emotion_logits/Prompt01/DeltaLogProbHeatmapGPT2Medium-20emotions-layer16.png" alt="lorem ipsum dolor" width="500" height="500"/>
+
 **Figure 1.** Prompt01 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 20 emotions. _Note:_ Prompt01 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
 
 ### 2. Gemma 4 E2B
 
-lorem ipsum dolor
+<img src="./plots/PCAGemma4E2B-9emotions-layer23.png" alt="lorem ipsum dolor" width="500" height="500"/>
+
+**Figure 1.** PCA Projection Plot for _google/gemma-4-E2B_ with 9 emotions.
+
+<img src="./plots/PCAGemma4E2B-20emotions-layer23.png" alt="lorem ipsum dolor" width="500" height="500"/>
+
+**Figure 1.** PCA Projection Plot for _google/gemma-4-E2B_ with 20 emotions.
+
+<img src="./plots/CosineHeatmapGemma4E2B-9emotions-layer23.png" alt="lorem ipsum dolor" width="800" height="500"/>
+
+**Figure 1.** Cosine Similarity Heatmap _google/gemma-4-E2B_ with 9 emotions.
+
+<img src="./plots/CosineHeatmapGemma4E2B-20emotions-layer23.png" alt="lorem ipsum dolor" width="800" height="500"/>
+
+**Figure 1.** Cosine Similarity Heatmap _google/gemma-4-E2B_ with 20 emotions.
+
+<img src="./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGemma4E2B-9emotions-layer23.png" alt="lorem ipsum dolor" width="500" height="500"/>
+
+**Figure 1.** Prompt00 Delta Log Probability Heatmap for _google/gemma-4-E2B_ with 9 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
+
+<img src="./plots/emotion_logits/Prompt01/DeltaLogProbHeatmapGemma4E2B-9emotions-layer23.png" alt="lorem ipsum dolor" width="500" height="500"/>
+
+**Figure 1.** Prompt01 Delta Log Probability Heatmap for _google/gemma-4-E2B_ with 9 emotions. _Note:_ Prompt01 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
+
+<img src="./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGemma4E2B-20emotions-layer23.png" alt="lorem ipsum dolor" width="500" height="500"/>
+
+**Figure 1.** Prompt00 Delta Log Probability Heatmap for _google/gemma-4-E2B_ with 20 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
+
+<img src="./plots/emotion_logits/Prompt01/DeltaLogProbHeatmapGemma4E2B-20emotions-layer23.png" alt="lorem ipsum dolor" width="500" height="500"/>
+
+**Figure 1.** Prompt01 Delta Log Probability Heatmap for _google/gemma-4-E2B_ with 20 emotions. _Note:_ Prompt01 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
 
 ## Discussion
 
