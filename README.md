@@ -72,25 +72,23 @@ The following subsection is further subdivided into two subsubsections: (1) GPT 
 
 Applying the logit lens to the extracted emotion vectors in GPT-2 Medium produced token distributions that aligned consistently with their corresponding emotional labels. The highest-scoring tokens for each emotion reflected coherent affective language. For example, vectors associated with happy and sad yielded tokens corresponding to positive and negative emotional expressions, respectively.
 
-The resulting token sets were relatively concentrated, with limited inclusion of unrelated terms. This indicates that the projected logits from the emotion vectors produce stable and interpretable outputs.
+The resulting token sets were relatively concentrated, with limited inclusion of unrelated terms. This indicates that the projected logits from the emotion vectors produce stable and interpretable outputs. Tokens can be appreciated in [Table 2], and [Table 3].
 
 #### ii. PCA Projection
 
-Principal Component Analysis applied to the extracted emotion vectors revealed structured clustering across emotion categories. Vectors corresponding to similar emotional valence appeared closer in the projected space, while opposing emotions were more separated.
-
-The projections produced visually distinct groupings, indicating that the vectors occupy separable regions in the reduced-dimensional space.
+Principal Component Analysis applied to the extracted emotion vectors revealed structured clustering across emotion categories. Vectors corresponding to similar emotional valence appeared closer in the projected space, while opposing emotions were more separated. The projections produced visually distinct groupings, indicating that the vectors occupy separable regions in the reduced-dimensional space. PCA plots can be appreciated in [Figure 1][Figure 2].
 
 #### iii. Cosine Similarity
 
 Pairwise cosine similarity between emotion vectors in GPT-2 Medium showed clear relationships between emotional categories. Similar emotions exhibited higher similarity scores, while opposing emotions showed lower or negative similarity values.
 
-The similarity matrix displayed structured variation across emotions, with consistent patterns reflecting expected relationships such as positive versus negative affect.
+The similarity matrix displayed structured variation across emotions, with consistent patterns reflecting expected relationships such as positive versus negative affect. Cosine Heatmaps can be appreciated in [Figure 3] and [Figure 4].
 
 #### iv. Emotion Steering
 
-Activation steering experiments in GPT-2 Medium produced clear and consistent changes in generated outputs. Increasing the steering value resulted in text that reflected the intended emotional tone. For example, sad steering produced negative or introspective phrasing, while happy steering produced positive language.
+Activation steering experiments in GPT-2 Medium produced clear and consistent changes in generated outputs. Increasing the steering value resulted in text that reflected the intended emotional tone. For example, sad steering produced negative or introspective phrasing, while happy steering produced positive language. The steering heatmaps can be appreciated in [Figure 5] and [Figure 6].
 
-The outputs remained coherent across steering values and prompts, and the emotional influence was consistently observable.
+The outputs remained coherent across steering values and prompts, and the emotional influence was consistently observable. Text output can be appreciated in [Table 4].
 
 | **Emotion** | **Top 5 Tokens** | **Bottom 5 Tokens** |
 | :--- | :--- | :--- |
