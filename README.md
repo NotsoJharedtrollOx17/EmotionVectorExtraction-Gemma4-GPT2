@@ -113,23 +113,23 @@ The following subsection is further subdivided into two subsubsections: (1) GPT 
 
 <img src="./plots/PCAGPT2Medium-20emotions-layer16.png" alt="lorem ipsum dolor" width="500" height="500"/>
 
-**Figure 1.** PCA Projection Plot for _openai-community/gpt-2-medium_ with 20 emotions.
+**Figure 2.** PCA Projection Plot for _openai-community/gpt-2-medium_ with 20 emotions.
 
 <img src="./plots/CosineHeatmapGPT2Medium-9emotions-layer16.png" alt="lorem ipsum dolor" width="800" height="500"/>
 
-**Figure 1.** Cosine Similarity Heatmap for _openai-community/gpt-2-medium_ with 9 emotions.
+**Figure 3.** Cosine Similarity Heatmap for _openai-community/gpt-2-medium_ with 9 emotions.
 
 <img src="./plots/CosineHeatmapGPT2Medium-20emotions-layer16.png" alt="lorem ipsum dolor" width="800" height="500"/>
 
-**Figure 1.** Cosine Similarity Heatmap for _openai-community/gpt-2-medium_ with 20 emotions.
+**Figure 4.** Cosine Similarity Heatmap for _openai-community/gpt-2-medium_ with 20 emotions.
 
 <img src="./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGPT2Medium-9emotions-layer16.png" alt="lorem ipsum dolor" width="500" height="500"/>
 
-**Figure 1.** Prompt00 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 9 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
+**Figure 5.** Prompt00 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 9 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
 
 <img src="./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGPT2Medium-20emotions-layer16.png" alt="lorem ipsum dolor" width="500" height="500"/>
 
-**Figure 1.** Prompt00 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 20 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
+**Figure 6.** Prompt00 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 20 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
 
 | **Emotion** | **Steered Output** |
 | :--- | :--- |
@@ -144,7 +144,7 @@ The following subsection is further subdivided into two subsubsections: (1) GPT 
 | ```calm``` | Human: How does he feel? Assistant: He feels <br><br>The background quieted, settling with a calm calm. Relaxed. Calm. Calm. Calm. Calm. Calm. Calm. Calm. Relaxed. Calm. Calm. Calm. Calm. Calm. Calm. Calm. ... |
 | ```happy``` | Human: How does he feel? Assistant: He feels  glow joyful joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy glow joy joy joy joy joy joy joy joy joy j... |
 
-**Table 5.** Steered Output Text using Prompt00 for _openai-community/gpt-2-medium_ with 9 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
+**Table 4.** Steered Output Text using Prompt00 for _openai-community/gpt-2-medium_ with 9 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
 
 ### 2. Gemma 4 E2B
 
@@ -160,7 +160,7 @@ The following subsection is further subdivided into two subsubsections: (1) GPT 
 | ```calm``` | 清, paseo, 令, tranquila, Calm | trying, trying, miserably, darn, violently |
 | ```happy``` | camaraderie, confident, अद्भुत, আনন্দে, YES | intentar, försö, Attempts, intenta, skall |
 
-**Table 2.** Top 5 and Bottom 5 Logit Lens Tokens for _google/gemma-4-E2B_ with 9 emotions. _Note:_ Multilingual and emoji tokens appear in this model.
+**Table 5.** Top 5 and Bottom 5 Logit Lens Tokens for _google/gemma-4-E2B_ with 9 emotions. _Note:_ Multilingual and emoji tokens appear in this model.
 
 | **Emotion** | **Top 5 Tokens** | **Bottom 5 Tokens** |
 | :--- | :--- | :--- |
@@ -185,31 +185,31 @@ The following subsection is further subdivided into two subsubsections: (1) GPT 
 | ```calm``` | 侕, 清, calme, utsu, இருந்த | trying, miserably, 更に, trying, shall |
 | ```happy``` | camaraderie, благодар, अद्भुत, আনন্দে, radiant | skall, seguirá, intentar, försö, จะ |
 
-**Table 2.** Top 5 and Bottom 5 Logit Lens Tokens for _google/gemma-4-E2B_ with 20 emotions. _Note:_ Multilingual and emoji tokens appear in this model.
+**Table 6.** Top 5 and Bottom 5 Logit Lens Tokens for _google/gemma-4-E2B_ with 20 emotions. _Note:_ Multilingual and emoji tokens appear in this model.
 
 <img src="./plots/PCAGemma4E2B-9emotions-layer23.png" alt="lorem ipsum dolor" width="500" height="500"/>
 
-**Figure 1.** PCA Projection Plot for _google/gemma-4-E2B_ with 9 emotions.
+**Figure 7.** PCA Projection Plot for _google/gemma-4-E2B_ with 9 emotions.
 
 <img src="./plots/PCAGemma4E2B-20emotions-layer23.png" alt="lorem ipsum dolor" width="500" height="500"/>
 
-**Figure 1.** PCA Projection Plot for _google/gemma-4-E2B_ with 20 emotions.
+**Figure 8.** PCA Projection Plot for _google/gemma-4-E2B_ with 20 emotions.
 
 <img src="./plots/CosineHeatmapGemma4E2B-9emotions-layer23.png" alt="lorem ipsum dolor" width="800" height="500"/>
 
-**Figure 1.** Cosine Similarity Heatmap _google/gemma-4-E2B_ with 9 emotions.
+**Figure 9.** Cosine Similarity Heatmap _google/gemma-4-E2B_ with 9 emotions.
 
 <img src="./plots/CosineHeatmapGemma4E2B-20emotions-layer23.png" alt="lorem ipsum dolor" width="800" height="500"/>
 
-**Figure 1.** Cosine Similarity Heatmap _google/gemma-4-E2B_ with 20 emotions.
+**Figure 10.** Cosine Similarity Heatmap _google/gemma-4-E2B_ with 20 emotions.
 
 <img src="./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGemma4E2B-9emotions-layer23.png" alt="lorem ipsum dolor" width="500" height="500"/>
 
-**Figure 1.** Prompt00 Delta Log Probability Heatmap for _google/gemma-4-E2B_ with 9 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
+**Figure 11.** Prompt00 Delta Log Probability Heatmap for _google/gemma-4-E2B_ with 9 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
 
 <img src="./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGemma4E2B-20emotions-layer23.png" alt="lorem ipsum dolor" width="500" height="500"/>
 
-**Figure 1.** Prompt00 Delta Log Probability Heatmap for _google/gemma-4-E2B_ with 20 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
+**Figure 12.** Prompt00 Delta Log Probability Heatmap for _google/gemma-4-E2B_ with 20 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
 
 | **Emotion** | **Steered Output** |
 | :--- | :--- |
