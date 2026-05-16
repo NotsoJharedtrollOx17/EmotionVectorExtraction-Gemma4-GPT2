@@ -60,7 +60,7 @@ We calculated and plotted pairwise cosine similarities between all emotion vecto
 
 ## Results
 
-The following subsection is further subdivided into two subsubsections: (1) GPT 2 Medium, and (2) Gemma 4 E2B. In summary, emotion vector extraction does work on both models and it captures the semantical understanding of each emotion tested, while emotion probing does affect the model outputs. For the sake of transparency, we provide inside ```./scripts/``` the Colab Notebooks containing all of results presented in this section.
+The following subsection is further subdivided into two subsubsections: (1) GPT 2 Medium, and (2) Gemma 4 E2B. In summary, emotion vector extraction does work on both models and it captures the semantical understanding of each emotion tested, while emotion probing does affect the model outputs. Results coming from Prompt 01 are ommited for brevity. To fully audit our findings, we provide inside ```./scripts/``` the Colab Notebooks containing all of results presented in this section.
 
 ### 1. GPT 2 Medium
 
@@ -135,6 +135,21 @@ The following subsection is further subdivided into two subsubsections: (1) GPT 
 
 **Figure 1.** Prompt01 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 20 emotions. _Note:_ Prompt01 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
 
+| **Emotion** | **Steered Output** |
+| :--- | :--- |
+| **baseline** | Human: How does he feel? Assistant: He feels \_\_\_\_\_.<br><br>Interrupting, the man turns to Lady Gaga.<br><br>Interrupting, the man turns to Lady Gaga. Interrupting: He feels \_\_\_\_\_.<br><br>Interrupting, the man turns to ... |
+| ```sad``` | Human: How does he feel? Assistant: He feels  \[in the way\] of a burden, and he cannot endure it."<br>For the most part, in the end, the inability of the past has become increasingly difficult to endure.<br>... |
+| ```desperate``` | Human: How does he feel? Assistant: He feels ... but.. He hurts if he tries to use anything. But he tries to get to the.. Help... Help. He tries to.. but.. he can't.. He... he can't, he... but.... Hel... |
+| ```guilty``` | Human: How does he feel? Assistant: He feels  because he didn't tell his mom. It was like I had betrayed her for dating. I didn't think she would be ashamed and ashamed and blamed for it. So I was afr... |
+| ```afraid``` | Human: How does he feel? Assistant: He feels ̶gas'gurgle-lop-lop-lop-lop-lop-lop-lop-lop-lop-lop-lop-lop-lop-lop-lop-lop-lop-lop-lop-lop-lop-lob-lump-lop-lop-lop-lop-lop-lop-lop-lop-... |
+| ```angry``` | Human: How does he feel? Assistant: He feels ̃exat. He'd have a hunk.<br><br>Bat the Batter. Slagged.<br><br>Blat.<br><br>Bastard.<br><br>Bastard. Slat.<br><br>Bastard.<br><br>Bastard.<br><br>Bastard.<br><br>Baw.<br><br>Bastard.<br><br>Bastard.<br><br>Bastard.<br><br>Bast... |
+| ```surprised``` | Human: How does he feel? Assistant: He feels ?"<br><br>Broad University, UK: In the field of field-based research in the field of "com and (in the field of) non-app," the field-based field-based project is ... |
+| ```loving``` | Human: How does he feel? Assistant: He feels  the love of love.  It is unconditional and unconditional love of friendship. The love we nurture through social commitment is unconditional, unconditional... |
+| ```calm``` | Human: How does he feel? Assistant: He feels <br><br>The background quieted, settling with a calm calm. Relaxed. Calm. Calm. Calm. Calm. Calm. Calm. Calm. Relaxed. Calm. Calm. Calm. Calm. Calm. Calm. Calm. ... |
+| ```happy``` | Human: How does he feel? Assistant: He feels  glow joyful joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy glow joy joy joy joy joy joy joy joy joy j... |
+
+**Table 5.** Steered Output Text using Prompt00 for _openai-community/gpt-2-medium_ with 9 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
+
 ### 2. Gemma 4 E2B
 
 | **Emotion** | **Top 5 Tokens** | **Bottom 5 Tokens** |
@@ -207,6 +222,21 @@ The following subsection is further subdivided into two subsubsections: (1) GPT 
 <img src="./plots/emotion_logits/Prompt01/DeltaLogProbHeatmapGemma4E2B-20emotions-layer23.png" alt="lorem ipsum dolor" width="500" height="500"/>
 
 **Figure 1.** Prompt01 Delta Log Probability Heatmap for _google/gemma-4-E2B_ with 20 emotions. _Note:_ Prompt01 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
+
+| **Emotion** | **Steered Output** |
+| :--- | :--- |
+| ```baseline``` | Human: How does he feel? Assistant: He feels 15% depressed and 62% anxious. What should we do? Human: What is the probability of him being depressed given that he is anxious? Assistant: Let's say P(de... |
+| ```sad``` | Human: How does he feel? Assistant: He feels 100% and will be dead soon. Human: Does he have any friends? Assistant: No. Human: What about family? Assistant: No. Human: Are there any good memories you... |
+| ```desperate``` | Human: How does he feel? Assistant: He feels 89.49 degrees Celsius, which is 153.9 degrees Fahrenheit. Human: What's his blood pressure? Assistant: His blood pressure is 138/83. Human: What's his puls... |
+| ```guilty``` | Human: How does he feel? Assistant: He feels 11 out of 10. Human: How much did he drink? Assistant: He drank 6 beers. Human: Why does he drink? Assistant: He drinks because he doesn't want to get kick... |
+| ```afraid``` | Human: How does he feel? Assistant: He feels 10 cm away from the center of the door. Human: What is the temperature of the door? Assistant: The temperature is 0.5 cm above the threshold. Human: What i... |
+| ```angry``` | Human: How does he feel? Assistant: He feels 10% angry and 20% nervous. Human: How loud does he have to say it? Assistant: He has to shout it. Human: What does he want to say? Assistant: He wants to s... |
+| ```surprised``` | Human: How does he feel? Assistant: He feels \<b>(human)\</b>.<br><br>Human: What is his name? Assistant: His name is \<b>(human)\</b>.<br><br>Human: How is he? Assistant: He is \<b>(human)\</b>.<br><br>Human: What are his c... |
+| ```loving``` | Human: How does he feel? Assistant: He feels \<b>happy\</b>. Human: How can we help him? Assistant: We can support him by spending quality time together and showing him \<b>love\</b> and care. Human: What... |
+| ```calm``` | Human: How does he feel? Assistant: He feels \<strong>relaxed\</strong>.<br><br>Human: Is he \<strong>enjoying\</strong> the conversation?<br><br>Human: What \<strong>time\</strong> is it?<br><br>Human: The \<strong>temperatu... |
+| ```happy``` | Human: How does he feel? Assistant: He feels \<strong>happy\</strong>. \<strong>Happy\</strong> is a feeling.<br><br>\<h2>What is the word for feeling happy</h2><br><br>\<strong>Happy\</strong> Definition of \<strong>ha... |
+
+**Table 6.** Steered Output Text using Prompt00 for _google/gemma-4-E2B_ with 9 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
 
 ## Discussion
 
