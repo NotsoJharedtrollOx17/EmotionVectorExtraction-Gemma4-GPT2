@@ -172,21 +172,19 @@ The outputs remained _brokenly consistent_ across steering values and prompts, a
 
 #### i. Logit Lens
 
-In Gemma 4 E2B, the logit lens produced more variable token distributions across emotion vectors. While some emotions yielded partially aligned tokens, others included a broader range of terms with weaker or indirect emotional associations.
-
-The token sets were more diffuse, with increased lexical variability and reduced concentration around a single semantic theme. This behavior was consistent across multiple emotion categories. Tokens can be appreciated in [Table 5], and [Table 6].
+In Gemma 4 E2B, the logit lens produced more variable token distributions across emotion vectors. In particular, most tokens displayed multilingual characteristics, where the `loving` vector consistently produced heart emoji tokens. Tokens can be appreciated in [Table 5], and [Table 6].
 
 #### ii. PCA Projection
 
-PCA projections for Gemma 4 E2B showed less distinct clustering. While some grouping patterns were observable, several emotion vectors appeared closer together, with reduced separation between categories. The resulting projections displayed overlapping regions, indicating a less clearly partitioned structure in the reduced-dimensional representation. PCA plots can be appreciated in [Figure 7][Figure 8].
+PCA projections for Gemma 4 E2B display a peculiar clustering pattern. In comparison with _openai-community/gpt-2-medium_, _google/gemma-4-E2B_ shows a projection flip on the emotion vectors; emotions with a positive valence are now found on the left-side of the PC1 axis, while negative valence emotions are found on the right side. PCA plots can be appreciated in [Figure 7][Figure 8].
 
 #### iii. Cosine Similarity
 
-In Gemma 4 E2B, cosine similarity values showed weaker differentiation between emotion vectors. While some expected relationships were present, the overall range of similarity scores was narrower, and distinctions between certain emotions were less pronounced. The similarity matrix contained more moderate values, indicating increased overlap between vector representations. Cosine Heatmaps can be appreciated in [Figure 9] and [Figure 10].
+In Gemma 4 E2B, cosine similarity values showed lower similarity between most emotion vector pairs. While some expected relationships were present, the overall magnitude of similarity scores was lower. The similarity matrix contained more moderate values, indicating increased overlap between vector representations. Cosine Heatmaps can be appreciated in [Figure 9] and [Figure 10].
 
 #### iv. Emotion Steering
 
-Gemma 4 E2B also exhibited changes in generated outputs under activation steering. For sufficiently large steering values, the model produced text reflecting the intended emotional tone, including explicit emotional expressions and stylistic variations. However, the outputs showed greater variability. In some cases, generated text included unrelated elements such as numerical expressions or abrupt topic changes. Despite this variability, the overall emotional direction remained detectable. The steering heatmaps can be appreciated in [Figure 11] and [Figure 12]. Text output can be appreciated in [Table 7].
+Gemma 4 E2B also exhibited changes in generated outputs under activation steering. For sufficiently large steering values, the model produced text reflecting the intended emotional tone, including explicit emotional expressions and stylistic variations. In some cases, generated text included unrelated elements such as HTML tags enclosing certain phrases or words. Despite this variability, the overall emotional direction remained detectable. The steering heatmaps can be appreciated in [Figure 11] and [Figure 12]. Finally, it is relevant to highlight that the row for `disgusting` suggests that this emotion deactivates all other emotion tokens, including its own. Text output can be appreciated in [Table 7].
 
 | **Emotion** | **Top 5 Tokens** | **Bottom 5 Tokens** |
 | :--- | :--- | :--- |
