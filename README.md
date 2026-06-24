@@ -20,7 +20,7 @@ Preliminary results indicate substantial differences on the emotion vectors of _
 
 ## Methodology
 
-It is crucial to emphasize our limited experimental scope. To further illustrate our scope, a summarization is provided on the table down below [Table 1].
+It is crucial to emphasize our limited experimental scope compared to [5], which helps to understand the scale of our results. To further illustrate this, a summarization is provided on the table down below [Table 1].
 
 | | **Anthropic [5]** | **Our Work** |
 |---|---|---|
@@ -32,11 +32,11 @@ It is crucial to emphasize our limited experimental scope. To further illustrate
 
 **Table 1.** Experiment Scope Comparison of Anthropic [5] versus Ours. _Note:_ Inspired by a similar table found on [2].
 
-Overall, we utilized the data pipeline found in [2] and then adapted the codebase to complement our data requirements and probing experiments. In a similar vein, we describe the methodology steps as follows: (1) Story Generation, (2) Emotion Vector Extraction, (3) Logit Lens, (4) Emotion Probe Steering, (5) PCA Projection, and (6) Cosine Similarity Heatmap. All steps are performed on both  _openai-community/gpt-2-medium_ and _google/gemma-4-E2B_.
+Overall, we utilized the data pipeline found in [2] and then adapted the codebase to complement our data requirements and probing experiments. This section is subdivided with the following methodology steps: (1) Story Generation, (2) Emotion Vector Extraction, (3) Logit Lens, (4) Emotion Probe Steering, (5) PCA Projection, and (6) Cosine Similarity Heatmap. All steps are performed on both  _openai-community/gpt-2-medium_ and _google/gemma-4-E2B_.
 
 ### 1. Story Generation
 
-We utilized a slight variation of the prompt template<sup>1</sup> utilized by [5], and then prompt the current web version of Gemini to generate batches of 10 stores per topic for each emotion with a JSON list format. Then we copy and paste the JSON into a file containing the stories generated for each emotion. This was decided to save the precious compute time provided in the free-tier range of our Google Colab Notebooks. We consider that story generation using the evaluated models would have slowed down our experiment execution. Likewise, we prompt Gemini with a neutral prompt<sup>2</sup> template to extend the list of texts consiting of commands and requests.
+We utilized a slight variation of the prompt template<sup>1</sup> utilized by [5], and then prompt the current web version of Gemini to generate batches of 10 stories per topic for each emotion with a JSON list format. We then copy-paste the JSON into a file containing the stories generated for each emotion. This was decided to save precious compute time provided in the free-tier range of our Google Colab Notebooks. We consider that story generation using the evaluated models would have slowed down our experiment execution. Likewise, we prompt Gemini with a neutral prompt<sup>2</sup> template to extend the provided list of texts consisting of commands and requests.
 
 > <sup>1</sup> Full template prompt available at [`./research_data/PromptDataForEmotions.txt`](./research_data/PromptDataForEmotions.txt)
 
@@ -44,23 +44,23 @@ We utilized a slight variation of the prompt template<sup>1</sup> utilized by [5
 
 ### 2. Emotion Vector Extraction
 
-Emotion vectors were computed by (1) averaging activations across all stories for a given emotion to obtain per-emotion mean vectors, (2) compute the global mean across all emotions, and (3) substract the global mean from each emotion mean. This process is executed for the list of 9 emotions, and for 20 emotions as well.
+Emotion vectors were computed by (i) averaging activations across all stories for a given emotion to obtain per-emotion mean vectors, (ii) compute the global mean across all emotion vectors, and (iii) subtract the global mean from each emotion vector mean. This process is executed for the list of 9 emotions, and 20 emotions as well.
 
 ### 3. Logit Lens
 
-Each emotion vector was projected through the model's unembedding matrix to verify it upweights semantically appropriate tokens. Said tokens were saved with their respective normalized standard deviation scores into JSON files utilized  on the next step. This process is done for the subset of 9, and 20 emotions respectively.
+Each emotion vector was projected through the model's unembedding matrix to verify if it upweights semantically appropriate tokens. Said tokens were stored with their respective normalized standard deviation scores into JSON files utilized on the next step. This process is done for the subset of 9, and 20 emotions respectively.
 
-### 4 . Emotion Probe Steering
+### 4. Emotion Probe Steering
 
-Utilizing the previously generated JSON logit lens files, we measure the difference of the log probability score between the steered tokens at +0.5 strength, and the baseline "emotion" tokens of the JSON file. We then project the scores into a heatmap. We execute two steering experiments with two different prompts, and display the steered text outputs to confirm the steering effects of our interventions. This process is executed for the list of 9, and 20 emotions respectively.
+Utilizing the previously generated JSON logit lens files, we measured the difference of the log probability score between the steered tokens at +0.5 strength and the baseline "emotion" tokens of the JSON file. We then project the scores into a heatmap. Furthermore, we execute two steering experiments with two different prompts, and display the steered text outputs to confirm the steering effects of our interventions. This process is executed for the list of 9, and 20 emotions respectively.
 
 ### 5. PCA Projection
 
-We performed Principal Component Analysis on the emotion vector matrix to identify dominant organizational axes. This process is executed for the list of 9 emotions, and for 20 emotions as well.
+We performed Principal Component Analysis on the emotion vectors to identify dominant organizational axes. This process is executed for the list of 9 emotions and for 20 emotions as well.
 
 ### 6. Cosine Similarity Heatmap
 
-We calculated and plotted pairwise cosine similarities between all emotion vectors to verify expected clustering and opposition patterns. This process is done for the subset of 9, and 20 emotions respectively.
+We calculated and plotted pairwise cosine similarities between all emotion vectors to verify expected clustering and oppositional patterns. This process is done for the subset of 9, and 20 emotions respectively.
 
 ## Results
 
