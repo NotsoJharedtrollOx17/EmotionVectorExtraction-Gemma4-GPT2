@@ -16,7 +16,7 @@ Recent work from [5] demonstrated that large language models develop internal ac
 
 This repository exhibits a partial replication of a subset of their experiments using smaller, publicly accessible transformer models. The selected models are  _openai-community/gpt-2-medium_ [3] and _google/gemma-4-E2B_ [4]. We focus on three core experimental components documented in [5]: (i) PCA Valence/Arousal Projection, (ii) Emotion Vector Cosine Similarity, and (iii) Causal Effects of Emotion Vector Steering. The objective is to reproduce experiments (i), (ii) and (iii), in smaller open-weight models. This may provide evidence of the presence of similar geometric structures within their activation spaces. In addition, utilizing an older transformer model such as _openai-community/gpt-2-medium_ may offer evidence of the existence of these emotion vectors inside antiquated models. For the case of _google/gemma-4-E2B_, we may provide substantial evidence that validates the results documented in [2], which further supports the community's replicability efforts.
 
-Preliminary results indicate substantial differences on the emotion vectors of _openai-community/gpt-2-medium_ and _google/gemma-4-E2B_ across (i), (ii), and (iii). In particular with experiment (iii), _openai-community/gpt-2-medium_ consistently produced stronger diagonal activation patterns during the heatmap steering interventions, suggesting that emotion vectors steer the model's responses easily. In contrast, _google/gemma-4-E2B_ frequently displayed weaker token-level activations in the heatmap despite retaining visible steering effects in the output text during free-form generation tasks.
+Preliminary results indicate that emotion vectors can be extracted from the selected models, and they do affect the model's outputs. We must emphasize that the peculiar ways these vectors behave indicate substantial differences on how _openai-community/gpt-2-medium_ and _google/gemma-4-E2B_ process these constructs across (i), (ii), and (iii). In particular with experiment (iii), _openai-community/gpt-2-medium_ consistently produced stronger diagonal activation patterns during the heatmap steering interventions, suggesting that emotion vectors steer the model's responses easily. In contrast, _google/gemma-4-E2B_ frequently displayed weaker token-level activations in the heatmap despite retaining visible steering effects in the output text of the intervention.
 
 ## Methodology
 
@@ -64,7 +64,7 @@ We calculated and plotted pairwise cosine similarities between all emotion vecto
 
 ## Results
 
-The following subsection is further subdivided into two subsubsections: (1) GPT 2 Medium, and (2) Gemma 4 E2B. In summary, emotion vector extraction does work on both models and it captures the semantical understanding of each emotion tested, while emotion probing does affect the model outputs. Results coming from Prompt 01 are ommited for brevity. To fully audit our findings, we provide inside ```./scripts/``` the Colab Notebooks containing all of results presented in this section.
+The following subsection is further subdivided into two sub-subsections: (1) GPT 2 Medium, and (2) Gemma 4 E2B. In summary, emotion vector extraction does work on both models and it captures the semantical understanding of each emotion tested, while emotion probing does affect the model's outputs. Results coming from Prompt 01 are ommited for brevity. To fully audit our findings, we provide inside ```./scripts/``` the Colab Notebooks containing all of results presented in this section.
 
 ### 1. GPT 2 Medium
 
