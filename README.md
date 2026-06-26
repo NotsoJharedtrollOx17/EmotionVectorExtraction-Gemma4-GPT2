@@ -301,7 +301,7 @@ We hereby state that both ChatGPT and Gemini were utilized for the analysis, int
 @misc{
     flores2026emotionvectorreplication,
     title = {Partial Replication of Anthropic's Emotion Vectors using Gemma 4 E2B and GPT 2 Medium inside a Google Colab T4 Notebook},
-    author = {Flores A., Abraham J.},
+    author = {Flores-Azcona, Abraham Jhared},
     year = {2026},
     month = {May},
     url = {https://github.com/NotsoJharedtrollOx17/EmotionVectorExtraction-Gemma4-GPT2/tree/main},
