@@ -74,21 +74,21 @@ Applying the logit lens to the extracted emotion vectors in _openai-community/gp
 
 The resulting token sets were relatively concentrated, with limited inclusion of unrelated terms. This indicates that the projected logits from the emotion vectors produce stable and interpretable outputs. Tokens can be appreciated in [Table 2], and [Table 3].
 
-#### ii. PCA Projection
-
-Principal Component Analysis applied to the extracted emotion vectors revealed structured clustering patterns across emotion categories. Vectors corresponding to similar emotional valence (emotions associated with positive or negative connotations) appeared closer in the projected space, while opposing emotions were more separated. The projections produced visually distinct groupings, indicating that the vectors occupy separable regions in the reduced-dimensional space. PCA plots can be appreciated in [Figure 1][Figure 2].
-
-#### iii. Cosine Similarity
-
-Pairwise cosine similarity between emotion vectors in _openai-community/gpt-2-medium_ showed clear relationships between emotional categories. Similar emotions exhibited higher similarity scores, while opposing emotions showed lower or negative similarity values.
-
-The similarity matrix displayed structured variations across emotion vectors, with consistent patterns reflecting expected relationships such as positive versus negative affection. Cosine Heatmaps can be appreciated in [Figure 3] and [Figure 4].
-
-#### iv. Emotion Steering
+#### ii. Emotion Steering
 
 Activation steering experiments in _openai-community/gpt-2-medium_ produced clear and consistent changes in generated outputs, although the output text seems repetitive with certain words alluding to the steered emotion. Increasing the steering value resulted in text reflecting the intended emotional tone. For example, steering with `sad` produced negative or introspective phrasing, while steering with `happy` produced positive language. The steering heatmaps can be appreciated in [Figure 5] and [Figure 6].
 
 The outputs remained _brokenly consistent_ across steering values and prompts, and the emotional influence was consistently observable. Text output can be appreciated in [Table 4].
+
+#### iii. PCA Projection
+
+Principal Component Analysis applied to the extracted emotion vectors revealed structured clustering patterns across emotion categories. Vectors corresponding to similar emotional valence (emotions associated with positive or negative connotations) appeared closer in the projected space, while opposing emotions were more separated. The projections produced visually distinct groupings, indicating that the vectors occupy separable regions in the reduced-dimensional space. PCA plots can be appreciated in [Figure 1][Figure 2].
+
+#### iv. Cosine Similarity
+
+Pairwise cosine similarity between emotion vectors in _openai-community/gpt-2-medium_ showed clear relationships between emotional categories. Similar emotions exhibited higher similarity scores, while opposing emotions showed lower or negative similarity values.
+
+The similarity matrix displayed structured variations across emotion vectors, with consistent patterns reflecting expected relationships such as positive versus negative affection. Cosine Heatmaps can be appreciated in [Figure 3] and [Figure 4].
 
 | **Emotion** | **Top 5 Tokens** | **Bottom 5 Tokens** |
 | :--- | :--- | :--- |
@@ -174,6 +174,10 @@ The outputs remained _brokenly consistent_ across steering values and prompts, a
 
 In Gemma 4 E2B, the logit lens produced more variable token distributions across emotion vectors. In particular, most tokens displayed multilingual characteristics, where the `loving` vector consistently produced heart emoji tokens. Tokens can be appreciated in [Table 5], and [Table 6].
 
+#### iv. Emotion Steering
+
+Gemma 4 E2B also exhibited changes in generated outputs under activation steering. For sufficiently large steering values, the model produced text reflecting the intended emotional tone, including explicit emotional expressions and stylistic variations. In some cases, generated text included unrelated elements such as HTML tags enclosing certain phrases or words. Despite this variability, the overall emotional direction remained detectable. The steering heatmaps can be appreciated in [Figure 11] and [Figure 12]. Finally, it is relevant to highlight that the row for `disgusting` suggests that this emotion deactivates all other emotion tokens, including its own. Text output can be appreciated in [Table 7].
+
 #### ii. PCA Projection
 
 PCA projections for Gemma 4 E2B display a peculiar clustering pattern. In comparison with _openai-community/gpt-2-medium_, _google/gemma-4-E2B_ shows a projection flip on the emotion vectors; emotions with a positive valence are now found on the left-side of the PC1 axis, while negative valence emotions are found on the right side. PCA plots can be appreciated in [Figure 7][Figure 8].
@@ -181,10 +185,6 @@ PCA projections for Gemma 4 E2B display a peculiar clustering pattern. In compar
 #### iii. Cosine Similarity
 
 In Gemma 4 E2B, cosine similarity values showed lower similarity between most emotion vector pairs. While some expected relationships were present, the overall magnitude of similarity scores was lower. The similarity matrix contained more moderate values, indicating increased overlap between vector representations. Cosine Heatmaps can be appreciated in [Figure 9] and [Figure 10].
-
-#### iv. Emotion Steering
-
-Gemma 4 E2B also exhibited changes in generated outputs under activation steering. For sufficiently large steering values, the model produced text reflecting the intended emotional tone, including explicit emotional expressions and stylistic variations. In some cases, generated text included unrelated elements such as HTML tags enclosing certain phrases or words. Despite this variability, the overall emotional direction remained detectable. The steering heatmaps can be appreciated in [Figure 11] and [Figure 12]. Finally, it is relevant to highlight that the row for `disgusting` suggests that this emotion deactivates all other emotion tokens, including its own. Text output can be appreciated in [Table 7].
 
 | **Emotion** | **Top 5 Tokens** | **Bottom 5 Tokens** |
 | :--- | :--- | :--- |
