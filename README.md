@@ -1,6 +1,6 @@
 # EmotionVectorExtraction-Gemma4-GPT2
 
-Partial replication of Anthropic's Emotion Vector findings using Gemma 4 E2B and GPT 2 Medium inside a Google Colab T4 Notebook
+Partial replication of Anthropic's Emotion Vector findings using Gemma 4 E2B and GPT-2 Medium inside a Google Colab T4 Notebook
 
 ## Authors
 
@@ -24,9 +24,9 @@ It is crucial to emphasize our limited experimental scope compared to [5], which
 
 | | **Anthropic [5]** | **Our Work** |
 |---|---|---|
-| **Model** | Claude Sonnet 4.5 | GPT 2 Medium and Gemma4-E2B |
+| **Model** | Claude Sonnet 4.5 | GPT-2 Medium and Gemma 4 E2B |
 | **Emotions tested** | 171 | 9 and 20 |
-| **Stories generated** | 205,200 | 2000 |
+| **Stories generated** | 205,200 | 2,000 |
 | **Team** | ~16 researchers | 1 researcher + ChatGPT + Gemini |
 | **Hardware** | Internal compute cluster | 2 Google Colab Notebooks with Free-Tier T4 NVIDIA GPUs |
 
@@ -62,11 +62,39 @@ We performed Principal Component Analysis on the emotion vectors to identify dom
 
 We calculated and plotted pairwise cosine similarities between all emotion vectors to verify expected clustering and oppositional patterns. This process is done for the subset of 9, and 20 emotions respectively.
 
+## How to replicate the findings
+
+The fastest way to replicate the results is to use one of the four saved Colab notebooks inside [`./scripts/`](./scripts/). They are snapshots of the same configurable notebook, with their saved outputs corresponding to the model, emotion count, and layer included in each filename:
+
+| **Model** | **Emotion set** | **Layer** | **Notebook** |
+|---|---:|---:|---|
+| GPT-2 Medium | 9 | 16 | [`emotion_vector_replication-GPT2Medium-9emotions-layer16.ipynb`](./scripts/emotion_vector_replication-GPT2Medium-9emotions-layer16.ipynb) |
+| GPT-2 Medium | 20 | 16 | [`emotion_vector_replication-GPT2Medium-20emotions-layer16.ipynb`](./scripts/emotion_vector_replication-GPT2Medium-20emotions-layer16.ipynb) |
+| Gemma 4 E2B | 9 | 23 | [`emotion_vector_replication-Gemma4E2B-9emotions-layer23.ipynb`](./scripts/emotion_vector_replication-Gemma4E2B-9emotions-layer23.ipynb) |
+| Gemma 4 E2B | 20 | 23 | [`emotion_vector_replication-Gemma4E2B-20emotions-layer23.ipynb`](./scripts/emotion_vector_replication-Gemma4E2B-20emotions-layer23.ipynb) |
+
+1. Open the desired notebook in Google Colab and select a T4 GPU runtime.
+2. Clone this repository into the runtime and move into its root so the notebook can resolve `./research_data/`:
+
+   ```python
+   !git clone https://github.com/NotsoJharedtrollOx17/EmotionVectorExtraction-Gemma4-GPT2.git
+   %cd EmotionVectorExtraction-Gemma4-GPT2
+   ```
+
+3. Run the dependency cells. The saved runs use `transformers==5.5.0` and `kaleido==0.2.1`. Gemma 4 E2B may also require a Hugging Face account with model access configured in the Colab runtime.
+4. In the configuration cells, keep the model, emotion list, and target layer that match the selected notebook filename. The notebook source contains both model choices, both emotion lists, and both layer choices, so blindly executing every alternative assignment will leave the last option active.
+5. When reproducing the committed findings, skip the optional `generateStructuredStories(...)` call. The analysis reads the existing per-emotion JSON files in [`./research_data/emotion_stories/`](./research_data/emotion_stories/), which now contain exactly 100 stories for each of the 20 emotions.
+6. Run the extraction, Logit Lens, steering, PCA, and cosine-similarity cells in order. Saved vectors, Delta Log Probability data, and the corresponding plots can be compared against [`./research_data/emotion_vectors/`](./research_data/emotion_vectors/), [`./research_data/emotion_logits/`](./research_data/emotion_logits/), and [`./plots/`](./plots/).
+
+The PCA and cosine results should reproduce from the saved corpus and configuration. Generated steering text can vary between runs because decoding is stochastic, so compare its overall behavior rather than expecting character-for-character output.
+
+_Dataset cleanup note:_ The committed result artifacts were originally generated when `calm_stories.json` contained 110 entries. The final ten accidental entries have since been removed so every emotion now contributes 100 stories. Trial reruns found no meaningful change to the reported structures, although a fresh run can show small numerical differences from the committed artifacts.
+
 ## Results
 
-The following subsection is further subdivided into two sub-subsections: (1) GPT 2 Medium, and (2) Gemma 4 E2B. In summary, emotion vector extraction does work on both models and it captures the semantical understanding of each emotion tested, while emotion probing does affect the model's outputs. Results coming from Prompt 01 are ommited for brevity. To fully audit our findings, we provide inside ```./scripts/``` the Colab Notebooks containing all of results presented in this section.
+The following subsection is further subdivided into two sub-subsections: (1) GPT-2 Medium, and (2) Gemma 4 E2B. In summary, emotion vector extraction produces label-related directions in both models, while emotion probing changes the models' outputs. Results coming from Prompt01 are omitted from this README for brevity, although their saved artifacts remain available in the repository. To fully audit our findings, we provide inside [`./scripts/`](./scripts/) the Colab notebooks containing the results presented in this section.
 
-### 1. GPT 2 Medium
+### 1. GPT-2 Medium
 
 #### i. Logit Lens
 
@@ -82,7 +110,7 @@ The outputs remained _brokenly consistent_ across steering values and prompts, a
 
 #### iii. PCA Projection
 
-Principal Component Analysis applied to the extracted emotion vectors revealed structured clustering patterns across emotion categories. Vectors corresponding to similar emotional valence (emotions associated with positive or negative connotations) appeared closer in the projected space, while opposing emotions were more separated. The projections produced visually distinct groupings, indicating that the vectors occupy separable regions in the reduced-dimensional space. PCA plots can be appreciated in [Figure 1][Figure 2].
+Principal Component Analysis applied to the extracted emotion vectors revealed structured clustering patterns across emotion categories. Vectors corresponding to similar emotional valence (emotions associated with positive or negative connotations) appeared closer in the projected space, while opposing emotions were more separated. The projections produced visually distinct groupings, indicating that the vectors occupy separable regions in the reduced-dimensional space. PCA plots can be appreciated in [Figure 1] and [Figure 2].
 
 #### iv. Cosine Similarity
 
@@ -129,29 +157,29 @@ The similarity matrix displayed structured variations across emotion vectors, wi
 
 **Table 3.** Top 5 and Bottom 5 Logit Lens Tokens for _openai-community/gpt-2-medium_ with 20 emotions.
 
-<img src="./plots/PCAGPT2Medium-9emotions-layer16.png" alt="lorem ipsum dolor" width="500" height="500"/>
+<img src="./plots/PCAGPT2Medium-9emotions-layer16.png" alt="GPT-2 Medium PCA projection for 9 emotion vectors" width="500" height="500"/>
 
 **Figure 1.** PCA Projection Plot for _openai-community/gpt-2-medium_ with 9 emotions.
 
-<img src="./plots/PCAGPT2Medium-20emotions-layer16.png" alt="lorem ipsum dolor" width="500" height="500"/>
+<img src="./plots/PCAGPT2Medium-20emotions-layer16.png" alt="GPT-2 Medium PCA projection for 20 emotion vectors" width="500" height="500"/>
 
 **Figure 2.** PCA Projection Plot for _openai-community/gpt-2-medium_ with 20 emotions.
 
-<img src="./plots/CosineHeatmapGPT2Medium-9emotions-layer16.png" alt="lorem ipsum dolor" width="800" height="500"/>
+<img src="./plots/CosineHeatmapGPT2Medium-9emotions-layer16.png" alt="GPT-2 Medium cosine similarity heatmap for 9 emotion vectors" width="800" height="500"/>
 
 **Figure 3.** Cosine Similarity Heatmap for _openai-community/gpt-2-medium_ with 9 emotions.
 
-<img src="./plots/CosineHeatmapGPT2Medium-20emotions-layer16.png" alt="lorem ipsum dolor" width="800" height="500"/>
+<img src="./plots/CosineHeatmapGPT2Medium-20emotions-layer16.png" alt="GPT-2 Medium cosine similarity heatmap for 20 emotion vectors" width="800" height="500"/>
 
 **Figure 4.** Cosine Similarity Heatmap for _openai-community/gpt-2-medium_ with 20 emotions.
 
-<img src="./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGPT2Medium-9emotions-layer16.png" alt="lorem ipsum dolor" width="500" height="500"/>
+<img src="./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGPT2Medium-9emotions-layer16.png" alt="GPT-2 Medium Prompt00 Delta Log Probability heatmap for 9 emotion vectors" width="500" height="500"/>
 
-**Figure 5.** Prompt00 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 9 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
+**Figure 5.** Prompt00 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 9 emotions. _Note:_ Prompt00 is found in [`./plots/emotion_logits/PromptID.txt`](./plots/emotion_logits/PromptID.txt)
 
-<img src="./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGPT2Medium-20emotions-layer16.png" alt="lorem ipsum dolor" width="500" height="500"/>
+<img src="./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGPT2Medium-20emotions-layer16.png" alt="GPT-2 Medium Prompt00 Delta Log Probability heatmap for 20 emotion vectors" width="500" height="500"/>
 
-**Figure 6.** Prompt00 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 20 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
+**Figure 6.** Prompt00 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 20 emotions. _Note:_ Prompt00 is found in [`./plots/emotion_logits/PromptID.txt`](./plots/emotion_logits/PromptID.txt)
 
 | **Emotion** | **Steered Output** |
 | :--- | :--- |
@@ -166,7 +194,7 @@ The similarity matrix displayed structured variations across emotion vectors, wi
 | ```calm``` | Human: How does he feel? Assistant: He feels <br><br>The background quieted, settling with a calm calm. Relaxed. Calm. Calm. Calm. Calm. Calm. Calm. Calm. Relaxed. Calm. Calm. Calm. Calm. Calm. Calm. Calm. ... |
 | ```happy``` | Human: How does he feel? Assistant: He feels  glow joyful joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy glow joy joy joy joy joy joy joy joy joy j... |
 
-**Table 4.** Steered Output Text using Prompt00 for _openai-community/gpt-2-medium_ with 9 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
+**Table 4.** Steered Output Text using Prompt00 for _openai-community/gpt-2-medium_ with 9 emotions. _Note:_ Prompt00 is found in [`./plots/emotion_logits/PromptID.txt`](./plots/emotion_logits/PromptID.txt)
 
 ### 2. Gemma 4 E2B
 
@@ -174,17 +202,17 @@ The similarity matrix displayed structured variations across emotion vectors, wi
 
 In Gemma 4 E2B, the logit lens produced more variable token distributions across emotion vectors. In particular, most tokens displayed multilingual characteristics, where the `loving` vector consistently produced heart emoji tokens. Tokens can be appreciated in [Table 5], and [Table 6].
 
-#### iv. Emotion Steering
+#### ii. Emotion Steering
 
-Gemma 4 E2B also exhibited changes in generated outputs under activation steering. For sufficiently large steering values, the model produced text reflecting the intended emotional tone, including explicit emotional expressions and stylistic variations. In some cases, generated text included unrelated elements such as HTML tags enclosing certain phrases or words. Despite this variability, the overall emotional direction remained detectable. The steering heatmaps can be appreciated in [Figure 11] and [Figure 12]. Finally, it is relevant to highlight that the row for `disgusting` suggests that this emotion deactivates all other emotion tokens, including its own. Text output can be appreciated in [Table 7].
+Gemma 4 E2B also exhibited changes in generated outputs under activation steering. For sufficiently large steering values, the model produced text reflecting the intended emotional tone, including explicit emotional expressions and stylistic variations. In some cases, generated text included unrelated elements such as HTML tags enclosing certain phrases or words. Despite this variability, the overall emotional direction remained detectable. The steering heatmaps can be appreciated in [Figure 11] and [Figure 12]. In the displayed 20-emotion heatmap, the row for `disgusted` shows negative changes across the evaluated token sets, including its own; this is a result of the current diagnostic rather than evidence of universal deactivation. Text output can be appreciated in [Table 7].
 
-#### ii. PCA Projection
+#### iii. PCA Projection
 
-PCA projections for Gemma 4 E2B display a peculiar clustering pattern. In comparison with _openai-community/gpt-2-medium_, _google/gemma-4-E2B_ shows a projection flip on the emotion vectors; emotions with a positive valence are now found on the left-side of the PC1 axis, while negative valence emotions are found on the right side. PCA plots can be appreciated in [Figure 7][Figure 8].
+PCA projections for Gemma 4 E2B display a peculiar clustering pattern. In the displayed coordinates, emotions with a positive valence are found on the left side of the PC1 axis, while several negative-valence emotions are found on the right side. PCA signs are arbitrary, so this apparent flip relative to _openai-community/gpt-2-medium_ is descriptive rather than a substantive reversal. PCA plots can be appreciated in [Figure 7] and [Figure 8].
 
-#### iii. Cosine Similarity
+#### iv. Cosine Similarity
 
-In Gemma 4 E2B, cosine similarity values showed lower similarity between most emotion vector pairs. While some expected relationships were present, the overall magnitude of similarity scores was lower. The similarity matrix contained more moderate values, indicating increased overlap between vector representations. Cosine Heatmaps can be appreciated in [Figure 9] and [Figure 10].
+In Gemma 4 E2B, cosine similarity values showed lower similarity between most emotion vector pairs. While some expected relationships were present, the overall magnitude of similarity scores was lower. The more moderate values indicate weaker directional alignment between many vector pairs, rather than increased overlap. Cosine heatmaps can be appreciated in [Figure 9] and [Figure 10].
 
 | **Emotion** | **Top 5 Tokens** | **Bottom 5 Tokens** |
 | :--- | :--- | :--- |
@@ -225,29 +253,29 @@ In Gemma 4 E2B, cosine similarity values showed lower similarity between most em
 
 **Table 6.** Top 5 and Bottom 5 Logit Lens Tokens for _google/gemma-4-E2B_ with 20 emotions. _Note:_ Multilingual and emoji tokens appear in this model.
 
-<img src="./plots/PCAGemma4E2B-9emotions-layer23.png" alt="lorem ipsum dolor" width="500" height="500"/>
+<img src="./plots/PCAGemma4E2B-9emotions-layer23.png" alt="Gemma 4 E2B PCA projection for 9 emotion vectors" width="500" height="500"/>
 
 **Figure 7.** PCA Projection Plot for _google/gemma-4-E2B_ with 9 emotions.
 
-<img src="./plots/PCAGemma4E2B-20emotions-layer23.png" alt="lorem ipsum dolor" width="500" height="500"/>
+<img src="./plots/PCAGemma4E2B-20emotions-layer23.png" alt="Gemma 4 E2B PCA projection for 20 emotion vectors" width="500" height="500"/>
 
 **Figure 8.** PCA Projection Plot for _google/gemma-4-E2B_ with 20 emotions.
 
-<img src="./plots/CosineHeatmapGemma4E2B-9emotions-layer23.png" alt="lorem ipsum dolor" width="800" height="500"/>
+<img src="./plots/CosineHeatmapGemma4E2B-9emotions-layer23.png" alt="Gemma 4 E2B cosine similarity heatmap for 9 emotion vectors" width="800" height="500"/>
 
 **Figure 9.** Cosine Similarity Heatmap _google/gemma-4-E2B_ with 9 emotions.
 
-<img src="./plots/CosineHeatmapGemma4E2B-20emotions-layer23.png" alt="lorem ipsum dolor" width="800" height="500"/>
+<img src="./plots/CosineHeatmapGemma4E2B-20emotions-layer23.png" alt="Gemma 4 E2B cosine similarity heatmap for 20 emotion vectors" width="800" height="500"/>
 
 **Figure 10.** Cosine Similarity Heatmap _google/gemma-4-E2B_ with 20 emotions.
 
-<img src="./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGemma4E2B-9emotions-layer23.png" alt="lorem ipsum dolor" width="500" height="500"/>
+<img src="./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGemma4E2B-9emotions-layer23.png" alt="Gemma 4 E2B Prompt00 Delta Log Probability heatmap for 9 emotion vectors" width="500" height="500"/>
 
-**Figure 11.** Prompt00 Delta Log Probability Heatmap for _google/gemma-4-E2B_ with 9 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
+**Figure 11.** Prompt00 Delta Log Probability Heatmap for _google/gemma-4-E2B_ with 9 emotions. _Note:_ Prompt00 is found in [`./plots/emotion_logits/PromptID.txt`](./plots/emotion_logits/PromptID.txt)
 
-<img src="./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGemma4E2B-20emotions-layer23.png" alt="lorem ipsum dolor" width="500" height="500"/>
+<img src="./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGemma4E2B-20emotions-layer23.png" alt="Gemma 4 E2B Prompt00 Delta Log Probability heatmap for 20 emotion vectors" width="500" height="500"/>
 
-**Figure 12.** Prompt00 Delta Log Probability Heatmap for _google/gemma-4-E2B_ with 20 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
+**Figure 12.** Prompt00 Delta Log Probability Heatmap for _google/gemma-4-E2B_ with 20 emotions. _Note:_ Prompt00 is found in [`./plots/emotion_logits/PromptID.txt`](./plots/emotion_logits/PromptID.txt)
 
 | **Emotion** | **Steered Output** |
 | :--- | :--- |
@@ -262,7 +290,7 @@ In Gemma 4 E2B, cosine similarity values showed lower similarity between most em
 | ```calm``` | Human: How does he feel? Assistant: He feels \<strong>relaxed\</strong>.<br><br>Human: Is he \<strong>enjoying\</strong> the conversation?<br><br>Human: What \<strong>time\</strong> is it?<br><br>Human: The \<strong>temperatu... |
 | ```happy``` | Human: How does he feel? Assistant: He feels \<strong>happy\</strong>. \<strong>Happy\</strong> is a feeling.<br><br>\<h2>What is the word for feeling happy</h2><br><br>\<strong>Happy\</strong> Definition of \<strong>ha... |
 
-**Table 7.** Steered Output Text using Prompt00 for _google/gemma-4-E2B_ with 9 emotions. _Note:_ Prompt00 is found in [./plots/emotion/logits/PromptID.txt](./plots/emotion_logits/PromptID.txt)
+**Table 7.** Steered Output Text using Prompt00 for _google/gemma-4-E2B_ with 9 emotions. _Note:_ Prompt00 is found in [`./plots/emotion_logits/PromptID.txt`](./plots/emotion_logits/PromptID.txt)
 
 ## Discussion
 
@@ -270,11 +298,11 @@ Our results provide substantial evidence that emotion vectors can be extracted f
 
 Regarding our PCA projections, their similarities and differences may be attributed to the low sample counts of the emotion stories used. This is in addition to extracting the emotions vectors from a set of only 9, and 20, emotions. Utilizing 9 emotions for the "emotion" PCA plot of both _openai-community/gpt-2-medium_ and _google/gemma-4-E2B_ illustrates that PC1 captures an emergent "Valence" axis. This pattern also appears with greater strength on the projection utilizing 20 emotions. Our particular finding is that an inverted "Valence" axis arises on the projections of _google/gemma-4-E2B_, which is supported further by the evidence obtained by [2]. We argue that the PCA projections of _google/gemma-4-E2B_ are crucial evidence that an "emotion" manifold may not replicate the axis orientation presented on the psychological construct mentioned in [5]. Furthermore, this suggests that emotion vectors may capture an inherently different geometry depending on the model family, such as the Gemma 4 family. We must remark that our previous claim is favored by a discussion thread found on HuggingFace<sup>1</sup>, which argues that a greater story sample count, and a larger emotion list, generates similar results to the ones reported by ourselves and [2].
 
-The cosine similarity heatmaps for both _openai-community/gpt-2-medium_ and _google/gemma-4-E2B_ display related emotion clusters even with a list of 9 emotions. The clustering effect is more pronounced with our list of 20 emotions, where emotions such as ```calm```, ```loving```, and ```happy```, have noticeable red/orange colorings between each other. This clustering heatmap effect is concordant to the results reported by [1][2][5]. The similarity heatmaps appear to follow a similiar grouping effect displayed on the PCA plots discussed on the previous paragraph. 
+The cosine similarity heatmaps for both _openai-community/gpt-2-medium_ and _google/gemma-4-E2B_ display related emotion clusters even with a list of 9 emotions. The clustering effect is more pronounced with our list of 20 emotions, where emotions such as ```calm```, ```loving```, and ```happy```, have noticeable red/orange colorings between each other. This clustering heatmap effect is concordant to the results reported by [1][2][5]. The similarity heatmaps appear to follow a similar grouping effect displayed on the PCA plots discussed in the previous paragraph. 
 
-Finally, our results from the emotion steering experiments strengthen the claim of [5] that emotion vectors causally influence the model's outputs. To our knowledge, the replication of [1] is the only existing attempt at the steering effects. While they collected vast amounts of evidence, we did not found any plots similar to the steering heatmaps found in the Appendix of [5]. We believe that our replication attempt of the aforementioned heatmaps facilitates the understanding of the interventions done in _openai-community/gpt-2-medium_ and _google/gemma-4-E2B_. The heatmap for _openai-community/gpt-2-medium_ displays that matches of steered vectors with their respective token sets (e.g. ```(happy, [joyful, joy, ecstatic, ...])```) do augment their generation likelihood from the baseline response. In particular, _openai-community/gpt-2-medium_ seems to have sparse likelihood activations of related emotions. We can assume that the model is not as capable at discerning the most appropriate token set to activate in accordance to the requested prompt, which is supported by the baseline (unsteered) generated text from the input prompt. What is interesting is that the generated text seems to read as broken text that oftentimes repeats a certain word related to the overarching emotion vector.
+Finally, our results from the emotion steering experiments strengthen the claim of [5] that emotion vectors causally influence the model's outputs. To our knowledge, the replication of [1] is the only existing attempt at the steering effects. While they collected vast amounts of evidence, we did not find any plots similar to the steering heatmaps found in the Appendix of [5]. We believe that our replication attempt of the aforementioned heatmaps facilitates the understanding of the interventions done in _openai-community/gpt-2-medium_ and _google/gemma-4-E2B_. The heatmap for _openai-community/gpt-2-medium_ displays that matches of steered vectors with their respective token sets (e.g. ```(happy, [joyful, joy, ecstatic, ...])```) do augment their generation likelihood from the baseline response. In particular, _openai-community/gpt-2-medium_ seems to have sparse likelihood activations of related emotions. We can assume that the model is not as capable at discerning the most appropriate token set to activate in accordance to the requested prompt, which is supported by the baseline (unsteered) generated text from the input prompt. What is interesting is that the generated text seems to read as broken text that oftentimes repeats a certain word related to the overarching emotion vector.
 
-In a similar vein, our steering results for _google/gemma-4-E2B_ suggest that the model can handle the intervention input prompt with ease, and steering augments the likelihood of most token matches with moderate strengh. The baseline generated text response handles the request with no signs of broken text behaviour like _openai-community/gpt-2-medium_, and that steered text generations semantically reflect the desired emotion. One particular highlight is that our steering heatmap of 20 emotions shows that ```disgusted``` deactivates all tokens sets. Further research is required to explain why that is the case.
+In a similar vein, our steering results for _google/gemma-4-E2B_ suggest that the model can handle the intervention input prompt with ease, and steering augments the likelihood of most token matches with moderate strength. The baseline generated text response handles the request with no signs of broken text behaviour like _openai-community/gpt-2-medium_, and the steered text generations semantically reflect the desired emotion. One particular highlight is that the ```disgusted``` row in our 20-emotion steering heatmap shows negative changes across the evaluated token sets. Further research is required to explain why that pattern appears in this diagnostic.
 
 Overall, our partial findings support the claims of [5], and it is remarkable to highlight their achieved replicability on models not related to the Claude family. Although our results may be interpreted as solid evidence, we must express caution and skepticism because our limited methodology scope might have altered the exhibited structures in terms of fidelity and resolution.
 
@@ -282,7 +310,7 @@ Overall, our partial findings support the claims of [5], and it is remarkable to
 
 ## Conclusion
 
-__The described findings suggest that emotion vectors can be extracted from _openai-community/gpt-2-medium_ and _google/gemma-4-E2B_, and can causally influence their generated responses if steered with the aformentioned vectors.__ This is supported by other replications accomplished by the online enthusiast community. Albeit antiquated for modern standards, _openai-community/gpt-2-medium_ displays an emergence of the described vectors and strong steering effects when intervened with them. In contrast, _google/gemma-4-E2B_ has moderate steering strength. In conclusion, we can ascertain that emotion vectors are present on models not related to the Claude family, and the results found for Claude Sonnet 4.5 can be replicated with noticeable similarity. __We argue that emotion vectors may be a fundamental property of large language models, and their causal steering effects might facilitate the understanding of their decision-making process.__ We encourage academics, professionals, and hobbyists alike to advance this line of research to further uncover additional properties besides the ones documented on the current writing.
+__The described findings suggest that emotion vectors can be extracted from _openai-community/gpt-2-medium_ and _google/gemma-4-E2B_, and can causally influence their generated responses if steered with the aforementioned vectors.__ This is supported by other replications accomplished by the online enthusiast community. Albeit antiquated for modern standards, _openai-community/gpt-2-medium_ displays an emergence of the described vectors and strong steering effects when intervened with them. In contrast, _google/gemma-4-E2B_ has moderate steering strength. In conclusion, we can ascertain that emotion vectors are present on models not related to the Claude family, and the results found for Claude Sonnet 4.5 can be replicated with noticeable similarity. __We argue that emotion vectors may be a fundamental property of large language models, and their causal steering effects might facilitate the understanding of their decision-making process.__ We encourage academics, professionals, and hobbyists alike to advance this line of research to further uncover additional properties besides the ones documented on the current writing.
 
 ## License
 
