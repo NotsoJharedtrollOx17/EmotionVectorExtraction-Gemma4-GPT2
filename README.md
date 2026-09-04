@@ -6,17 +6,21 @@ Partial replication of Anthropic's Emotion Vector findings using Gemma 4 E2B and
 
 - Abraham Jhared Flores Azcona _(NotsoJharedtrollOx17)_  ``abrahamjhared.flores@gmail.com``
 
+## Extended Preprint
+
+The complete 47-page preprint is available as [`PartialReplicationEmotionVectors.pdf`](./PartialReplicationEmotionVectors.pdf). It provides the extended methodology, experimental setup, results, discussion, limitations, appendices, and references behind this repository's simplified results summary. The LaTeX source is maintained in the companion [`preprint-EmotionVectorExtraction-Gemma4-GPT2`](https://github.com/NotsoJharedtrollOx17/preprint-EmotionVectorExtraction-Gemma4-GPT2) repository.
+
 ## Abstract
 
 We discuss a first-pass, resource-constrained partial replication of selected analyses from Anthropic's Emotion Vectors study. These analyses encompass (i) PCA projections interpreted in relation to valence and arousal, (ii) pairwise cosine similarity between emotion vectors, and (iii) activation-steering diagnostics. Anthropic reported that emotion-related directions in Claude Sonnet 4.5 organize internal representations and can influence model outputs. Related open-weight replication attempts have reported some comparable patterns in _meta-llama/Llama-3.3-70B-Instruct_ and _google/gemma-4-E4B_, while _openai-community/gpt-2-medium_ and _google/gemma-4-E2B_ have received less attention in this setting. Our contribution applies the same broad analysis family to these two models in Google Colab using generated story corpora and nine- and 20-emotion label sets. We observe (1) a partial valence-like separation along PC1 in both models, (2) local similarity clusters among related emotion labels, and (3) model-dependent changes in token probabilities and sampled text under steering with coefficient 0.5. GPT-2 Medium generally shows sharper but more repetitive and brittle steering diagnostics, whereas Gemma 4 E2B shows more moderate and multilingual token-level effects. These observations are consistent with some previously reported geometric and intervention patterns, but they characterize this particular corpus-and-pipeline combination. The stories are uncurated, the analysis does not use external affect ratings or random-direction controls, and the steering outputs are prompt-dependent and stochastic; accordingly, the results do not establish universal or uniquely emotional representations.
 
 ## Introduction
 
-Recent work from [5] demonstrated that large language models develop internal activation patterns associated with emotional concepts and _these representations can causally influence_ downstream behavior through residual stream interventions. These activation patterns are emotion vectors. Their findings suggest that emotional representations inside language models based on transformer architectures may behave as structured latent directions rather than superficial linguistic correlations. In particular, [5] reported that emotion vectors extracted from Claude Sonnet 4.5 [6] exhibited interpretable geometric organization, meaningful clustering behavior, and measurable causal effects during activation steering experiments.
+Recent work from [5] introduced the term _emotion vectors_ for directions in Claude Sonnet 4.5's residual stream that represent broad emotion concepts. The authors reported that these directions generalize beyond explicit emotion words, organize partly along the psychological dimensions of valence and arousal, and influence generated behavior under activation steering. These findings motivate a narrower generality question: whether comparable affect-associated directions can also be recovered in independently available transformer language models.
 
-This repository exhibits a partial replication of a subset of their experiments using smaller, publicly accessible transformer models. The selected models are  _openai-community/gpt-2-medium_ [3] and _google/gemma-4-E2B_ [4]. We focus on three core experimental components documented in [5]: (i) PCA Valence/Arousal Projection, (ii) Emotion Vector Cosine Similarity, and (iii) Causal Effects of Emotion Vector Steering. The objective is to reproduce experiments (i), (ii) and (iii), in smaller open-weight models. This may provide evidence of the presence of similar geometric structures within their activation spaces. In addition, utilizing an older transformer model such as _openai-community/gpt-2-medium_ may offer evidence of the existence of these emotion vectors inside antiquated models. For the case of _google/gemma-4-E2B_, we may provide substantial evidence that validates the results documented in [2], which further supports the community's replicability efforts.
+This repository provides a first-pass, resource-constrained partial replication of selected analyses using _openai-community/gpt-2-medium_ [3] and _google/gemma-4-E2B_ [4]. We examine Logit Lens vocabulary projections, PCA and pairwise cosine similarity, and activation steering on two fixed prompts using nine- and 20-emotion label sets. The purpose is not to reproduce every behavioral or safety claim from [5], or to validate the Gemma 4 E4B results in [2], but to add two inexpensive model cases to the emerging comparison literature.
 
-Preliminary results indicate that emotion vectors can be extracted from the selected models, and they do affect the model's outputs. We must emphasize that the peculiar ways these vectors behave indicate substantial differences on how _openai-community/gpt-2-medium_ and _google/gemma-4-E2B_ process these constructs across (i), (ii), and (iii). In particular with experiment (iii), _openai-community/gpt-2-medium_ consistently produced stronger diagonal activation patterns during the heatmap steering interventions, suggesting that emotion vectors steer the model's responses easily. In contrast, _google/gemma-4-E2B_ frequently displayed weaker token-level activations in the heatmap despite retaining visible steering effects in the output text of the intervention.
+Under this pipeline, both models show several label-consistent vocabulary projections, local cosine-similarity families, and a partial valence-like separation along PC1. Activation addition produces prompt- and direction-dependent changes in next-token probabilities and sampled text. GPT-2 Medium often shows sharper diagonal token effects together with repetitive and brittle continuations, whereas Gemma 4 E2B generally shows more moderate, multilingual, and sometimes unrelated effects. Steering is causal in the limited computational sense that the intervention precedes and changes model outputs; these diagnostics do not establish subjective experience, uniquely emotional control, or a universal internal mechanism.
 
 ## Methodology
 
@@ -36,7 +40,7 @@ Overall, we utilized the data pipeline found in [2] and then adapted the codebas
 
 ### 1. Story Generation
 
-We utilized a slight variation of the prompt template<sup>1</sup> utilized by [5], and then prompt the current web version of Gemini to generate batches of 10 stories per topic for each emotion with a JSON list format. We then copy-paste the JSON into a file containing the stories generated for each emotion. This was decided to save precious compute time provided in the free-tier range of our Google Colab Notebooks. We consider that story generation using the evaluated models would have slowed down our experiment execution. Likewise, we prompt Gemini with a neutral prompt<sup>2</sup> template to extend the provided list of texts consisting of commands and requests.
+We used a modified version of the prompt template<sup>1</sup> from [5] and asked the web version of Gemini to generate batches of five stories for each of ten topics in JSON format. The generated batches were assembled into the committed corpus of 100 stories for each emotion. Stories were retained without manual rewriting or post-hoc quality filtering. This saved limited free-tier Colab compute, but it also means that the results characterize this generated corpus and may reflect lexical leakage or other corpus artifacts. We likewise used a neutral prompt<sup>2</sup> template with Gemini to extend a list of emotionally neutral commands and statements.
 
 > <sup>1</sup> Full template prompt available at [`./research_data/PromptDataForEmotions.txt`](./research_data/PromptDataForEmotions.txt)
 
@@ -44,23 +48,23 @@ We utilized a slight variation of the prompt template<sup>1</sup> utilized by [5
 
 ### 2. Emotion Vector Extraction
 
-Emotion vectors were computed by (i) averaging activations across all stories for a given emotion to obtain per-emotion mean vectors, (ii) compute the global mean across all emotion vectors, and (iii) subtract the global mean from each emotion vector mean. This process is executed for the list of 9 emotions, and 20 emotions as well.
+For each story, hidden states were mean-pooled from token index 50 onward, or from the midpoint for shorter sequences, at fixed numeric index 16 for GPT-2 Medium and 23 for Gemma 4 E2B. We averaged the pooled story representations within each emotion, subtracted a shared neutral mean as an intermediate step, and then subtracted the global mean of the neutral-adjusted emotion prototypes. Because the same neutral mean is subtracted from every prototype, it cancels during global centering; the final directions are globally emotion-centered and then L2-normalized. The layers follow a source-informed two-thirds-depth convention and were not selected through a layer sweep. Extraction uses `outputs.hidden_states[layerIndex]`, while steering hooks the transformer block with the same numeric index, so the embedding entry at hidden-state index zero creates a possible one-block alignment offset.
 
 ### 3. Logit Lens
 
-Each emotion vector was projected through the model's unembedding matrix to verify if it upweights semantically appropriate tokens. Said tokens were stored with their respective normalized standard deviation scores into JSON files utilized on the next step. This process is done for the subset of 9, and 20 emotions respectively.
+Each normalized direction was projected through the model's final normalization and language-model head, and the resulting vocabulary scores were standardized as z-scores. The highest- and lowest-scoring tokens were stored in JSON files for the next step. These projections document vocabulary items aligned with each direction; they are diagnostics rather than independent validation that every direction uniquely represents its label.
 
 ### 4. Emotion Probe Steering
 
-Utilizing the previously generated JSON logit lens files, we measured the difference of the log probability score between the steered tokens at +0.5 strength and the baseline "emotion" tokens of the JSON file. We then project the scores into a heatmap. Furthermore, we execute two steering experiments with two different prompts, and display the steered text outputs to confirm the steering effects of our interventions. This process is executed for the list of 9, and 20 emotions respectively.
+For each of two fixed prompts, we compared baseline and steered next-token log probabilities at coefficient `alpha=0.5`. Each heatmap cell averages the change for the five top Logit Lens tokens associated with its target direction. Because these target tokens come from the same vectors used for steering, the heatmaps are direction-consistency diagnostics rather than independent semantic tests. The implementation scales the intervention by each current token's residual norm, so `alpha=0.5` is a source-informed operating point rather than a numerically identical reproduction of [5] or an optimized cross-model setting. Sampled continuations provide a complementary qualitative diagnostic, but they are stochastic and were not repeated across a prespecified set of seeds.
 
 ### 5. PCA Projection
 
-We performed Principal Component Analysis on the emotion vectors to identify dominant organizational axes. This process is executed for the list of 9 emotions and for 20 emotions as well.
+We performed Principal Component Analysis on the normalized emotion vectors to visualize their leading variance directions. The components were estimated without external emotion ratings, so valence- or arousal-like interpretations are descriptive observations made after inspecting the labeled plots. This process is executed for the nine- and 20-emotion sets.
 
 ### 6. Cosine Similarity Heatmap
 
-We calculated and plotted pairwise cosine similarities between all emotion vectors to verify expected clustering and oppositional patterns. This process is done for the subset of 9, and 20 emotions respectively.
+We calculated and plotted pairwise cosine similarities between the normalized emotion vectors to inspect directional alignment, local similarity families, and oppositions. These descriptive patterns do not establish a universal emotion manifold. This process is done for the nine- and 20-emotion sets.
 
 ## How to replicate the findings
 
@@ -98,15 +102,15 @@ The following subsection is further subdivided into two sub-subsections: (1) GPT
 
 #### i. Logit Lens
 
-Applying the logit lens to the extracted emotion vectors in _openai-community/gpt-2-medium_ produced token distributions that aligned consistently with their corresponding emotional labels. The highest-scoring tokens for each emotion reflected coherent affective language. For example, vectors associated with `happy` and `sad` yielded tokens corresponding to positive and negative emotional expressions related to their respective emotion concept.
+For GPT-2 Medium, several projected token lists align directly with their labels. For example, the `happy`, `calm`, `loving`, `angry`, and `desperate` vectors rank label-related tokens such as `joyful`, `relaxation`, `nurturing`, `angrily`, and `frantically`. Other rows are less direct and include fragments or unrelated vocabulary.
 
-The resulting token sets were relatively concentrated, with limited inclusion of unrelated terms. This indicates that the projected logits from the emotion vectors produce stable and interpretable outputs. Tokens can be appreciated in [Table 2], and [Table 3].
+The tables therefore provide examples of label-associated vocabulary alongside counterexamples; they document the projected directions rather than independently validating stable or uniquely emotional representations. Tokens can be inspected in [Table 2] and [Table 3].
 
 #### ii. Emotion Steering
 
-Activation steering experiments in _openai-community/gpt-2-medium_ produced clear and consistent changes in generated outputs, although the output text seems repetitive with certain words alluding to the steered emotion. Increasing the steering value resulted in text reflecting the intended emotional tone. For example, steering with `sad` produced negative or introspective phrasing, while steering with `happy` produced positive language. The steering heatmaps can be appreciated in [Figure 5] and [Figure 6].
+Activation addition in GPT-2 Medium changes next-token probabilities and sampled continuations in prompt- and direction-dependent ways. Several heatmaps contain comparatively strong diagonal cells, but off-diagonal effects also occur. Some sampled outputs repeat label-associated words or stems, while others degrade or drift into unrelated continuations. The steering heatmaps can be inspected in [Figure 5] and [Figure 6].
 
-The outputs remained _brokenly consistent_ across steering values and prompts, and the emotional influence was consistently observable. Text output can be appreciated in [Table 4].
+These results establish intervention sensitivity for the implemented directions, not uniformly specific emotional control. Representative text output can be inspected in [Table 4].
 
 #### iii. PCA Projection
 
@@ -114,9 +118,9 @@ Principal Component Analysis applied to the extracted emotion vectors revealed s
 
 #### iv. Cosine Similarity
 
-Pairwise cosine similarity between emotion vectors in _openai-community/gpt-2-medium_ showed clear relationships between emotional categories. Similar emotions exhibited higher similarity scores, while opposing emotions showed lower or negative similarity values.
+Pairwise cosine similarity in GPT-2 Medium shows several local relationships between labels, including positive similarity for some related pairs and negative similarity for some contrasting pairs.
 
-The similarity matrix displayed structured variations across emotion vectors, with consistent patterns reflecting expected relationships such as positive versus negative affection. Cosine Heatmaps can be appreciated in [Figure 3] and [Figure 4].
+The matrices also contain mixed and near-zero entries, so the observed families are descriptive rather than a complete positive-versus-negative partition. Cosine heatmaps can be inspected in [Figure 3] and [Figure 4].
 
 | **Emotion** | **Top 5 Tokens** | **Bottom 5 Tokens** |
 | :--- | :--- | :--- |
@@ -200,11 +204,11 @@ The similarity matrix displayed structured variations across emotion vectors, wi
 
 #### i. Logit Lens
 
-In Gemma 4 E2B, the logit lens produced more variable token distributions across emotion vectors. In particular, most tokens displayed multilingual characteristics, where the `loving` vector consistently produced heart emoji tokens. Tokens can be appreciated in [Table 5], and [Table 6].
+In Gemma 4 E2B, the Logit Lens tables are more multilingual and fragmentary than GPT-2 Medium's. Some rows contain direct label-related tokens, such as heart emoji and `LOVE` for `loving`, while other rows mix plausible associations with subword fragments or unrelated vocabulary. Multilingual or emoji tokens do not by themselves indicate stronger semantic encoding. Tokens can be inspected in [Table 5] and [Table 6].
 
 #### ii. Emotion Steering
 
-Gemma 4 E2B also exhibited changes in generated outputs under activation steering. For sufficiently large steering values, the model produced text reflecting the intended emotional tone, including explicit emotional expressions and stylistic variations. In some cases, generated text included unrelated elements such as HTML tags enclosing certain phrases or words. Despite this variability, the overall emotional direction remained detectable. The steering heatmaps can be appreciated in [Figure 11] and [Figure 12]. In the displayed 20-emotion heatmap, the row for `disgusted` shows negative changes across the evaluated token sets, including its own; this is a result of the current diagnostic rather than evidence of universal deactivation. Text output can be appreciated in [Table 7].
+Gemma 4 E2B also shows prompt- and direction-dependent changes under activation addition. Some sampled continuations contain label-related expressions, while others contain HTML-like markup, repeated dialogue, multilingual tokens, or unrelated content. The heatmaps and samples therefore establish intervention sensitivity, not uniformly specific emotional control. The steering heatmaps can be inspected in [Figure 11] and [Figure 12]. In the displayed 20-emotion heatmap, the row for `disgusted` shows negative changes across the evaluated token sets, including its own; this remains an unresolved property of the diagnostic rather than evidence of universal deactivation. Representative text output can be inspected in [Table 7].
 
 #### iii. PCA Projection
 
@@ -212,7 +216,7 @@ PCA projections for Gemma 4 E2B also show a partial PC1 separation, although the
 
 #### iv. Cosine Similarity
 
-In Gemma 4 E2B, cosine similarity values showed lower similarity between most emotion vector pairs. While some expected relationships were present, the overall magnitude of similarity scores was lower. The more moderate values indicate weaker directional alignment between many vector pairs, rather than increased overlap. Cosine heatmaps can be appreciated in [Figure 9] and [Figure 10].
+In Gemma 4 E2B, cosine similarity values showed lower similarity between many emotion-vector pairs, alongside local alignments such as `happy`-`calm`, `afraid`-`angry`, and `hopeful`-`inspired`. The more moderate values indicate weaker directional alignment rather than increased overlap, and mixed or near-zero entries show that the geometry is not exhausted by one affective partition. Cosine heatmaps can be inspected in [Figure 9] and [Figure 10].
 
 | **Emotion** | **Top 5 Tokens** | **Bottom 5 Tokens** |
 | :--- | :--- | :--- |
@@ -298,7 +302,7 @@ The results show that this extraction-and-intervention pipeline produces label-a
 
 The PCA plots provide a partial, qualitative valence-like separation along PC1 in both models. The arrangement is model-dependent, and the Gemma coordinates are more difficult to interpret; PC2 does not provide a stable arousal direction. The apparent orientation change between models is not itself substantive because PCA signs are arbitrary. The cosine heatmaps add complementary evidence by showing local similarity families, including positive-affect groupings such as ```calm```, ```loving```, and ```happy```. These patterns are compatible with earlier replication reports, but they do not establish a human affective circumplex or a universal emotion manifold.
 
-Steering produces model- and prompt-dependent changes in token probabilities and sampled text. GPT-2 Medium often shows sharper diagonal token effects, together with repetition and other brittle continuations. Gemma 4 E2B generally shows more moderate changes and more fluent-looking outputs, although multilingual tokens, markup, and unrelated content also occur. The ```disgusted``` row in the 20-emotion Gemma heatmap is negative across the evaluated token sets, including its own; this remains an unresolved property of the diagnostic rather than evidence of universal deactivation.
+Steering produces model- and prompt-dependent changes in token probabilities and sampled text. GPT-2 Medium often shows sharper diagonal token effects, together with repetition and other brittle continuations. Gemma 4 E2B generally shows more moderate changes, while multilingual tokens, markup, repeated dialogue, and unrelated content also occur. These differences are qualitative: the models have different tokenizers, residual norms, and generation distributions, so raw delta-log-probability magnitudes are not direct cross-model effect sizes. The ```disgusted``` row in the 20-emotion Gemma heatmap is negative across the evaluated token sets, including its own; this remains an unresolved property of the diagnostic rather than evidence of universal deactivation.
 
 Taken together, these observations are consistent with some geometric and intervention patterns reported by [1], [2], and [5]. They should nevertheless be read as findings about this specific generated corpus, layer choices, target-token construction, and steering coefficient. The uncurated stories, limited label sets, absence of external ratings and random-direction controls, and stochastic generations constrain the strength and generality of the conclusions.
 
@@ -306,7 +310,7 @@ Taken together, these observations are consistent with some geometric and interv
 
 ## Conclusion
 
-This first-pass study shows that the selected pipeline can extract centered directions with label-associated vocabulary, geometric relationships, and intervention effects in GPT-2 Medium and Gemma 4 E2B. The two models do not behave identically: GPT-2 Medium shows sharper but more brittle steering diagnostics, while Gemma 4 E2B shows more moderate and multilingual effects. These findings extend comparison with prior open-weight replications, but they do not establish that the directions are universal, uniquely emotional, or equivalent to the representations reported in Claude Sonnet 4.5. Larger and more controlled datasets, external affect ratings, random-direction baselines, and broader layer searches are needed to test those possibilities.
+This first-pass partial replication extracted affect-associated residual-stream directions from GPT-2 Medium and Gemma 4 E2B using a fixed, low-cost pipeline. Across both models, the directions showed several label-consistent vocabulary associations, repeated local cosine-similarity families, and a partial valence-like PC1 separation. Activation addition changed next-token probabilities and sampled continuations, although the changes were not uniformly specific or fluent, and PC2 did not consistently support an arousal interpretation. These findings demonstrate the portability of this extraction-and-intervention procedure to two additional models, not the universality or psychological completeness of emotion vectors. Stronger conclusions require independent semantic evaluations, control directions, exact layer alignment, external affect ratings, and repeated generation trials.
 
 ## License
 
@@ -328,8 +332,8 @@ We hereby state that both ChatGPT and Gemini were utilized for the analysis, int
     author = {Flores-Azcona, Abraham Jhared},
     year = {2026},
     month = {May},
-    url = {https://github.com/NotsoJharedtrollOx17/EmotionVectorExtraction-Gemma4-GPT2/tree/main},
-    note = {This replication is the first independent replication of Anthropic's Emotion Vectors utilizing GPT 2 Medium}
+    url = {https://github.com/NotsoJharedtrollOx17/EmotionVectorExtraction-Gemma4-GPT2/tree/v2.1.0},
+    note = {Software and data release, version 2.1.0}
 }
 ```
 
