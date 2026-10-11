@@ -6,9 +6,9 @@ Partial replication of Anthropic's Emotion Vector findings using Gemma 4 E2B and
 
 - Abraham Jhared Flores Azcona _(NotsoJharedtrollOx17)_  ``abrahamjhared.flores@gmail.com``
 
-## Extended Preprint
+## Extended Technical Report
 
-The complete 47-page preprint is available as [`PartialReplicationEmotionVectors.pdf`](./PartialReplicationEmotionVectors.pdf). It provides the extended methodology, experimental setup, results, discussion, limitations, appendices, and references behind this repository's simplified results summary. The LaTeX source is maintained in the companion [`preprint-EmotionVectorExtraction-Gemma4-GPT2`](https://github.com/NotsoJharedtrollOx17/preprint-EmotionVectorExtraction-Gemma4-GPT2) repository.
+The complete 47-page technical report is available as [`PartialReplicationEmotionVectors.pdf`](./PartialReplicationEmotionVectors.pdf). It provides the extended methodology, experimental setup, results, discussion, limitations, appendices, and references behind this repository's simplified results summary. The LaTeX source is maintained in the companion [`report-EmotionVectorExtraction-Gemma4-GPT2`](https://github.com/NotsoJharedtrollOx17/report-EmotionVectorExtraction-Gemma4-GPT2) repository.
 
 ## Abstract
 
@@ -332,8 +332,8 @@ We hereby state that both ChatGPT and Gemini were utilized for the analysis, int
     author = {Flores-Azcona, Abraham Jhared},
     year = {2026},
     month = {May},
-    url = {https://github.com/NotsoJharedtrollOx17/EmotionVectorExtraction-Gemma4-GPT2/tree/v2.1.0},
-    note = {Software and data release, version 2.1.0}
+    url = {https://github.com/NotsoJharedtrollOx17/EmotionVectorExtraction-Gemma4-GPT2/tree/v2.1.1},
+    note = {Software and data release, version 2.1.1}
 }
 ```
 
