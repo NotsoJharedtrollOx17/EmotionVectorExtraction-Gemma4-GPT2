@@ -10,6 +10,10 @@ Partial replication of Anthropic's Emotion Vector findings using Gemma 4 E2B and
 
 The complete 47-page technical report is available as [`PartialReplicationEmotionVectors.pdf`](./PartialReplicationEmotionVectors.pdf). It provides the extended methodology, experimental setup, results, discussion, limitations, appendices, and references behind this repository's simplified results summary. The LaTeX source is maintained in the companion [`report-EmotionVectorExtraction-Gemma4-GPT2`](https://github.com/NotsoJharedtrollOx17/report-EmotionVectorExtraction-Gemma4-GPT2) repository.
 
+## Presentation Slides
+
+The slides accompanying this project are archived in [`technical-presentations`](https://github.com/NotsoJharedtrollOx17/technical-presentations), under [the Emotion Vectors presentation](https://github.com/NotsoJharedtrollOx17/technical-presentations/tree/main/2026-00-emotionVectors-srt). The [slide PDF](https://github.com/NotsoJharedtrollOx17/technical-presentations/blob/main/2026-00-emotionVectors-srt/slidesPartialReplicationEmotionVectors.pdf) is available directly from that archive.
+
 ## Abstract
 
 We discuss a first-pass, resource-constrained partial replication of selected analyses from Anthropic's Emotion Vectors study. These analyses encompass (i) PCA projections interpreted in relation to valence and arousal, (ii) pairwise cosine similarity between emotion vectors, and (iii) activation-steering diagnostics. Anthropic reported that emotion-related directions in Claude Sonnet 4.5 organize internal representations and can influence model outputs. Related open-weight replication attempts have reported some comparable patterns in _meta-llama/Llama-3.3-70B-Instruct_ and _google/gemma-4-E4B_, while _openai-community/gpt-2-medium_ and _google/gemma-4-E2B_ have received less attention in this setting. Our contribution applies the same broad analysis family to these two models in Google Colab using generated story corpora and nine- and 20-emotion label sets. We observe (1) a partial valence-like separation along PC1 in both models, (2) local similarity clusters among related emotion labels, and (3) model-dependent changes in token probabilities and sampled text under steering with coefficient 0.5. GPT-2 Medium generally shows sharper but more repetitive and brittle steering diagnostics, whereas Gemma 4 E2B shows more moderate and multilingual token-level effects. These observations are consistent with some previously reported geometric and intervention patterns, but they characterize this particular corpus-and-pipeline combination. The stories are uncurated, the analysis does not use external affect ratings or random-direction controls, and the steering outputs are prompt-dependent and stochastic; accordingly, the results do not establish universal or uniquely emotional representations.
@@ -332,8 +336,8 @@ We hereby state that both ChatGPT and Gemini were utilized for the analysis, int
     author = {Flores-Azcona, Abraham Jhared},
     year = {2026},
     month = {May},
-    url = {https://github.com/NotsoJharedtrollOx17/EmotionVectorExtraction-Gemma4-GPT2/tree/v2.1.1},
-    note = {Software and data release, version 2.1.1}
+    url = {https://github.com/NotsoJharedtrollOx17/EmotionVectorExtraction-Gemma4-GPT2/tree/v2.1.2},
+    note = {Software and data release, version 2.1.2}
 }
 ```
 
