@@ -8,7 +8,7 @@ Partial replication of Anthropic's Emotion Vector findings using Gemma 4 E2B and
 
 ## Extended Technical Report
 
-The complete 47-page technical report is available as [`PartialReplicationEmotionVectors.pdf`](./PartialReplicationEmotionVectors.pdf). It provides the extended methodology, experimental setup, results, discussion, limitations, appendices, and references behind this repository's simplified results summary. The LaTeX source is maintained in the companion [`report-EmotionVectorExtraction-Gemma4-GPT2`](https://github.com/NotsoJharedtrollOx17/report-EmotionVectorExtraction-Gemma4-GPT2) repository.
+The revised 47-page technical report is available as [`PartialReplicationEmotionVectors.pdf`](./PartialReplicationEmotionVectors.pdf). It provides the extended methodology, experimental setup, results, discussion, limitations, appendices, and references behind this repository's simplified results summary. The revised PDF is also distributed with [release v2.1.3](https://github.com/NotsoJharedtrollOx17/EmotionVectorExtraction-Gemma4-GPT2/releases/tag/v2.1.3). The LaTeX source is maintained in the companion [`report-EmotionVectorExtraction-Gemma4-GPT2`](https://github.com/NotsoJharedtrollOx17/report-EmotionVectorExtraction-Gemma4-GPT2) repository.
 
 ## Presentation Slides
 
@@ -16,13 +16,13 @@ The slides accompanying this project are archived in [`technical-presentations`]
 
 ## Abstract
 
-We discuss a first-pass, resource-constrained partial replication of selected analyses from Anthropic's Emotion Vectors study. These analyses encompass (i) PCA projections interpreted in relation to valence and arousal, (ii) pairwise cosine similarity between emotion vectors, and (iii) activation-steering diagnostics. Anthropic reported that emotion-related directions in Claude Sonnet 4.5 organize internal representations and can influence model outputs. Related open-weight replication attempts have reported some comparable patterns in _meta-llama/Llama-3.3-70B-Instruct_ and _google/gemma-4-E4B_, while _openai-community/gpt-2-medium_ and _google/gemma-4-E2B_ have received less attention in this setting. Our contribution applies the same broad analysis family to these two models in Google Colab using generated story corpora and nine- and 20-emotion label sets. We observe (1) a partial valence-like separation along PC1 in both models, (2) local similarity clusters among related emotion labels, and (3) model-dependent changes in token probabilities and sampled text under steering with coefficient 0.5. GPT-2 Medium generally shows sharper but more repetitive and brittle steering diagnostics, whereas Gemma 4 E2B shows more moderate and multilingual token-level effects. These observations are consistent with some previously reported geometric and intervention patterns, but they characterize this particular corpus-and-pipeline combination. The stories are uncurated, the analysis does not use external affect ratings or random-direction controls, and the steering outputs are prompt-dependent and stochastic; accordingly, the results do not establish universal or uniquely emotional representations.
+We discuss a first-pass, resource-constrained partial replication of selected analyses from Anthropic's Emotion Vectors study. These analyses encompass (i) PCA projections interpreted in relation to valence and arousal, (ii) pairwise cosine similarity between emotion vectors, and (iii) activation-steering diagnostics. Anthropic reported that emotion-related directions in Claude Sonnet 4.5 organize internal representations and can influence model outputs. Related open-weight replication attempts have reported some comparable patterns in _meta-llama/Llama-3.3-70B-Instruct_ and _google/gemma-4-E4B_, while _openai-community/gpt2-medium_ and _google/gemma-4-E2B_ have received less attention in this setting. Our contribution applies the same broad analysis family to these two models in Google Colab using generated story corpora and nine- and 20-emotion label sets. We observe (1) a partial valence-like separation along PC1 in both models, (2) local similarity clusters among related emotion labels, and (3) model-dependent changes in token probabilities across eleven coefficients from -0.5 to +0.5, with displayed heatmaps and inspected sampled continuations at +0.5. GPT-2 Medium generally shows sharper but more repetitive and brittle steering diagnostics, whereas Gemma 4 E2B shows more moderate and multilingual token-level effects. These observations are consistent with some previously reported geometric and intervention patterns, but they characterize this particular corpus-and-pipeline combination. The stories are uncurated, the analysis does not use external affect ratings or random-direction controls, and the steering outputs are prompt-dependent and stochastic; accordingly, the results do not establish universal or uniquely emotional representations.
 
 ## Introduction
 
 Recent work from [5] introduced the term _emotion vectors_ for directions in Claude Sonnet 4.5's residual stream that represent broad emotion concepts. The authors reported that these directions generalize beyond explicit emotion words, organize partly along the psychological dimensions of valence and arousal, and influence generated behavior under activation steering. These findings motivate a narrower generality question: whether comparable affect-associated directions can also be recovered in independently available transformer language models.
 
-This repository provides a first-pass, resource-constrained partial replication of selected analyses using _openai-community/gpt-2-medium_ [3] and _google/gemma-4-E2B_ [4]. We examine Logit Lens vocabulary projections, PCA and pairwise cosine similarity, and activation steering on two fixed prompts using nine- and 20-emotion label sets. The purpose is not to reproduce every behavioral or safety claim from [5], or to validate the Gemma 4 E4B results in [2], but to add two inexpensive model cases to the emerging comparison literature.
+This repository provides a first-pass, resource-constrained partial replication of selected analyses using _openai-community/gpt2-medium_ [3] and _google/gemma-4-E2B_ [4]. We examine Logit Lens vocabulary projections, PCA and pairwise cosine similarity, and activation steering on two fixed prompts using nine- and 20-emotion label sets. The purpose is not to reproduce every behavioral or safety claim from [5], or to validate the Gemma 4 E4B results in [2], but to add two inexpensive model cases to the emerging comparison literature.
 
 Under this pipeline, both models show several label-consistent vocabulary projections, local cosine-similarity families, and a partial valence-like separation along PC1. Activation addition produces prompt- and direction-dependent changes in next-token probabilities and sampled text. GPT-2 Medium often shows sharper diagonal token effects together with repetitive and brittle continuations, whereas Gemma 4 E2B generally shows more moderate, multilingual, and sometimes unrelated effects. Steering is causal in the limited computational sense that the intervention precedes and changes model outputs; these diagnostics do not establish subjective experience, uniquely emotional control, or a universal internal mechanism.
 
@@ -40,7 +40,7 @@ It is crucial to emphasize our limited experimental scope compared to [5], which
 
 **Table 1.** Experiment Scope Comparison of Anthropic [5] versus Ours. _Note:_ Inspired by a similar table found on [2].
 
-Overall, we utilized the data pipeline found in [2] and then adapted the codebase to complement our data requirements and probing experiments. This section is subdivided with the following methodology steps: (1) Story Generation, (2) Emotion Vector Extraction, (3) Logit Lens, (4) Emotion Probe Steering, (5) PCA Projection, and (6) Cosine Similarity Heatmap. All steps are performed on both  _openai-community/gpt-2-medium_ and _google/gemma-4-E2B_.
+Overall, we utilized the data pipeline found in [2] and then adapted the codebase to complement our data requirements and probing experiments. This section is subdivided with the following methodology steps: (1) Story Generation, (2) Emotion Vector Extraction, (3) Logit Lens, (4) Emotion Probe Steering, (5) PCA Projection, and (6) Cosine Similarity Heatmap. All steps are performed on both  _openai-community/gpt2-medium_ and _google/gemma-4-E2B_.
 
 ### 1. Story Generation
 
@@ -60,7 +60,7 @@ Each normalized direction was projected through the model's final normalization 
 
 ### 4. Emotion Probe Steering
 
-For each of two fixed prompts, we compared baseline and steered next-token log probabilities at coefficient `alpha=0.5`. Each heatmap cell averages the change for the five top Logit Lens tokens associated with its target direction. Because these target tokens come from the same vectors used for steering, the heatmaps are direction-consistency diagnostics rather than independent semantic tests. The implementation scales the intervention by each current token's residual norm, so `alpha=0.5` is a source-informed operating point rather than a numerically identical reproduction of [5] or an optimized cross-model setting. Sampled continuations provide a complementary qualitative diagnostic, but they are stochastic and were not repeated across a prespecified set of seeds.
+For each of two fixed prompts and all four saved model/emotion-set configurations, we compared baseline and steered next-token log probabilities at eleven coefficients: `-0.5, -0.4, -0.3, -0.2, -0.1, 0.0, 0.1, 0.2, 0.3, 0.4, 0.5`. All eight saved probability JSON files contain this grid. The displayed heatmaps select `alpha=+0.5`, and the inspected sampled continuations use that same setting; the sweep is not a repeated-generation evaluation of emotional tone or coherence. Each heatmap cell averages the change for the five top Logit Lens tokens associated with its target direction. Because these target tokens come from the same vectors used for steering, the heatmaps are direction-consistency diagnostics rather than independent semantic tests. The implementation scales the intervention by each current token's residual norm, so `alpha=0.5` is a source-informed operating point rather than a numerically identical reproduction of [5] or an optimized cross-model setting. Sampled continuations provide a complementary qualitative diagnostic, but they are stochastic and were not repeated across a prespecified set of seeds.
 
 ### 5. PCA Projection
 
@@ -72,7 +72,7 @@ We calculated and plotted pairwise cosine similarities between the normalized em
 
 ## How to replicate the findings
 
-The fastest way to replicate the results is to use one of the four saved Colab notebooks inside [`./scripts/`](./scripts/). They are snapshots of the same configurable notebook, with their saved outputs corresponding to the model, emotion count, and layer included in each filename:
+To inspect the saved runs or attempt a rerun, use one of the four saved Colab notebooks inside [`./scripts/`](./scripts/). They are snapshots of the same configurable notebook, with their saved outputs corresponding to the model, emotion count, and layer included in each filename:
 
 | **Model** | **Emotion set** | **Layer** | **Notebook** |
 |---|---:|---:|---|
@@ -91,12 +91,12 @@ The fastest way to replicate the results is to use one of the four saved Colab n
 
 3. Run the dependency cells. The saved runs use `transformers==5.5.0` and `kaleido==0.2.1`. Gemma 4 E2B may also require a Hugging Face account with model access configured in the Colab runtime.
 4. In the configuration cells, keep the model, emotion list, and target layer that match the selected notebook filename. The notebook source contains both model choices, both emotion lists, and both layer choices, so blindly executing every alternative assignment will leave the last option active.
-5. When reproducing the committed findings, skip the optional `generateStructuredStories(...)` call. The analysis reads the existing per-emotion JSON files in [`./research_data/emotion_stories/`](./research_data/emotion_stories/), which now contain exactly 100 stories for each of the 20 emotions.
+5. For a rerun using the current committed corpus, skip the optional `generateStructuredStories(...)` call. The analysis reads the existing per-emotion JSON files in [`./research_data/emotion_stories/`](./research_data/emotion_stories/), which now contain exactly 100 stories for each of the 20 emotions.
 6. Run the extraction, Logit Lens, steering, PCA, and cosine-similarity cells in order. Saved vectors, Delta Log Probability data, and the corresponding plots can be compared against [`./research_data/emotion_vectors/`](./research_data/emotion_vectors/), [`./research_data/emotion_logits/`](./research_data/emotion_logits/), and [`./plots/`](./plots/).
 
-The PCA and cosine results should reproduce from the saved corpus and configuration. Generated steering text can vary between runs because decoding is stochastic, so compare its overall behavior rather than expecting character-for-character output.
+The notebooks preserve historical outputs rather than demonstrating a clean end-to-end rerun from the current corpus. The saved Gemma 4 E2B nine-emotion notebook includes a `NameError: name 'numberEmotions' is not defined` in a heatmap-saving cell. Inspect that recorded error when following its configuration and execution order. This documentation revision preserves the error and does not repair or rerun the experiment. Generated steering text can also vary because decoding is stochastic.
 
-_Dataset cleanup note:_ The committed result artifacts were originally generated when `calm_stories.json` contained 110 entries. The final ten accidental entries have since been removed so every emotion now contributes 100 stories. Trial reruns found no meaningful change to the reported structures, although a fresh run can show small numerical differences from the committed artifacts.
+_Dataset cleanup note:_ The committed result artifacts were originally generated when `calm_stories.json` contained 110 entries. The final ten accidental entries have since been removed so every emotion now contributes 100 stories. The current corpus therefore differs from the one used for the historical artifacts. Exact reproduction of those artifacts from the corrected corpus has not been established by this documentation audit; compare saved artifacts and new runs with that provenance distinction in mind.
 
 ## Results
 
@@ -138,7 +138,7 @@ The matrices also contain mixed and near-zero entries, so the observed families 
 | ```calm``` | relaxation, breeze, relaxing, ambient, calming | Worse, stros, CHA, Worst, :( |
 | ```happy``` | joyful, joy, ecstatic, exhilar, wonderful | Worse, complains, screws, inconvenient, offending |
 
-**Table 2.** Top 5 and Bottom 5 Logit Lens Tokens for _openai-community/gpt-2-medium_ with 9 emotions.
+**Table 2.** Top 5 and Bottom 5 Logit Lens Tokens for _openai-community/gpt2-medium_ with 9 emotions.
 
 | **Emotion** | **Top 5 Tokens** | **Bottom 5 Tokens** |
 | :--- | :--- | :--- |
@@ -163,31 +163,31 @@ The matrices also contain mixed and near-zero entries, so the observed families 
 | ```calm``` | breeze, relaxation, calming, calm, relaxing | Worse, CHA, stros, Worst, Illegal |
 | ```happy``` | joy, joyful, exhilar, ecstatic, gratitude | complains, Worse, objectionable, inconvenient, offending |
 
-**Table 3.** Top 5 and Bottom 5 Logit Lens Tokens for _openai-community/gpt-2-medium_ with 20 emotions.
+**Table 3.** Top 5 and Bottom 5 Logit Lens Tokens for _openai-community/gpt2-medium_ with 20 emotions.
 
 <img src="./plots/PCAGPT2Medium-9emotions-layer16.png" alt="GPT-2 Medium PCA projection for 9 emotion vectors" width="500" height="500"/>
 
-**Figure 1.** PCA Projection Plot for _openai-community/gpt-2-medium_ with 9 emotions.
+**Figure 1.** PCA Projection Plot for _openai-community/gpt2-medium_ with 9 emotions.
 
 <img src="./plots/PCAGPT2Medium-20emotions-layer16.png" alt="GPT-2 Medium PCA projection for 20 emotion vectors" width="500" height="500"/>
 
-**Figure 2.** PCA Projection Plot for _openai-community/gpt-2-medium_ with 20 emotions.
+**Figure 2.** PCA Projection Plot for _openai-community/gpt2-medium_ with 20 emotions.
 
 <img src="./plots/CosineHeatmapGPT2Medium-9emotions-layer16.png" alt="GPT-2 Medium cosine similarity heatmap for 9 emotion vectors" width="800" height="500"/>
 
-**Figure 3.** Cosine Similarity Heatmap for _openai-community/gpt-2-medium_ with 9 emotions.
+**Figure 3.** Cosine Similarity Heatmap for _openai-community/gpt2-medium_ with 9 emotions.
 
 <img src="./plots/CosineHeatmapGPT2Medium-20emotions-layer16.png" alt="GPT-2 Medium cosine similarity heatmap for 20 emotion vectors" width="800" height="500"/>
 
-**Figure 4.** Cosine Similarity Heatmap for _openai-community/gpt-2-medium_ with 20 emotions.
+**Figure 4.** Cosine Similarity Heatmap for _openai-community/gpt2-medium_ with 20 emotions.
 
 <img src="./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGPT2Medium-9emotions-layer16.png" alt="GPT-2 Medium Prompt00 Delta Log Probability heatmap for 9 emotion vectors" width="500" height="500"/>
 
-**Figure 5.** Prompt00 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 9 emotions. _Note:_ Prompt00 is found in [`./plots/emotion_logits/PromptID.txt`](./plots/emotion_logits/PromptID.txt)
+**Figure 5.** Prompt00 Delta Log Probability Heatmap for _openai-community/gpt2-medium_ with 9 emotions. _Note:_ Prompt00 is found in [`./plots/emotion_logits/PromptID.txt`](./plots/emotion_logits/PromptID.txt)
 
 <img src="./plots/emotion_logits/Prompt00/DeltaLogProbHeatmapGPT2Medium-20emotions-layer16.png" alt="GPT-2 Medium Prompt00 Delta Log Probability heatmap for 20 emotion vectors" width="500" height="500"/>
 
-**Figure 6.** Prompt00 Delta Log Probability Heatmap for _openai-community/gpt-2-medium_ with 20 emotions. _Note:_ Prompt00 is found in [`./plots/emotion_logits/PromptID.txt`](./plots/emotion_logits/PromptID.txt)
+**Figure 6.** Prompt00 Delta Log Probability Heatmap for _openai-community/gpt2-medium_ with 20 emotions. _Note:_ Prompt00 is found in [`./plots/emotion_logits/PromptID.txt`](./plots/emotion_logits/PromptID.txt)
 
 | **Emotion** | **Steered Output** |
 | :--- | :--- |
@@ -202,7 +202,7 @@ The matrices also contain mixed and near-zero entries, so the observed families 
 | ```calm``` | Human: How does he feel? Assistant: He feels <br><br>The background quieted, settling with a calm calm. Relaxed. Calm. Calm. Calm. Calm. Calm. Calm. Calm. Relaxed. Calm. Calm. Calm. Calm. Calm. Calm. Calm. ... |
 | ```happy``` | Human: How does he feel? Assistant: He feels  glow joyful joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy joy glow joy joy joy joy joy joy joy joy joy j... |
 
-**Table 4.** Steered Output Text using Prompt00 for _openai-community/gpt-2-medium_ with 9 emotions. _Note:_ Prompt00 is found in [`./plots/emotion_logits/PromptID.txt`](./plots/emotion_logits/PromptID.txt)
+**Table 4.** Steered Output Text using Prompt00 for _openai-community/gpt2-medium_ with 9 emotions. _Note:_ Prompt00 is found in [`./plots/emotion_logits/PromptID.txt`](./plots/emotion_logits/PromptID.txt)
 
 ### 2. Gemma 4 E2B
 
@@ -216,7 +216,7 @@ Gemma 4 E2B also shows prompt- and direction-dependent changes under activation 
 
 #### iii. PCA Projection
 
-PCA projections for Gemma 4 E2B also show a partial PC1 separation, although the displayed arrangement is less straightforward and PC2 does not support a stable arousal interpretation. In the displayed coordinates, several positive labels appear on the left and several negative labels on the right. Because PCA signs are arbitrary, the apparent orientation difference from _openai-community/gpt-2-medium_ is descriptive rather than a substantive reversal. The plots show candidate affective organization, not a validated human circumplex. PCA plots can be appreciated in [Figure 7] and [Figure 8].
+PCA projections for Gemma 4 E2B also show a partial PC1 separation, although the displayed arrangement is less straightforward and PC2 does not support a stable arousal interpretation. In the displayed coordinates, several positive labels appear on the left and several negative labels on the right. Because PCA signs are arbitrary, the apparent orientation difference from _openai-community/gpt2-medium_ is descriptive rather than a substantive reversal. The plots show candidate affective organization, not a validated human circumplex. PCA plots can be appreciated in [Figure 7] and [Figure 8].
 
 #### iv. Cosine Similarity
 
@@ -306,15 +306,15 @@ The results show that this extraction-and-intervention pipeline produces label-a
 
 The PCA plots provide a partial, qualitative valence-like separation along PC1 in both models. The arrangement is model-dependent, and the Gemma coordinates are more difficult to interpret; PC2 does not provide a stable arousal direction. The apparent orientation change between models is not itself substantive because PCA signs are arbitrary. The cosine heatmaps add complementary evidence by showing local similarity families, including positive-affect groupings such as ```calm```, ```loving```, and ```happy```. These patterns are compatible with earlier replication reports, but they do not establish a human affective circumplex or a universal emotion manifold.
 
-Steering produces model- and prompt-dependent changes in token probabilities and sampled text. GPT-2 Medium often shows sharper diagonal token effects, together with repetition and other brittle continuations. Gemma 4 E2B generally shows more moderate changes, while multilingual tokens, markup, repeated dialogue, and unrelated content also occur. These differences are qualitative: the models have different tokenizers, residual norms, and generation distributions, so raw delta-log-probability magnitudes are not direct cross-model effect sizes. The ```disgusted``` row in the 20-emotion Gemma heatmap is negative across the evaluated token sets, including its own; this remains an unresolved property of the diagnostic rather than evidence of universal deactivation.
+Steering produces model- and prompt-dependent changes in token probabilities and sampled text. Unsteered samples also contain repetition or markup, so the inspected continuations do not isolate steering's contribution to those problems. GPT-2 Medium often shows sharper diagonal token effects, together with repetition and other brittle continuations. Gemma 4 E2B generally shows more moderate changes, while multilingual tokens, markup, repeated dialogue, and unrelated content also occur. These differences are qualitative: the models have different tokenizers, residual norms, and generation distributions, so raw delta-log-probability magnitudes are not direct cross-model effect sizes. The ```disgusted``` row in the 20-emotion Gemma heatmap is negative across the evaluated token sets, including its own; this remains an unresolved property of the diagnostic rather than evidence of universal deactivation.
 
-Taken together, these observations are consistent with some geometric and intervention patterns reported by [1], [2], and [5]. They should nevertheless be read as findings about this specific generated corpus, layer choices, target-token construction, and steering coefficient. The uncurated stories, limited label sets, absence of external ratings and random-direction controls, and stochastic generations constrain the strength and generality of the conclusions.
+Taken together, these observations are consistent with some geometric and intervention patterns reported by [1], [2], and [5]. They should nevertheless be read as findings about this specific generated corpus, layer choices, target-token construction, coefficient grid, and selected +0.5 generation setting. The uncurated stories, limited label sets, absence of external ratings and random-direction controls, and stochastic generations constrain the strength and generality of the conclusions.
 
 > <sup>1</sup> [HuggingFace thread](https://huggingface.co/google/gemma-4-E4B-it/discussions/8).
 
 ## Conclusion
 
-This first-pass partial replication extracted affect-associated residual-stream directions from GPT-2 Medium and Gemma 4 E2B using a fixed, low-cost pipeline. Across both models, the directions showed several label-consistent vocabulary associations, repeated local cosine-similarity families, and a partial valence-like PC1 separation. Activation addition changed next-token probabilities and sampled continuations, although the changes were not uniformly specific or fluent, and PC2 did not consistently support an arousal interpretation. These findings demonstrate the portability of this extraction-and-intervention procedure to two additional models, not the universality or psychological completeness of emotion vectors. Stronger conclusions require independent semantic evaluations, control directions, exact layer alignment, external affect ratings, and repeated generation trials.
+This first-pass partial replication extracted affect-associated residual-stream directions from GPT-2 Medium and Gemma 4 E2B using a fixed, low-cost pipeline. Across both models, the directions showed several label-consistent vocabulary associations, repeated local cosine-similarity families, and a partial valence-like PC1 separation. Activation addition changed next-token probabilities and sampled continuations, although the changes were not uniformly specific or fluent, and PC2 did not consistently support an arousal interpretation. These saved experiments document the application of this extraction-and-intervention procedure to two additional models. They do not establish universal or psychologically complete emotion representations, or a general limitation of static linear steering. Stronger conclusions require independent semantic evaluations, control directions, exact layer alignment, external affect ratings, and repeated generation trials.
 
 ## License
 
@@ -336,8 +336,8 @@ We hereby state that both ChatGPT and Gemini were utilized for the analysis, int
     author = {Flores-Azcona, Abraham Jhared},
     year = {2026},
     month = {May},
-    url = {https://github.com/NotsoJharedtrollOx17/EmotionVectorExtraction-Gemma4-GPT2/tree/v2.1.2},
-    note = {Software and data release, version 2.1.2}
+    url = {https://github.com/NotsoJharedtrollOx17/EmotionVectorExtraction-Gemma4-GPT2/tree/v2.1.3},
+    note = {Software and data release, version 2.1.3}
 }
 ```
 
