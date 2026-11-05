@@ -70,7 +70,7 @@ gAccelerator = None
 gDevice = None
 gTokenizer = None
 gModel = None
-gTargetLayer = None # Layer 24 has consistent emotion classifications
+gTargetLayer = None # Select the fixed extraction/intervention numeric index below.
 gStoryFile = None
 gEmotionLibrary: Dict[str, torch.Tensor] = None
 gNeutralVectors: List[torch.Tensor] = None
@@ -413,7 +413,7 @@ def extractEmotionVector(emotionLabel: str, neutralTexts: List[str]):
 """#### `normalizeEmotionVectors()`
 
 
-* Normalizes emotion vectors and neutral vectors, and updates emotion vectors by subtracting the global mean of the emotions and the neutral.
+* Subtracts a shared neutral mean, globally centers the emotion prototypes, and L2-normalizes each direction. The shared neutral mean cancels during global centering; no neutral-subspace projection is performed.
 """
 
 def normalizeEmotionVectors():
@@ -1341,17 +1341,18 @@ generateStructuredStories(emotionLabels, storyTopics, samplesPerPair=5)
 gEmotionLibrary = {}
 gNeutralVectors = []
 
-# We must collect neutral activations to build the global noise subspace
+# Collect neutral activations for the shared-mean intermediate calculation.
 extractNeutralVectors(neutralPrompts)
 
 # and the emotion vectors
 for emotion in emotionLabels:
-    # Captures the raw (Emotional - Neutral) delta
+    # Captures the mean pooled story activations for this emotion.
     extractEmotionVector(emotion, neutralPrompts)
     freeVRAM()
 
 # [4] Normalize the emotion vectors
-# Project out the top 50% of neutral variance to isolate 'Pure Affect'
+# Subtract the shared neutral mean, globally emotion-center, then L2-normalize.
+# The shared neutral mean cancels; this does not remove a learned neutral subspace.
 normalizeEmotionVectors()
 
 # [5] Storing Emotion Vector results
@@ -1413,7 +1414,7 @@ if kModelIdx == "openai-community/gpt2-medium":
 elif kModelIdx == "google/gemma-4-E2B":
     modelName = "Gemma4E2B"
 
-steeringValue = 0.5  # match Anthropic-style
+steeringValue = 0.5  # selected display setting; uses the current token residual norm
 
 heatmap, emotions = computeEmotionHeatmap(
     allLogProbData,
@@ -1471,7 +1472,7 @@ if kModelIdx == "openai-community/gpt2-medium":
 elif kModelIdx == "google/gemma-4-E2B":
     modelName = "Gemma4E2B"
 
-steeringValue = 0.5  # match Anthropic-style
+steeringValue = 0.5  # selected display setting; uses the current token residual norm
 
 heatmap, emotions = computeEmotionHeatmap(
     allLogProbData,
@@ -1516,7 +1517,7 @@ for emotionLabel in emotionLabels:
     print(f"[STEERING] Output: {output[:200]}...")
     print("[END] Emotion:", emotionLabel)
 
-# [6] Generate the 4-quadrant manifold with Valence/Arousal rotation logic
+# [6] Plot the raw two-component PCA projection; axis interpretations are descriptive.
 fig = visualizePCAManifold()
 
 # [i] abbreviate the modelName for the plot filename
